@@ -21,7 +21,7 @@ sum.na.rm <- function(x) { sum(x,na.rm=T) }
 stderr <- function(x) sqrt(var(x)/length(x))
 
 #Get directory of this file
-directory = '/Users/mekline/Dropbox/_Projects/Gesture - Case Marking/Analysis - Post Blindcoding'
+directory = getwd()
 
 #Initialize dataset
 gestable = data.frame(NULL)
@@ -358,6 +358,7 @@ katydata$Classified.Spatial.Compare <- katydata$Spatial.Cue.Katy == katydata$Spa
 mean(katydata$Classified.Spatial.Compare)
 
 
+
 ######
 # Column cleanup and renaming
 #Now drop all the preliminary codings & 'mush' columns, leaving us with just Final.WordOrder.Clean and Final.Spatial.Clean
@@ -523,8 +524,6 @@ handdata$Object.Type <- as.factor(handdata$Object.Type)
 #alldata <- alldata[alldata$SuperGoodResponse == "Yes",]
 
 
-#### GRAPHS AND STATS!!!! ######
-
 
 #################
 #WORD ORDER
@@ -535,6 +534,12 @@ alldata[alldata$WordOrder.Classified == "VerbLateral",]$ChoseLateral <- 1
 
 ParticipantScores <- aggregate(alldata$ChoseLateral, by=list(alldata$Subject, alldata$Object.Type, alldata$GestureCondition), mean.na.rm)
 names(ParticipantScores) <- c("Subject", "Object.Type", "GestureCondition", "ChoseLateral")
+
+#### GRAPHS AND STATS!!!! ######
+
+# 3/20/15 Reordering stats to match paper order, calculating confints, and redoing model comparisons (rather than reporting p vals from the wrong variable coding)
+
+
 
 ###
 # GRAPH #1 - ChoseLateral by Object Type and Gesture Condition 
@@ -766,10 +771,13 @@ summary(peopleexp_embod_model)
 
 
 
+
+
+
 #####
 # GRAPH N? (Optional, probably just state...)
 
-#Check that with the alternate clasification (see above) to more closely match Hall assignments
+#Check that word order pattern obtains with the alternate clasification (see above) to more closely match Hall assignments
 peopledata$ChoseNonAdj <- 0
 peopledata[is.na(peopledata$WordOrder.Embod.Classified),]$WordOrder.Embod.Classified <- "Unclassified"
 peopledata[peopledata$WordOrder.Embod.Classified=="NonAdjacent",]$ChoseNonAdj <- 1 #1=SOV
@@ -780,7 +788,7 @@ with(PeopleEmbodScoresHall, tapply(ChoseNonAdj, list(PVEmbod, GestureCondition),
 #Qualitatively similar!
 
 #########################################
-##SUBSEQUENT ANALYSES
+##SUBSEQUENT/EXPLORATORY ANALYSES
 #########################################
 
 
