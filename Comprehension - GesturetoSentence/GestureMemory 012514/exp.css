@@ -1,0 +1,78 @@
+body {background-color:#EFD6A8;
+	margin:50px 0px; 
+	padding:0px;
+	text-align:center;
+	}
+	
+#Content {
+	width:800px;
+	margin:0px auto;
+	text-align:left;
+	padding:15px;
+	}
+
+p.blocktext {
+	width:800px;
+	margin-left:auto;
+	margin-right: auto;
+	text-align:left;
+	padding:0;
+
+	margin-top: 0;
+	margin-bottom: 0;
+
+}
+
+p.centertext {
+	width:800px;
+	margin-left:auto;
+	margin-right: auto;
+	text-align:center;
+	padding:0;
+
+	margin-top: 0;
+	margin-bottom: 0;
+
+}
+
+em.big {
+	font-style:normal;
+	font-size:1.5em;
+}
+
+div{
+	margin-left: auto;
+    margin-right: auto;
+    width: 800
+}
+
+.meter-wrap{
+    position: relative;
+}
+
+.meter-wrap, .meter-value, .meter-text {
+    /* The width and height of your image */
+    width: 400px; height: 30px;
+}
+
+.meter-wrap, .meter-value {
+    background: #336666 url(meter-outline.png) top left no-repeat;
+}
+
+.meter-value {
+	margin-left:0;
+	text-align: left
+}
+
+.meter-text {
+    position: absolute;
+    top:0; left:0;
+
+    padding-top: 5px;
+
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+

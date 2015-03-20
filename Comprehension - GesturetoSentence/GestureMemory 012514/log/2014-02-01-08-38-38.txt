@@ -1,0 +1,109 @@
+run	-1	'Willow is running on port 2999'
+take	0	"{'tag': 'click', 'id': 'GoOnButton', 'client': 0}"
+let	0	'(body)'
+add	0	'(body)\n<html>\n<head>\n<link rel="stylesheet" type="text/css" href="exp.css" />\n</head>\n<body>\n\n<h3>Memory Task Instructions</h3>\n\n<p class="blocktext"> Now that you have learned a vocabulary of gestures, you will watch a series of 72 memory sets. In each\nset, you will be given lists of words to remember, and a movie showing a gesture "phrase." These phrases do not necessarily use English grammar, but the agent (the person doing the action) will always come at the beginning of the phrase. </p>\n\n<br></br>\n\n<p class="blocktext">Your task will be to report the lists of words you see and at the same time, remember what the gesture phrase means. </p> \n\n<br></br>\n\n<p class="blocktext"> The movies are very short, and the presentations are timed.  Do not click away from this tab during the experiment.  If you are looking away, or if a movie doesn\'t display correctly, click the "I missed it" button.</p>\n\n<br></br>\n\n<p class="blocktext"> Click the button below when you are ready to start watching the videos.</p>\n\n<input type=\'submit\' value=\'Ready to start!\' id=\'GoOnButton\'>\n\n\n</body>\n</html>'
+put	0	"{u'time': 1391261924306, u'tag': u'click', u'id': u'GoOnButton', u'client': 0}"
+took	0	"{u'client': 0, u'tag': u'click', u'id': u'GoOnButton', u'time': 1391261924306}"
+let	0	'(body)'
+take	0	"{'tag': 'PING', 'client': 0}"
+add	0	'(body)\n<html>\n<head>\n<link rel="stylesheet" type="text/css" href="exp.css" />\n</head>\n<body>\n\nRemember the following list of words. You will have to enter them correctly after the next screen.\n<center>\n<h3>Kiss</h3>\n<h3>Poke</h3>\n<h3>Fall</h3>\n<h3>Girl</h3>\n<h3>Kick</h3>\n\n</body>\n</html>'
+put	0	"{'tag': 'PING', 'client': 0}"
+took	0	"{'tag': 'PING', 'client': 0}"
+let	0	'(body)'
+take	0	"{'tag': 'PING', 'client': 0}"
+add	0	'(body)\n<html>\n<head>\n<link rel="stylesheet" type="text/css" href="exp.css" />\n</head>\n<body>\n\nNow get ready for a gesture movie!\n\n</body>\n</html>\n'
+put	0	"{'tag': 'PING', 'client': 0}"
+took	0	"{'tag': 'PING', 'client': 0}"
+let	0	'(body)'
+take	0	"{'tag': 'PING', 'client': 0}"
+add	0	'(body)\n<html>\r\n<head>\r\n<link rel="stylesheet" type="text/css" href="exp.css" />\r\n</head>\r\n<body>\r\n\r\n<div>\r\n<video id="TheMovie" width="600" height="450" preload autoplay>\r\n  \r\n  <source id="src_mpg" src="http://tedlab.mit.edu/~mekline/GestureMovies/35AI_TargetSV.mp4"  type=\'video/mp4; codecs="avc1.42E01E, mp4a.40.2"\'>\r\n  <source id="src_ogv" src="http://tedlab.mit.edu/~mekline/GestureMovies/35AI_TargetSV.ogv"  type=\'video/ogg; codecs="theora, vorbis"\'>\r\n  \r\n\t<object\r\n\tclassid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B"\r\n\tcodebase="http://www.apple.com/qtactivex/qtplugin.cab"\r\n\theight="400"\r\n\twidth="300" >\r\n\t<param id="src_obj" name="src" value="http://tedlab.mit.edu/~mekline/GestureMovies/35AI_TargetSV.mp4"/>\r\n\t<param name="scale" value="aspect" />\r\n\t<param name="controller" value="false" />\r\n\t<param name="autoplay" value="true" />\r\n\t<embed\r\n\tid="src_embed"\r\n\ttype="video/quicktime"\r\n\tpluginspage="http://www.apple.com/quicktime/download/"\r\n\theight="450"\r\n\twidth="600"\r\n\tsrc="http://tedlab.mit.edu/~mekline/GestureMovies/35AI_TargetSV.mp4"\r\n\tscale="aspect"\r\n\tcontroller="false"\r\n\tautoplay="true" />\r\n\t</object>\r\n</video>\r\n</div>\r\n\r\n</body>\r\n</html>\r\n'
+put	0	"{'tag': 'PING', 'client': 0}"
+took	0	"{'tag': 'PING', 'client': 0}"
+take	0	"{'tag': 'click', 'id': 'GoOnButton', 'client': 0}"
+add	0	'(body)\n<html>\n<head>\n<link rel="stylesheet" type="text/css" href="exp.css" />\n</head>\n<body>\n\n<input type=\'submit\' value=\'Go On\' id=\'GoOnButton\'>\n\n</body>\n</html>'
+put	0	"{u'time': 1391261939574, u'tag': u'click', u'id': u'GoOnButton', u'client': 0}"
+took	0	"{u'client': 0, u'tag': u'click', u'id': u'GoOnButton', u'time': 1391261939574}"
+let	0	'(body)'
+take	0	"{'tag': 'click', 'id': 'GoOnButton', 'client': 0}"
+add	0	'(body)\n<html>\n<head>\n<link rel="stylesheet" type="text/css" href="exp.css" />\n</head>\n<body>\n\n<p class="centertext">Enter your word list below.</p>\n\n<p class="centertext"><textarea id="math1" rows="1" cols="20"> </textarea> </p>\n<p class="centertext"><textarea id="math2" rows="1" cols="20"> </textarea> </p>\n<p class="centertext"><textarea id="math3" rows="1" cols="20"> </textarea> </p>\n<p class="centertext"><textarea id="math4" rows="1" cols="20"> </textarea> </p>\n<p class="centertext"><textarea id="math5" rows="1" cols="20"> </textarea> </p>\n\n\n<p class="centertext"> Click the button below when you are ready.</p>\n\n<input type=\'submit\' value=\'Done!\' id=\'GoOnButton\'>\n\n</body>\n</html>'
+put	0	"{u'time': 1391261946731, u'tag': u'click', u'id': u'GoOnButton', u'client': 0}"
+took	0	"{u'client': 0, u'tag': u'click', u'id': u'GoOnButton', u'time': 1391261946731}"
+take	0	"{'ticket': 1, 'tag': 'peek'}"
+peek	0	'(#math1)'
+put	0	"{u'ticket': 1, u'tag': u'peek', u'time': 1391261946735, u'value': u' kiss', u'client': 0}"
+took	0	"{u'ticket': 1, u'tag': u'peek', u'client': 0, u'value': u' kiss', u'time': 1391261946735}"
+take	0	"{'ticket': 2, 'tag': 'peek'}"
+peek	0	'(#math2)'
+put	0	"{u'ticket': 2, u'tag': u'peek', u'time': 1391261946750, u'value': u'poke ', u'client': 0}"
+took	0	"{u'ticket': 2, u'tag': u'peek', u'client': 0, u'value': u'poke ', u'time': 1391261946750}"
+take	0	"{'ticket': 3, 'tag': 'peek'}"
+peek	0	'(#math3)'
+put	0	"{u'ticket': 3, u'tag': u'peek', u'time': 1391261946765, u'value': u'fall ', u'client': 0}"
+took	0	"{u'ticket': 3, u'tag': u'peek', u'client': 0, u'value': u'fall ', u'time': 1391261946765}"
+take	0	"{'ticket': 4, 'tag': 'peek'}"
+peek	0	'(#math4)'
+put	0	"{u'ticket': 4, u'tag': u'peek', u'time': 1391261946780, u'value': u'girl ', u'client': 0}"
+took	0	"{u'ticket': 4, u'tag': u'peek', u'client': 0, u'value': u'girl ', u'time': 1391261946780}"
+take	0	"{'ticket': 5, 'tag': 'peek'}"
+peek	0	'(#math5)'
+put	0	"{u'ticket': 5, u'tag': u'peek', u'time': 1391261946794, u'value': u'kick ', u'client': 0}"
+took	0	"{u'ticket': 5, u'tag': u'peek', u'client': 0, u'value': u'kick ', u'time': 1391261946794}"
+let	0	'(body)'
+take	0	"{'tag': 'PING', 'client': 0}"
+add	0	'(body)\n<html>\n<head>\n<link rel="stylesheet" type="text/css" href="exp.css" />\n</head>\n<body>\n\nRemember the following list of words. You will have to enter them correctly after the next screen.\n<center>\n<h3>Lift</h3>\n<h3>Rub</h3>\n<h3>Elbow</h3>\n<h3>Fall</h3>\n<h3>Old Lady</h3>\n\n</body>\n</html>'
+put	0	"{'tag': 'PING', 'client': 0}"
+took	0	"{'tag': 'PING', 'client': 0}"
+let	0	'(body)'
+take	0	"{'tag': 'click', 'client': 0}"
+add	0	'(body)\n<html>\n<head>\n<link rel="stylesheet" type="text/css" href="exp.css" />\n</head>\n<body>\n\n<p class="centertext"> <b>Did the fireman move ? <b></p>\n\n<br></br>\n\n</body>\n</html>\n'
+add	0	'(body)\n<html>\n<head>\n<link rel="stylesheet" type="text/css" href="exp.css" />\n</head>\n<body>\n\n<p >\n<input class="choice" id=\'Yes\' value=\'   Yes   \' type=\'submit\' />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;\n<input class="choice" id=\'No\' value=\'   No   \' type=\'submit\' />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;\n<input class="choice" id=\'Error\' value=\'I missed it!\' type=\'submit\' />\n</p>\n\n</body>\n</html>'
+put	0	"{u'time': 1391261952667, u'tag': u'click', u'id': u'No', u'client': 0}"
+took	0	"{u'client': 0, u'tag': u'click', u'id': u'No', u'time': 1391261952667}"
+let	0	'(body)'
+take	0	"{'tag': 'click', 'id': 'GoOnButton', 'client': 0}"
+add	0	'(body)\n<html>\n<head>\n<link rel="stylesheet" type="text/css" href="exp.css" />\n</head>\n<body>\n\n<p class="centertext">Enter your word list below.</p>\n\n<p class="centertext"><textarea id="math1" rows="1" cols="20"> </textarea> </p>\n<p class="centertext"><textarea id="math2" rows="1" cols="20"> </textarea> </p>\n<p class="centertext"><textarea id="math3" rows="1" cols="20"> </textarea> </p>\n<p class="centertext"><textarea id="math4" rows="1" cols="20"> </textarea> </p>\n<p class="centertext"><textarea id="math5" rows="1" cols="20"> </textarea> </p>\n\n\n<p class="centertext"> Click the button below when you are ready.</p>\n\n<input type=\'submit\' value=\'Done!\' id=\'GoOnButton\'>\n\n</body>\n</html>'
+put	0	"{u'time': 1391261960164, u'tag': u'click', u'id': u'GoOnButton', u'client': 0}"
+took	0	"{u'client': 0, u'tag': u'click', u'id': u'GoOnButton', u'time': 1391261960164}"
+peek	0	'(#math1)'
+take	0	"{'ticket': 6, 'tag': 'peek'}"
+put	0	"{u'ticket': 6, u'tag': u'peek', u'time': 1391261960173, u'value': u' kiss', u'client': 0}"
+took	0	"{u'ticket': 6, u'tag': u'peek', u'client': 0, u'value': u' kiss', u'time': 1391261960173}"
+take	0	"{'ticket': 7, 'tag': 'peek'}"
+peek	0	'(#math2)'
+put	0	"{u'ticket': 7, u'tag': u'peek', u'time': 1391261960188, u'value': u'rub ', u'client': 0}"
+took	0	"{u'ticket': 7, u'tag': u'peek', u'client': 0, u'value': u'rub ', u'time': 1391261960188}"
+take	0	"{'ticket': 8, 'tag': 'peek'}"
+peek	0	'(#math3)'
+put	0	"{u'ticket': 8, u'tag': u'peek', u'time': 1391261960202, u'value': u'elbow ', u'client': 0}"
+took	0	"{u'ticket': 8, u'tag': u'peek', u'client': 0, u'value': u'elbow ', u'time': 1391261960202}"
+take	0	"{'ticket': 9, 'tag': 'peek'}"
+peek	0	'(#math4)'
+put	0	"{u'ticket': 9, u'tag': u'peek', u'time': 1391261960217, u'value': u'fall ', u'client': 0}"
+took	0	"{u'ticket': 9, u'tag': u'peek', u'client': 0, u'value': u'fall ', u'time': 1391261960217}"
+take	0	"{'ticket': 10, 'tag': 'peek'}"
+peek	0	'(#math5)'
+put	0	"{u'ticket': 10, u'tag': u'peek', u'time': 1391261960232, u'value': u'old lady ', u'client': 0}"
+took	0	"{u'ticket': 10, u'tag': u'peek', u'client': 0, u'value': u'old lady ', u'time': 1391261960232}"
+let	0	'(body)'
+add	0	'(body)\n<html>\r\n<head>\r\n<link rel="stylesheet" type="text/css" href="exp.css" />\r\n</head>\r\n<body>\r\n\r\n<br></br>\r\n\r\n<p class="centertext"><h3>You got 9 out 10 words correct.</h3></p>\r\n<p class="centertext"><h3>You got the gesture translation <b>wrong</b>.</h3></p>\r\n\r\n<div class="meter-wrap">\r\n    <div class="meter-value" style="background-color: #0a0; width: 8%;">\r\n        <div class="meter-text">\r\n            You have finished 1 out of 12 questions!\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n\r\n\r\n</body>\r\n<html>'
+take	0	"{'tag': 'PING', 'client': 0}"
+put	0	"{'tag': 'PING', 'client': 0}"
+took	0	"{'tag': 'PING', 'client': 0}"
+log	0	u"(0, 'a1b6ba2b4fg0', 'NA', 'NA', 'NA', 'NA', 0, '35', 'AI', 'Same', 'SV', 'Active', 'Fireman', 'Move', 'NA', 'A', 'Boy', u'No', 0, 0, 5, 4, 'Did the fireman move ?')"
+let	0	'(body)'
+take	0	"{'tag': 'PING', 'client': 0}"
+add	0	'(body)\n<html>\n<head>\n<link rel="stylesheet" type="text/css" href="exp.css" />\n</head>\n<body>\n\nRemember the following list of words. You will have to enter them correctly after the next screen.\n<center>\n<h3>Ball</h3>\n<h3>Girl</h3>\n<h3>Boy</h3>\n<h3>Push</h3>\n<h3>Move</h3>\n\n</body>\n</html>'
+put	0	"{'tag': 'PING', 'client': 0}"
+took	0	"{'tag': 'PING', 'client': 0}"
+let	0	'(body)'
+take	0	"{'tag': 'PING', 'client': 0}"
+add	0	'(body)\n<html>\n<head>\n<link rel="stylesheet" type="text/css" href="exp.css" />\n</head>\n<body>\n\nNow get ready for a gesture movie!\n\n</body>\n</html>\n'
+put	0	"{'tag': 'PING', 'client': 0}"
+took	0	"{'tag': 'PING', 'client': 0}"
+let	0	'(body)'
+take	0	"{'tag': 'PING', 'client': 0}"
+add	0	'(body)\n<html>\r\n<head>\r\n<link rel="stylesheet" type="text/css" href="exp.css" />\r\n</head>\r\n<body>\r\n\r\n<div>\r\n<video id="TheMovie" width="600" height="450" preload autoplay>\r\n  \r\n  <source id="src_mpg" src="http://tedlab.mit.edu/~mekline/GestureMovies/04AO_TargetSOV.mp4"  type=\'video/mp4; codecs="avc1.42E01E, mp4a.40.2"\'>\r\n  <source id="src_ogv" src="http://tedlab.mit.edu/~mekline/GestureMovies/04AO_TargetSOV.ogv"  type=\'video/ogg; codecs="theora, vorbis"\'>\r\n  \r\n\t<object\r\n\tclassid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B"\r\n\tcodebase="http://www.apple.com/qtactivex/qtplugin.cab"\r\n\theight="400"\r\n\twidth="300" >\r\n\t<param id="src_obj" name="src" value="http://tedlab.mit.edu/~mekline/GestureMovies/04AO_TargetSOV.mp4"/>\r\n\t<param name="scale" value="aspect" />\r\n\t<param name="controller" value="false" />\r\n\t<param name="autoplay" value="true" />\r\n\t<embed\r\n\tid="src_embed"\r\n\ttype="video/quicktime"\r\n\tpluginspage="http://www.apple.com/quicktime/download/"\r\n\theight="450"\r\n\twidth="600"\r\n\tsrc="http://tedlab.mit.edu/~mekline/GestureMovies/04AO_TargetSOV.mp4"\r\n\tscale="aspect"\r\n\tcontroller="false"\r\n\tautoplay="true" />\r\n\t</object>\r\n</video>\r\n</div>\r\n\r\n</body>\r\n</html>\r\n'
+put	0	"{'tag': 'PING', 'client': 0}"
+took	0	"{'tag': 'PING', 'client': 0}"
+take	0	"{'tag': 'click', 'id': 'GoOnButton', 'client': 0}"
+add	0	'(body)\n<html>\n<head>\n<link rel="stylesheet" type="text/css" href="exp.css" />\n</head>\n<body>\n\n<input type=\'submit\' value=\'Go On\' id=\'GoOnButton\'>\n\n</body>\n</html>'
