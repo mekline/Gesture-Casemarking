@@ -537,12 +537,12 @@ names(ParticipantScores) <- c("Subject", "Object.Type", "GestureCondition", "Cho
 
 #### GRAPHS AND STATS!!!! ######
 
-# 3/20/15 Reordering stats to match paper order, calculating confints, and redoing model comparisons (rather than reporting p vals from the wrong variable coding)
+# 3/20/15 Reordering stats to match paper order, calculating confints, and redoing model comparisons (adding item intercepts and rather than reporting p vals from the wrong variable coding)
 
 
 
 ###
-# GRAPH #1 - ChoseLateral by Object Type and Gesture Condition 
+# GRAPH #1 - (FIGURE 4) ChoseLateral by Object Type and Gesture Condition 
 ###
 #Table for scores
 with(ParticipantScores, tapply(ChoseLateral, list(Object.Type, GestureCondition), mean, na.rm=TRUE), drop=TRUE)
@@ -562,24 +562,38 @@ quantile(ObjectHand.boot.mean$thetastar, c(0.025, 0.975))
 
 #In each experiment- were people more likely to use SVO with Animate?
 
-#free_model <- lmer(WordOrder.Classified ~ Object.Type  + (Object.Type|Subject), data=freedata, family="binomial")
-#Failed to converge! Remove random slope
-free_model_noslope <- lmer(WordOrder.Classified ~ Object.Type  + (1|Subject), data=freedata, family="binomial")
-summary(free_model_noslope)
+free_model <- lmer(WordOrder.Classified ~ Object.Type  + (Object.Type|Subject) + (1|Sentence), data=freedata, family="binomial")
+free_nofix <- lmer(WordOrder.Classified ~ (Object.Type|Subject) + (1|Sentence), data=freedata, family="binomial")
+anova(free_model,free_nofix)
 
-hand_model <- lmer(WordOrder.Classified ~ Object.Type  + (Object.Type|Subject), data=handdata, family="binomial")
-summary(hand_model)
+hand_model <- lmer(WordOrder.Classified ~ Object.Type  + (Object.Type|Subject) + (1|Sentence), data=handdata, family="binomial")
+hand_nofix <- lmer(WordOrder.Classified ~  (Object.Type|Subject) + (1|Sentence), data=handdata, family="binomial")
+anova(hand_model,hand_nofix)
 
 #Does that differ between experiments? (Yes)
-#word_order_model <- lmer(WordOrder.Classified ~ Object.Type*GestureCondition  + (Object.Type*GestureCondition|Subject), data=alldata, family="binomial")
-#noconverge, remove slope
-word_order_model <- lmer(WordOrder.Classified ~ Object.Type*GestureCondition  + (GestureCondition|Subject), data=alldata, family="binomial")
-summary(word_order_model)
+#word_order_model <- lmer(WordOrder.Classified ~ Object.Type*GestureCondition  + (Object.Type*GestureCondition|Subject) + (1|Sentence), data=alldata, family="binomial")
+#doesn't converge! Remove interaction...
+#word_order_model <- lmer(WordOrder.Classified ~ Object.Type*GestureCondition  + (Object.Type+GestureCondition|Subject) + (1|Sentence), data=alldata, family="binomial")
+#still no
+#word_order_model <- lmer(WordOrder.Classified ~ Object.Type*GestureCondition  + (Object.Type|Subject) + (1|Sentence), data=alldata, family="binomial")
+#still no
+word_order_model <- lmer(WordOrder.Classified ~ Object.Type*GestureCondition  + (1|Subject) + (1|Sentence), data=alldata, family="binomial")
 
-word_order_model2 <- lmer(WordOrder.Classified ~ Object.Type+GestureCondition  + (GestureCondition|Subject), data=alldata, family="binomial")
-summary(word_order_model2)
+#Check effects by removal!
 
+#no interaction
+word_order_model2 <- lmer(WordOrder.Classified ~ Object.Type+GestureCondition  + (1|Subject) + (1|Sentence), data=alldata, family="binomial")
 anova(word_order_model, word_order_model2)
+
+#then no Animacy
+word_order_model3 <- lmer(WordOrder.Classified ~ GestureCondition  + (1|Subject) + (1|Sentence), data=alldata, family="binomial")
+anova(word_order_model2, word_order_model3)
+
+#or no GestureCondition
+word_order_model4 <- lmer(WordOrder.Classified ~ Object.Type  + (1|Subject) + (1|Sentence), data=alldata, family="binomial")
+anova(word_order_model2, word_order_model4)
+
+
 #################
 #CASEMARKING
 
@@ -587,39 +601,7 @@ alldata$Casemarked <- 0
 alldata[is.na(alldata$SpatialCue),]$SpatialCue <- "Spatial.Absent"
 alldata[alldata$SpatialCue == "Spatial.Present",]$Casemarked <- 1
 
-###
-#GRAPH 2 - ChoseLateral by Spatial Cue and Experiment [FOR ALL TRIALS, MIGHT NOT REPORT SINCE ANIMATE TRIALS ARE KEY TEST]
-###
-SpatialScores <- aggregate(alldata$ChoseLateral, by=list(alldata$Subject, alldata$Casemarked, alldata$GestureCondition), mean.na.rm)
-names(SpatialScores) <- c("Subject", "Casemarked", "GestureCondition", "ChoseLateral")
 
-#Table for scores too
-with(SpatialScores, tapply(ChoseLateral, list(Casemarked, GestureCondition), mean, na.rm=TRUE), drop=TRUE)
-
-#CONF INTERVALS
-#Time for bootstrapped confidence intervals around the means of the 4 conditions!
-NoCaseFree.boot.mean = bootstrap(SpatialScores[SpatialScores$Casemarked==0 & SpatialScores$GestureCondition=="Free",]$ChoseLateral, 1000, mean)
-quantile(NoCaseFree.boot.mean$thetastar, c(0.025, 0.975))
-NoCaseHand.boot.mean = bootstrap(SpatialScores[SpatialScores$Casemarked==0 & SpatialScores$GestureCondition=="Case",]$ChoseLateral, 1000, mean)
-quantile(NoCaseHand.boot.mean$thetastar, c(0.025, 0.975))
-CaseFree.boot.mean = bootstrap(SpatialScores[SpatialScores$Casemarked==1 & SpatialScores$GestureCondition=="Free",]$ChoseLateral, 1000, mean)
-quantile(CaseFree.boot.mean$thetastar, c(0.025, 0.975))
-CaseHand.boot.mean = bootstrap(SpatialScores[SpatialScores$Casemarked==1 & SpatialScores$GestureCondition=="Case",]$ChoseLateral, 1000, mean)
-quantile(CaseHand.boot.mean$thetastar, c(0.025, 0.975))
-
-#MODEL
-
-#In each experiment, were people more likely to use SOV if they provided a spatial cue?
-spatial_free_model <- lmer(WordOrder.Classified ~ SpatialCue  + (SpatialCue|Subject), data=freedata, family="binomial")
-summary(spatial_free_model)
-spatial_hand_model <- lmer(WordOrder.Classified ~ SpatialCue  + (SpatialCue|Subject), data=handdata, family="binomial")
-summary(spatial_hand_model)
-
-#Did this differ across experiments?
-#exp_spatial_model <- lmer(WordOrder.Classified ~ GestureCondition*SpatialCue  + (GestureCondition*SpatialCue|Subject), data=alldata, family="binomial")
-#Doesn't converge, drop a slope
-exp_spatial_model <- lmer(WordOrder.Classified ~ GestureCondition*SpatialCue  + (GestureCondition|Subject), data=alldata, family="binomial")
-summary(exp_spatial_model)
 
 ###
 # GRAPH 3 - Spatial Cue by Animacy and Experiment
@@ -786,6 +768,40 @@ names(PeopleEmbodScoresHall) <- c("Subject", "PVEmbod", "GestureCondition", "Cho
 #Table for scores too
 with(PeopleEmbodScoresHall, tapply(ChoseNonAdj, list(PVEmbod, GestureCondition), mean, na.rm=TRUE), drop=TRUE)
 #Qualitatively similar!
+
+###
+#GRAPH 2 - ChoseLateral by Spatial Cue and Experiment [FOR ALL TRIALS LUMPING ANIMACY, MIGHT NOT REPORT SINCE ANIMATE TRIALS ARE KEY TEST]
+###
+SpatialScores <- aggregate(alldata$ChoseLateral, by=list(alldata$Subject, alldata$Casemarked, alldata$GestureCondition), mean.na.rm)
+names(SpatialScores) <- c("Subject", "Casemarked", "GestureCondition", "ChoseLateral")
+
+#Table for scores too
+with(SpatialScores, tapply(ChoseLateral, list(Casemarked, GestureCondition), mean, na.rm=TRUE), drop=TRUE)
+
+#CONF INTERVALS
+#Time for bootstrapped confidence intervals around the means of the 4 conditions!
+NoCaseFree.boot.mean = bootstrap(SpatialScores[SpatialScores$Casemarked==0 & SpatialScores$GestureCondition=="Free",]$ChoseLateral, 1000, mean)
+quantile(NoCaseFree.boot.mean$thetastar, c(0.025, 0.975))
+NoCaseHand.boot.mean = bootstrap(SpatialScores[SpatialScores$Casemarked==0 & SpatialScores$GestureCondition=="Case",]$ChoseLateral, 1000, mean)
+quantile(NoCaseHand.boot.mean$thetastar, c(0.025, 0.975))
+CaseFree.boot.mean = bootstrap(SpatialScores[SpatialScores$Casemarked==1 & SpatialScores$GestureCondition=="Free",]$ChoseLateral, 1000, mean)
+quantile(CaseFree.boot.mean$thetastar, c(0.025, 0.975))
+CaseHand.boot.mean = bootstrap(SpatialScores[SpatialScores$Casemarked==1 & SpatialScores$GestureCondition=="Case",]$ChoseLateral, 1000, mean)
+quantile(CaseHand.boot.mean$thetastar, c(0.025, 0.975))
+
+#MODEL
+
+#In each experiment, were people more likely to use SOV if they provided a spatial cue?
+spatial_free_model <- lmer(WordOrder.Classified ~ SpatialCue  + (SpatialCue|Subject), data=freedata, family="binomial")
+summary(spatial_free_model)
+spatial_hand_model <- lmer(WordOrder.Classified ~ SpatialCue  + (SpatialCue|Subject), data=handdata, family="binomial")
+summary(spatial_hand_model)
+
+#Did this differ across experiments?
+#exp_spatial_model <- lmer(WordOrder.Classified ~ GestureCondition*SpatialCue  + (GestureCondition*SpatialCue|Subject), data=alldata, family="binomial")
+#Doesn't converge, drop a slope
+exp_spatial_model <- lmer(WordOrder.Classified ~ GestureCondition*SpatialCue  + (GestureCondition|Subject), data=alldata, family="binomial")
+summary(exp_spatial_model)
 
 #########################################
 ##SUBSEQUENT/EXPLORATORY ANALYSES
