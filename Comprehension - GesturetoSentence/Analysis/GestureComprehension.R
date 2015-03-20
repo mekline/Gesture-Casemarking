@@ -7,6 +7,7 @@ library(stringr)
 library(lme4)
 library(multcomp)
 library(binom)
+library(bootstrap)
 mean.na.rm <- function(x) { mean(x,na.rm=T) }
 stderr <- function(x) sqrt(var(x)/length(x))
 
@@ -229,6 +230,19 @@ length(unique(alldata$Paycode))
 with(Scores, tapply(CorrectScore, list(sentType, sentOrder), mean, na.rm=TRUE), drop=TRUE)
 with(Scores, tapply(CorrectScore, list(sentType, sentOrder), stderr), drop=TRUE)
 
+#Something better: rather than standard error let's do bootstrapped CIs
+
+#CONF INTERVALS
+#Bootstrapped confidence intervals around the means of the 4 conditions!
+PersonSOV.boot.mean = bootstrap(Scores[Scores$sentType=="AO" & Scores$sentOrder=="SOV",]$CorrectScore, 1000, mean)
+quantile(PersonSOV.boot.mean$thetastar, c(0.025, 0.975))
+PersonSVO.boot.mean = bootstrap(Scores[Scores$sentType=="AO" & Scores$sentOrder=="SVO",]$CorrectScore, 1000, mean)
+quantile(PersonSVO.boot.mean$thetastar, c(0.025, 0.975))
+ObjectSOV.boot.mean = bootstrap(Scores[Scores$sentType=="IO" & Scores$sentOrder=="SOV",]$CorrectScore, 1000, mean)
+quantile(ObjectSOV.boot.mean$thetastar, c(0.025, 0.975))
+ObjectSVO.boot.mean = bootstrap(Scores[Scores$sentType=="IO" & Scores$sentOrder=="SVO",]$CorrectScore, 1000, mean)
+quantile(ObjectSVO.boot.mean$thetastar, c(0.025, 0.975))
+
 
 
 #TIME FOR STATS
@@ -236,7 +250,7 @@ with(Scores, tapply(CorrectScore, list(sentType, sentOrder), stderr), drop=TRUE)
 
 #Were they above chance overall?
 binom.test(sum(alldata$wasCorrect), length(alldata$wasCorrect), p=0.5)
-
+#(yes)
 
 
 ##TRY MIXED LOGISTIC REGRESSION
@@ -246,15 +260,27 @@ binom.test(sum(alldata$wasCorrect), length(alldata$wasCorrect), p=0.5)
 #WITH all data
 #The sentCond and changeCond manipulations are within-item and within-subject, so the full random slopes model is:
 gesturecomp_maximal_model <- lmer(wasCorrect ~ sentType*sentOrder + (sentType*sentOrder|stimNo) + (sentType*sentOrder|Paycode), data=alldata, family="binomial")
-summary(gesturecomp_maximal_model)
 
 #This doesn't converge.  So reduce the random effects model (take out item slopes - might have been a good idea to do 1 at a time? Not sure. But in any case doesn't converge)
 gesturecomp_notmaximal_model <- lmer(wasCorrect ~ sentType*sentOrder + (1|stimNo) + (sentType*sentOrder|Paycode), data=alldata, family="binomial")
-summary(gesturecomp_notmaximal_model)
 
 #still no convergence, take out participant slopes
 gesturecomp_noslopes_model <- lmer(wasCorrect ~ sentType*sentOrder + (1|stimNo) + (1|Paycode), data=alldata, family="binomial")
 summary(gesturecomp_noslopes_model)
+
+#Rather than reporting p vals from the above (which is wrong bc of how the levels are specified, thanks jesse), sequentially take out fixed effects
+
+#Remove/compare interaction
+gesturecomp_nointer <- lmer(wasCorrect ~ sentType+sentOrder + (1|stimNo) + (1|Paycode), data=alldata, family="binomial")
+anova(gesturecomp_noslopes_model, gesturecomp_nointer)
+
+#The remove main effects of Type (animacy)
+noType <- lmer(wasCorrect ~ sentOrder + (1|stimNo) + (1|Paycode), data=alldata, family="binomial")
+anova(gesturecomp_nointer, noType)
+
+#or of Order (SOV/SVO)
+noOrder <- lmer(wasCorrect ~ sentType + (1|stimNo) + (1|Paycode), data=alldata, family="binomial")
+anova(gesturecomp_nointer, noOrder)
 
 
 
