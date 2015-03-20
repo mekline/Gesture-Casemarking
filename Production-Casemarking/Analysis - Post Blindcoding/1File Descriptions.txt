@@ -1,0 +1,30 @@
+*File Descriptions
+
+******
+These are copied directly from the shared Dropbox folder called Gesture Recoding - Casemarking
+
+SpatialCasemarking_AllGestureData.csv - Contains all data regarding gestures produced by participants, plus all coding by primary/secondary/blind coders. 
+
+SpatialCasemarking_SubjectInfo.csv - Contains information regarding coders and participants.
+
+Last3NoAgreeReconciliation.csv - Table that contains responses where the original and blind coder disagree on the word order of the last 3 gestures produced by the participant. Similar to Last3NoAgree.csv, but contains a final column with the discussed final decision regarding word order.
+
+SpatialNoAgreeReconciliation.csv - Table that contains responses where the original and blind coder’s Spatial.Cue coding do not match. Similar to SpatialNoAgree, but contains a final column with the discussed final decision regarding the presence of spatial cues.
+
+******
+
+Analysis files
+
+AnalysisNew_MK additions.R: Final/main analysis doc.  Contains a copy of all miguel’s preprocessing, so all the preliminary ‘compare’ files can be generated/compared to those produced by the reconciliation processes. 
+
+
+GestureCaseMarking_Old analysis script pre blind coding.R Is what it sounds like!
+
+******
+SpatialCasemarking_OnlyCaseTrials.csv A new file for additional coding of case marking trials. Contains JUST transitive trials of JUST subjects included but JUST the trials coded (in final reconciliation) as having case marking.  Also produced is an xlsx version suitable for blind coding.
+
+
+******
+Embodiment_Recode.csv
+Miguel went through the Embodiment coding to double check it and refactor it to S, V, O using 1/0 coding instead of the various letter systems that coders used…  
+It’s the Embodiment codings from THIS file that should be used!

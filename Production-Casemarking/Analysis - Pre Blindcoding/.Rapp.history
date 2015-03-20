@@ -1,0 +1,164 @@
+1+2
+whatever
+whatever <- c(1,2,3,4)#
+#
+whatever
+whatever
+whatever <- c(2,3,4,5,'werer')
+whatever
+foo = c(3,12,4,7,6,1)
+dim(foo)= c(2,3)
+foo
+dim(foo)= c(3,2)
+foo
+fisher.test(foo)
+foo = c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1)
+length(foo)
+foo = c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2, 1,1,1,1,0,2,1)
+foo = c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1)
+goo = c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2, 1,1,1,1,0,2,1)
+length(goo)
+length(foo)
+goo = c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2, 1,1,1,1,0,2)
+length(goo)
+mean(goo)
+foo = c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2)
+mean(foo)
+foo = c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2)
+mean(foo)
+foo = c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,0,0,2,2,2,2)
+mean(foo)
+foo = c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,0,0,2,2,2,2)
+mean(foo)
+wilcox.test(foo, goo)
+foo = c(1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,0,0,2,2,2,2)
+wilcox.test(foo, goo)
+foo = c(1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,0,0,2,2,2,2)
+wilcox.test(foo, goo)
+mean(foo)
+foo = c(1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,0,0,2,2,2,2)
+goo = c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2, 1,1,1,1,0,2)
+mean(goo)
+mean(foo)
+wilcox.test(foo,goo, paired=FALSE)
+real <- c(3,4,3,3,0,3,3,2,2,4,3)
+unreal <- c(2,2,1,2,1,2,3,1,1,3,1)
+length(real)
+wilcox.test(real, unreal, paired=TRUE)
+ls()
+summary(twocondition_maximal_model)
+twocondition_maximal_model
+anova(twocondition_maximal_model, twocondition_nointer_model)
+ls()
+setwd("/Users/mekline/Dropbox/_Projects/Gesture Case Marking/Analysis/")#
+library(languageR)#
+library(stringr)#
+library(lme4)#
+library(multcomp)#
+library(binom)#
+mean.na.rm <- function(x) { mean(x,na.rm=T) }#
+stderr <- function(x) sqrt(var(x)/length(x))#
+#Read in the two data files and combine them!#
+#
+freeData <- read.csv('FreeGestureData.csv', header=T)#
+handData <- read.csv('CaseInstructionData.csv', header=T)#
+freeData$Instructions <- "FreeInstructions"#
+handData$Instructions <- "HandInstructions"#
+freeData[is.na(freeData$Spatial.Cue),]$Spatial.Cue <- 0#
+handData$Spatial.Cue <- as.numeric(as.character(handData$Spatial.Cue))#
+handData[is.na(handData$Spatial.Cue),]$Spatial.Cue <- 0#
+mydata <- rbind(freeData,handData)#
+#
+#Get rid of the speech columns, we don't need them!#
+mydata <- mydata[mydata$Trial.Type == "Gesture",]#
+#
+#Handle problem people and items!!#
+#
+mydata <- mydata[(mydata$Trial.Number != 2) & (mydata$Trial.Number != 3),]#
+mydata <- mydata[mydata$Subject != 28,]#
+#
+#Important columns!#
+#Instructions <- None or Case marking#
+#Type.of.Action <- Transitive/Intransitive sentence#
+#Object.Type <- Person, Object, or None type patient#
+#Word.Order <- SOV, SVO <- Participants raw response! Sequence of gestures#
+#Spatial.Cue <- Did the participants use a spatial cue for the subject and object?#
+#Exclude <- Individual trials to be excluded#
+#P_Before_A <- Hand-coded interpretation of the sequences (1 means SOV) - Errorful!#
+#
+##################################################################
+## CATEGORIZE RESPONSES#
+#
+#We want to know whether S and O are separated by the V or not. Since people sometimes gesture extra, we'll keep #
+#the first instance of each item.  So a person who gestures SVSVVO would be scored as SVO, and a person who #
+#gestured SOOVS would be coded as SOV.  #
+#
+#Find the first instance of each item#
+mydata$S.pos <- str_locate(mydata$Word.Order,"S")[,1]#
+mydata$V.pos <- str_locate(mydata$Word.Order,"V")[,1]#
+mydata$O.pos <- str_locate(mydata$Word.Order,"O")[,1]#
+#
+#And code that for the measure of interest!#
+#mydata$Participants.Clustered <- ((mydata$S.pos < mydata$V.pos) & (mydata$O.pos < mydata$V.pos)) | ((mydata$S.pos > mydata$V.pos) & (mydata$O.pos > mydata$V.pos))#
+mydata$Patient.Before.Action <- mydata$V.pos > mydata$O.pos#
+#Keep only data that has a codeable response!#
+mydata <- mydata[!is.na(mydata$Patient.Before.Action),]#
+mydata <- mydata[mydata$Type.of.Action == "Transitive",]#
+mydata <- mydata[mydata$Object.Type == "Object" | mydata$Object.Type == "Person" ,]#
+#
+#Make the variables human-readable!!#
+mydata$Word.Order.Coded <- "SVO"#
+mydata[mydata$Patient.Before.Action == TRUE,]$Word.Order.Coded <- "SOV"#
+#
+mydata[mydata$Spatial.Cue == 1,]$Spatial.Cue <- "Spatial.Present"#
+mydata[mydata$Spatial.Cue == 0,]$Spatial.Cue <- "Spatial.Absent"#
+##################################################################
+## REPORT DESCRIPTIVES#
+sum.na.rm <- function(x) { sum(x,na.rm=T) }#
+my.sd <- function(x) {sd(x)/sqrt(length(x))}#
+#
+#Report S counts#
+length(unique(mydata$Subject))#
+#
+#Report counts of SOV versus SVO instances in Free and Hand conditions (TRUE = SOV)#
+table(mydata$Word.Order.Coded, mydata$Object.Type, mydata$Instructions)#
+table(mydata$Spatial.Cue, mydata$Word.Order.Coded, mydata$Instructions)#
+table(mydata$Spatial.Cue, mydata$Object.Type, mydata$Instructions)#
+#
+justSOV <- mydata[mydata$Word.Order.Coded == "SOV",]#
+table(justSOV$Spatial.Cue, justSOV$Object.Type, justSOV$Instructions)#
+#
+#Make scores for each participant#
+mydata$ChoseSOV <- 0#
+mydata[mydata$Word.Order.Coded == "SOV",]$ChoseSOV <- 1#
+#
+ParticipantScores <- aggregate(mydata$ChoseSOV, by=list(mydata$Subject, mydata$Object.Type, mydata$Instructions), sum.na.rm)#
+names(ParticipantScores) <- c("Subject", "ObjectType", "Instructions", "ChoseSOV")#
+#
+#Time for bootstrapped confidence intervals around the means of the 4 conditions!#
+library(bootstrap)#
+PersonFree.boot.mean = bootstrap(ParticipantScores[ParticipantScores$ObjectType=="Person", ParticipantScores$Instructions=="FreeInstructions",]$ChoseSOV, 1000, mean)#
+quantile(PersonFree.boot.mean$thetastar, c(0.025, 0.975))
+names(ParticipantScores)
+ParticipantScores$ObjectType
+help(bootstrap)
+PersonFree.boot.mean = bootstrap(ParticipantScores[ParticipantScores$ObjectType=="Person" && ParticipantScores$Instructions=="FreeInstructions",]$ChoseSOV, 1000, mean)#
+quantile(PersonFree.boot.mean$thetastar, c(0.025, 0.975))
+ParticipantScores[ParticipantScores$ObjectType=="Person" && ParticipantScores$Instructions=="FreeInstructions",]$ChoseSOV
+ParticipantScores$Instructions
+ParticipantScores[ParticipantScores$ObjectType=="Person" && ParticipantScores$Instructions=="FreeInstructions",]
+ParticipantScores
+ParticipantScores[ParticipantScores$ObjectType=="Person",]
+ParticipantScores[ParticipantScores$Instructions=="FreeInstructions",]
+ParticipantScores[ParticipantScores$ObjectType=="Person" & ParticipantScores$Instructions=="FreeInstructions",]
+PersonFree.boot.mean = bootstrap(ParticipantScores[ParticipantScores$ObjectType=="Person" & ParticipantScores$Instructions=="FreeInstructions",]$ChoseSOV, 1000, mean)#
+quantile(PersonFree.boot.mean$thetastar, c(0.025, 0.975))
+PersonHand.boot.mean = bootstrap(ParticipantScores[ParticipantScores$ObjectType=="Person" & ParticipantScores$Instructions=="HandInstructions",]$ChoseSOV, 1000, mean)#
+quantile(PersonHand.boot.mean$thetastar, c(0.025, 0.975))#
+#
+ObjectFree.boot.mean = bootstrap(ParticipantScores[ParticipantScores$ObjectType=="Object" & ParticipantScores$Instructions=="FreeInstructions",]$ChoseSOV, 1000, mean)#
+quantile(ObjectFree.boot.mean$thetastar, c(0.025, 0.975))#
+ObjectHand.boot.mean = bootstrap(ParticipantScores[ParticipantScores$ObjectType=="Object" & ParticipantScores$Instructions=="HandInstructions",]$ChoseSOV, 1000, mean)#
+quantile(ObjectHand.boot.mean$thetastar, c(0.025, 0.975))
+table(mydata$Word.Order.Coded, mydata$Object.Type, mydata$Instructions)
+with(ParticipantScores, tapply(ChoseSOV, list(ObjectType, Instructions), mean, na.rm=TRUE), drop=TRUE)

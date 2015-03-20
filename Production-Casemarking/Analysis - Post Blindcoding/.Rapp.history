@@ -1,0 +1,461 @@
+1+2
+whatever
+whatever <- c(1,2,3,4)#
+#
+whatever
+whatever
+whatever <- c(2,3,4,5,'werer')
+whatever
+foo = c(3,12,4,7,6,1)
+dim(foo)= c(2,3)
+foo
+dim(foo)= c(3,2)
+foo
+fisher.test(foo)
+foo = c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1)
+length(foo)
+foo = c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2, 1,1,1,1,0,2,1)
+foo = c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1)
+goo = c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2, 1,1,1,1,0,2,1)
+length(goo)
+length(foo)
+goo = c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2, 1,1,1,1,0,2)
+length(goo)
+mean(goo)
+foo = c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2)
+mean(foo)
+foo = c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2)
+mean(foo)
+foo = c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,0,0,2,2,2,2)
+mean(foo)
+foo = c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,0,0,2,2,2,2)
+mean(foo)
+wilcox.test(foo, goo)
+foo = c(1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,0,0,2,2,2,2)
+wilcox.test(foo, goo)
+foo = c(1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,0,0,2,2,2,2)
+wilcox.test(foo, goo)
+mean(foo)
+foo = c(1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,0,0,2,2,2,2)
+goo = c(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2, 1,1,1,1,0,2)
+mean(goo)
+mean(foo)
+wilcox.test(foo,goo, paired=FALSE)
+real <- c(3,4,3,3,0,3,3,2,2,4,3)
+unreal <- c(2,2,1,2,1,2,3,1,1,3,1)
+length(real)
+wilcox.test(real, unreal, paired=TRUE)
+ls()
+summary(twocondition_maximal_model)
+twocondition_maximal_model
+anova(twocondition_maximal_model, twocondition_nointer_model)
+ls()
+x <- c('2', '3', '4')
+x
+as.numeric(x)
+x
+as.factor(x)
+y = as.factor(x)
+y
+as.numeric(y)
+x <- as.character(x)
+x <- as.character(y)
+as.numeric(x)
+mystring <- "Ffoosdfsaf/12sadf,?SO(OV)S"
+mystring
+library(stringr)
+str_match(mystring, "(OV)S")
+str_match(mystring, "\(OV\)S")
+str_match(mystring, "O\(OV\)S")
+str_match(mystring, 'O\(OV\)S')
+str_match(mystring, 'O(OV)S')
+str_match(mystring, 'O(OV)*S')
+str_match(mystring, 'SO')
+str_match(mystring, 'O\\(OV\\)S')
+str_match(mystring, '[\\(\\)]OV\\)')
+str_match(mystring, '[\\(\\)][SOV][\\(\\)][SOV][\\(\\)][SOV][\\(\\)]')
+str_match(mystring, '[\\(\\)]?[SOV][\\(\\)]?[SOV][\\(\\)]?[SOV][\\(\\)]?')
+str_match(mystring, '[\\(\\)]?[SOV][\\(\\)]?[SOV][\\(\\)]?[SOV][\\(\\)]?$')
+myshortstring <- "(OV)"
+str_match(myshortstring, '[\\(\\)]?[SOV][\\(\\)]?[SOV][\\(\\)]?[SOV][\\(\\)]?$')
+str_match(myshortstring, '[\\(\\)]?[SOV]?[\\(\\)]?[SOV][\\(\\)]?[SOV][\\(\\)]?$')
+mynoparen <- "SOVV"
+str_match(mynoparen, '[\\(\\)]?[SOV]?[\\(\\)]?[SOV][\\(\\)]?[SOV][\\(\\)]?$')
+str_match("SOVVSOV", '[\\(\\)]?[SOV]?[\\(\\)]?[SOV][\\(\\)]?[SOV][\\(\\)]?$')
+str_match("VVO", '[\\(\\)]?[SOV]?[\\(\\)]?[SOV][\\(\\)]?[SOV][\\(\\)]?$')
+str_match("V(VO)", '[\\(\\)]?[SOV]?[\\(\\)]?[SOV][\\(\\)]?[SOV][\\(\\)]?$')
+str_match("(VVO)", '[\\(\\)]?[SOV]?[\\(\\)]?[SOV][\\(\\)]?[SOV][\\(\\)]?$')
+str_match("(V)(VO)", '[\\(\\)]?[SOV]?[\\(\\)]?[SOV][\\(\\)]?[SOV][\\(\\)]?$')
+str_match("(V)(VO", '[\\(\\)]?[SOV]?[\\(\\)]?[SOV][\\(\\)]?[SOV][\\(\\)]?$')
+str_match("(V)VO", '[\\(\\)]?[SOV]?[\\(\\)]?[SOV][\\(\\)]?[SOV][\\(\\)]?$')
+str_match()"V", '[\\(\\)]?[SOV]?[\\(\\)]?[SOV][\\(\\)]?[SOV][\\(\\)]?$')
+str_match("V", '[\\(\\)]?[SOV]?[\\(\\)]?[SOV][\\(\\)]?[SOV][\\(\\)]?$')
+str_match("V", '[\\(\\)]?[SOV]?[\\(\\)]?[SOV]?[\\(\\)]?[SOV][\\(\\)]?$')
+str_match("V", '[\\(\\)]*[SOV]?[\\(\\)]*[SOV]?[\\(\\)]*[SOV][\\(\\)]*$')
+str_match("(V)(VO)", '[\\(\\)]*[SOV]?[\\(\\)]*[SOV]?[\\(\\)]*[SOV][\\(\\)]*$')
+str_match("cat and dog", 'dog')
+str_match("cat and dog", ' dog')
+str_match("cat and dog", '[a-z]')
+str_match("cat and dog", '[a-z]+')
+str_match("cat + dog", '[a-z]+')
+str_match("cat + dog", '+')
+str_match("cat + dog", '\+')
+str_match("cat + dog", '\\+')
+str_match("aaaaaaa", 'a+')
+str_match("aaaaaaa", 'a')
+str_match("123fasdfhjk234", '[0-9]+')
+str_match("123fasdfhjk234", '[\d]+')
+str_match("123fasdfhjk234", '[\\d]+')
+str_match("123fasdfhjk234", '[[:digit:]]+')
+str_match("123fasdfhjk234", '[2-9]+')
+str_match("SOVOVOVOSOV", '[\\(\\)]*[SOV]?[\\(\\)]*[SOV]?[\\(\\)]*[SOV][\\(\\)]*$')
+str_match("SVOOVOVOSOV", '[\\(\\)]*[SOV]?[\\(\\)]*[SOV]?[\\(\\)]*[SOV][\\(\\)]*$')
+str_match("SVOOVOVOOOO", '[\\(\\)]*[SOV]?[\\(\\)]*[SOV]?[\\(\\)]*[SOV][\\(\\)]*$')
+str_match("OO", '[\\(\\)]*[SOV]?[\\(\\)]*[SOV]?[\\(\\)]*[SOV][\\(\\)]*$')
+str_match("V", '[\\(\\)]*[SOV]?[\\(\\)]*[SOV]?[\\(\\)]*[SOV][\\(\\)]*$')
+str_match("", '[\\(\\)]*[SOV]?[\\(\\)]*[SOV]?[\\(\\)]*[SOV][\\(\\)]*$')
+str_match("S(OV)", '[\\(\\)]*[SOV]?[\\(\\)]*[SOV]?[\\(\\)]*[SOV][\\(\\)]*$')
+str_match("SOVOVOVS(OV)", '[\\(\\)]*[SOV]?[\\(\\)]*[SOV]?[\\(\\)]*[SOV][\\(\\)]*$')
+str_match("SOVOVOV(SOV)", '[\\(\\)]*[SOV]?[\\(\\)]*[SOV]?[\\(\\)]*[SOV][\\(\\)]*$')
+str_match("SOVOVO(VSOV)", '[\\(\\)]*[SOV]?[\\(\\)]*[SOV]?[\\(\\)]*[SOV][\\(\\)]*$')
+str_match("SOVOVOVSO(V)", '[\\(\\)]*[SOV]?[\\(\\)]*[SOV]?[\\(\\)]*[SOV][\\(\\)]*$')
+str_match("SOVOVOVSOV())", '[\\(\\)]*[SOV]?[\\(\\)]*[SOV]?[\\(\\)]*[SOV][\\(\\)]*$')
+str_match("SOVOVOVS(OV)", '[\\(\\)]*[SOV]?[\\(\\)]*[SOV]?[\\(\\)]*[SOV][\\(\\)]*$')
+str_match("SOVOVOVS(OV", '[\\(\\)]*[SOV]?[\\(\\)]*[SOV]?[\\(\\)]*[SOV][\\(\\)]*$')
+str_match("SOVOVOVS(OV", '(.)*')
+str_match("SOVOVOVS(OV", '(.)+')
+str_match("SOVOVOVS(OV", '(.)?')
+str_match("SOVOVOVS(OV", '(.)')
+str_match("SOVOVOVS(OV", '[\\(\\)]*[SO][\\(\\)]*[V][\\(\\)]*[SO][\\(\\)]*$'')
+''
+str_match("SOVOVOVS(OV", '[\\(\\)]*[SO][\\(\\)]*[V][\\(\\)]*[SO][\\(\\)]*$')
+str_match("SOV", '[\\(\\)]*[SO][\\(\\)]*[V][\\(\\)]*[SO][\\(\\)]*$')
+str_match("SVO", '[\\(\\)]*[SO][\\(\\)]*[V][\\(\\)]*[SO][\\(\\)]*$')
+str_match("S(VO)", '[\\(\\)]*[SO][\\(\\)]*[V][\\(\\)]*[SO][\\(\\)]*$')
+Miguel Salinas R Analysis#
+library(irr)#
+library(stringr)#
+#
+#Get directory of this file#
+directory = as.character(getwd())#
+#
+#Initialize dataset#
+gestable = data.frame(NULL)#
+#
+#Load csv with Alldata into variable#
+gestable = read.csv(paste0(directory, "/SpatialCasemarking_AllGestureData.csv"), header = TRUE)#
+#
+#Load csv of SubjectInfo#
+subtable = read.csv(paste0(directory, "/SpatialCasemarking_SubjectInfo.csv"), header = TRUE)#
+#
+#Drop unneeded columns#
+gestable$Participant <- gestable$Subject#
+subtable <- subtable[,c("Participant", "Initial.Coder","Blind.Coder","To.include")]#
+alltable <- merge(gestable, subtable, by=c("Participant"))#
+gestable <- alltable[alltable$To.include == 1,]#
+#Add column that compares old and new coding#
+#But first! Force uppercase!#
+gestable$Word.Order <- toupper(as.character(gestable$Word.Order))#
+gestable$Word.Order.Recode <- toupper(as.character(gestable$Word.Order.Recode))#
+gestable$Literal.Compare = (as.character(gestable$Word.Order) == as.character(gestable$Word.Order.Recode))#
+litcompavg = mean(gestable$Literal.Compare)#
+print(paste0('Literal Direct Agreement: ', litcompavg))#
+#
+#Spit out CSV table comparing word orders that didn't match#
+noagreetable <- gestable[gestable$Literal.Compare == 0,]#
+noagreetable <- noagreetable[,c("Subject", "GestureCondition", "Trial.Number", "Clipped.Movie.File", "Word.Order", "Word.Order.Recode", "Initial.Coder", "Blind.Coder")]#
+#
+write.csv(noagreetable, file = paste0(directory, "/LiteralNoAgree.csv"))#
+#Calculate Cohen's Kappa for Literal Compare#
+firstlev <- levels(factor(gestable$Word.Order))#
+secondlev <- levels(factor(gestable$Word.Order.Recode))#
+alllev <- levels(factor(c(firstlev, secondlev)))#
+litfirstprob <- rep(0, length(alllev))#
+litsecondprob <- rep(0, length(alllev))#
+#
+for (i in gestable$Word.Order) {#
+	for (j in 1:(length(alllev))) {#
+		if (i == alllev[j]) {#
+			litfirstprob[j] <- litfirstprob[j]+1#
+		}#
+	}#
+}#
+#
+for (k in gestable$Word.Order.Recode) {#
+	for (l in 1:(length(alllev))) {#
+		if (k == alllev[l]) {#
+			litsecondprob[l] <- litsecondprob[l]+1#
+		}#
+	}#
+}#
+#
+#Come up with random probability percentages for each level#
+percent1 = litfirstprob/length(gestable$Word.Order)#
+percent2 = litsecondprob/length(gestable$Word.Order)#
+#
+litpercents = percent1*percent2#
+#
+litrandprob = 0#
+for (w in litpercents) {litrandprob = litrandprob+w}#
+#
+litkappa = (litcompavg-litrandprob)/(1-litrandprob)#
+print(paste0('Literal Kappa (manual): ', litkappa))#
+#
+#Add column that compares coding regarding spacial cues.#
+gestable$SpaCue.Agree = as.character((as.numeric(gestable$Spatial.Cue) == as.numeric(gestable$Spatial.Cue.Recode)))#
+spacueavg = mean(as.logical(gestable$SpaCue.Agree))
+setwd("/Users/mekline/Dropbox/_Projects")
+getwd()
+setwd("Gesture - Case Marking/Analysis - Post Blindcoding")
+getwd()
+ls
+Miguel Salinas R Analysis#
+library(irr)#
+library(stringr)#
+#
+#Get directory of this file#
+directory = as.character(getwd())#
+#
+#Initialize dataset#
+gestable = data.frame(NULL)#
+#
+#Load csv with Alldata into variable#
+gestable = read.csv(paste0(directory, "/SpatialCasemarking_AllGestureData.csv"), header = TRUE)#
+#
+#Load csv of SubjectInfo#
+subtable = read.csv(paste0(directory, "/SpatialCasemarking_SubjectInfo.csv"), header = TRUE)#
+#
+#Drop unneeded columns#
+gestable$Participant <- gestable$Subject#
+subtable <- subtable[,c("Participant", "Initial.Coder","Blind.Coder","To.include")]#
+alltable <- merge(gestable, subtable, by=c("Participant"))#
+gestable <- alltable[alltable$To.include == 1,]#
+#Add column that compares old and new coding#
+#But first! Force uppercase!#
+gestable$Word.Order <- toupper(as.character(gestable$Word.Order))#
+gestable$Word.Order.Recode <- toupper(as.character(gestable$Word.Order.Recode))#
+gestable$Literal.Compare = (as.character(gestable$Word.Order) == as.character(gestable$Word.Order.Recode))#
+litcompavg = mean(gestable$Literal.Compare)#
+print(paste0('Literal Direct Agreement: ', litcompavg))#
+#
+#Spit out CSV table comparing word orders that didn't match#
+noagreetable <- gestable[gestable$Literal.Compare == 0,]#
+noagreetable <- noagreetable[,c("Subject", "GestureCondition", "Trial.Number", "Clipped.Movie.File", "Word.Order", "Word.Order.Recode", "Initial.Coder", "Blind.Coder")]#
+#
+write.csv(noagreetable, file = paste0(directory, "/LiteralNoAgree.csv"))#
+#Calculate Cohen's Kappa for Literal Compare#
+firstlev <- levels(factor(gestable$Word.Order))#
+secondlev <- levels(factor(gestable$Word.Order.Recode))#
+alllev <- levels(factor(c(firstlev, secondlev)))#
+litfirstprob <- rep(0, length(alllev))#
+litsecondprob <- rep(0, length(alllev))#
+#
+for (i in gestable$Word.Order) {#
+	for (j in 1:(length(alllev))) {#
+		if (i == alllev[j]) {#
+			litfirstprob[j] <- litfirstprob[j]+1#
+		}#
+	}#
+}#
+#
+for (k in gestable$Word.Order.Recode) {#
+	for (l in 1:(length(alllev))) {#
+		if (k == alllev[l]) {#
+			litsecondprob[l] <- litsecondprob[l]+1#
+		}#
+	}#
+}#
+#
+#Come up with random probability percentages for each level#
+percent1 = litfirstprob/length(gestable$Word.Order)#
+percent2 = litsecondprob/length(gestable$Word.Order)#
+#
+litpercents = percent1*percent2#
+#
+litrandprob = 0#
+for (w in litpercents) {litrandprob = litrandprob+w}#
+#
+litkappa = (litcompavg-litrandprob)/(1-litrandprob)#
+print(paste0('Literal Kappa (manual): ', litkappa))#
+#
+#Add column that compares coding regarding spacial cues.#
+gestable$SpaCue.Agree = as.character((as.numeric(gestable$Spatial.Cue) == as.numeric(gestable$Spatial.Cue.Recode)))#
+spacueavg = mean(as.logical(gestable$SpaCue.Agree))
+Data cleaning starts here#
+#####
+#
+#Get rid of intransitive responses from analysis#
+gestable <- gestable[ ! gestable$Type.of.Action %in% "Intransitive",]#
+#Insert Blank Column for Organization and Initialize counters#
+gestable$Blank1 <- ''#
+i = 0#
+j = 0#
+k = 0#
+l = 0#
+#Get the last chunk of string after the Slash (Eunice's coding)#
+oldSsplit = NULL#
+for (k in as.character(gestable$Word.Order)) {#
+	splt = unlist(strsplit(k, "[/]"))#
+	lst = splt[length(splt)]#
+	oldSsplit <- append(oldSsplit, lst)}#
+gestable$Eun.S.Split <- oldSsplit#
+#Get the last chunk of string after the Slash (Miguel's coding)#
+newSsplit = NULL#
+for (l in as.character(gestable$Word.Order.Recode)) {#
+	splt = unlist(strsplit(l, "[/]"))#
+	lst = splt[length(splt)]#
+	newSsplit <- append(newSsplit, lst)}#
+gestable$Mig.S.Split <- newSsplit#
+#Insert blank column for organization#
+gestable$Blank3 <- ''#
+#
+#Take old set of coding and take only the last 3 characters#
+EunLast3 = NULL#
+#for (num in length(gestable$Eun.S.Split))#
+	for (h in gestable$Eun.S.Split) {#
+		WOslash <- unlist(strsplit(h, "[/]"))#
+		WOfpar <- unlist(strsplit(WOslash, "[ ]"))#
+		WOques <- unlist(strsplit(WOfpar, "[?]"))#
+		WOall <- unlist(strsplit(as.character(WOques), "[,]"))#
+		tog <- paste(WOall, sep = '', collapse = '')#
+		lasttog <- str_match(tog, '[\\(\\)]*[SOV]?[\\(\\)]*[SOV]?[\\(\\)]*[SOV][\\(\\)]*$')#
+		EunLast3 <- append(EunLast3, lasttog)#
+		}#
+gestable$Eun.Last3 = EunLast3#
+gestable[is.na(gestable$Eun.Last3),]$Eun.Last3 <- ''#
+#
+gestable$Eun.Last3#
+#
+#Take set of recoding and take only the last 3 characters#
+MigLast3 = NULL#
+for (d in gestable$Mig.S.Split) {#
+	WOslash <- unlist(strsplit(d, "[/]"))#
+	WOfpar <- unlist(strsplit(WOslash, "[ ]"))#
+	WOques <- unlist(strsplit(WOfpar, "[?]"))#
+	WOall <- unlist(strsplit(as.character(WOques), "[,]"))#
+	tog <- paste(WOall, sep = '', collapse = '')#
+	lasttog <- str_match(tog, '[\\(\\)]*[SOV]?[\\(\\)]*[SOV]?[\\(\\)]*[SOV][\\(\\)]*$')#
+	MigLast3 <- append(MigLast3, lasttog)#
+	}#
+gestable$Mig.Last3 = MigLast3#
+gestable[is.na(gestable$Mig.Last3),]$Mig.Last3 <- ''#
+#
+gestable$Mig.Last3#
+#
+#Add column that compares old and new coding of only the last 3 gestures#
+gestable$Last3.Compare <- (as.character(gestable$Eun.Last3) == as.character(gestable$Mig.Last3))#
+lst3compavg <- mean(gestable$Last3.Compare)#
+print(paste0('Last3 Direct Agreement: ', lst3compavg))#
+#
+#Calculate Cohen's Kappa for Last3 Compare#
+first3lev <- levels(as.factor(gestable$Eun.Last3))#
+second3lev <- levels(as.factor(gestable$Mig.Last3))#
+all3lev <- levels(factor(c(first3lev, second3lev)))#
+litfirst3prob <- rep(0, length(all3lev))#
+litsecond3prob <- rep(0, length(all3lev))#
+#
+for (i in gestable$Eun.Last3) {#
+	for (j in 1:(length(all3lev))) {#
+		if (i == all3lev[j]) {#
+			litfirst3prob[j] <- litfirst3prob[j]+1#
+		}#
+	}#
+}#
+#
+for (k in gestable$Mig.Last3) {#
+	for (l in 1:(length(all3lev))) {#
+		if (k == all3lev[l]) {#
+			litsecond3prob[l] <- litsecond3prob[l]+1#
+		}#
+	}#
+}#
+#
+#Come up with random probability percentages for each level#
+percent3_1 = litfirst3prob/length(gestable$Eun.Last3)#
+percent3_2 = litsecond3prob/length(gestable$Eun.Last3)#
+#
+lst3percents = percent3_1*percent3_2#
+#
+lst3randprob = 0#
+for (w in lst3percents) {lst3randprob = lst3randprob+w}#
+#
+lst3kappa = (lst3compavg-lst3randprob)/(1-lst3randprob)#
+print(paste0('Last3 Kappa (Manual): ', lst3kappa))#
+#Produce table that spits out disagreement.#
+noagreetable2 <- gestable[gestable$Last3.Compare == 0,]#
+noagreetable2 <- noagreetable2[,c("Subject", "GestureCondition", "Trial.Number", "Clipped.Movie.File", "Event", "Eun.Last3", "Mig.Last3", "Initial.Coder", "Blind.Coder")]#
+#
+write.csv(noagreetable2, file = paste0(directory, "/Last3NoAgree.csv"))
+Insert blank column for organization#
+gestable$OldPunct <- ''#
+#
+#Add columns that say if there was punctuation in the initial coding#
+oldhascomma = NULL#
+for (e in gestable$Word.Order) {#
+	comma <- unlist(strsplit(e, "[,]"))#
+	if (length(comma) == 1) {oldhascomma <- append(oldhascomma, FALSE)}#
+	else {oldhascomma <- append(oldhascomma, TRUE)}#
+	}#
+gestable$OldHasComma <- oldhascomma#
+#
+oldhasslash = NULL#
+for (f in gestable$Word.Order) {#
+	slash <- unlist(strsplit(f, "[/]"))#
+	if (length(slash) == 1) {oldhasslash <- append(oldhasslash, FALSE)}#
+	else {oldhasslash <- append(oldhasslash, TRUE)}#
+	}#
+gestable$OldHasSlash <- oldhasslash#
+#
+oldhaspar = NULL#
+for (g in gestable$Word.Order) {#
+	par <- unlist(strsplit(g, "[(]"))#
+	if (length(par) == 1) {oldhaspar <- append(oldhaspar, FALSE)}#
+	else {oldhaspar <- append(oldhaspar, TRUE)}#
+	}#
+gestable$OldHasPar <- oldhaspar#
+#
+oldhasques = NULL#
+for (h in gestable$Word.Order) {#
+	ques <- unlist(strsplit(h, "[(]"))#
+	if (length(ques) == 1) {oldhasques <- append(oldhasques, FALSE)}#
+	else {oldhasques <- append(oldhasques, TRUE)}#
+	}#
+gestable$OldHasQues <- oldhasques#
+#
+#Insert blank column for organization#
+gestable$NewPunct <- ''#
+#
+#Add columns that say if there was punctuation in the recoding#
+newhascomma = NULL#
+for (e in gestable$Word.Order.Recode) {#
+	comma <- unlist(strsplit(e, "[,]"))#
+	if (length(comma) == 1) {newhascomma <- append(newhascomma, FALSE)}#
+	else {newhascomma <- append(newhascomma, TRUE)}#
+	}#
+gestable$NewHasComma <- newhascomma#
+#
+newhasslash = NULL#
+for (f in gestable$Word.Order.Recode) {#
+	slash <- unlist(strsplit(f, "[/]"))#
+	if (length(slash) == 1) {newhasslash <- append(newhasslash, FALSE)}#
+	else {newhasslash <- append(newhasslash, TRUE)}#
+	}#
+gestable$NewHasSlash <- newhasslash#
+#
+newhaspar = NULL#
+for (g in gestable$Word.Order.Recode) {#
+	par <- unlist(strsplit(g, "[(]"))#
+	if (length(par) == 1) {newhaspar <- append(newhaspar, FALSE)}#
+	else {newhaspar <- append(newhaspar, TRUE)}#
+	}#
+gestable$NewHasPar <- newhaspar#
+#
+newhasques = NULL#
+for (h in gestable$Word.Order.Recode) {#
+	ques <- unlist(strsplit(h, "[(]"))#
+	if (length(ques) == 1) {newhasques <- append(newhasques, FALSE)}#
+	else {newhasques <- append(newhasques, TRUE)}#
+}#
+gestable$NewHasQues <- newhasques#
+#After it all, create a new table with all this information#
+write.csv(gestable, file = paste0(directory, "/AllGestureWithAnalysis.csv"))
