@@ -604,7 +604,7 @@ alldata[alldata$SpatialCue == "Spatial.Present",]$Casemarked <- 1
 
 
 ###
-# GRAPH 3 - Spatial Cue by Animacy and Experiment
+# GRAPH 3 (FIGURE 5) - Spatial Cue by Animacy and Experiment
 ###
 
 #Did they casemark differently depending on animacy?
@@ -614,17 +614,39 @@ names(AnimacySpatialScores) <- c("Subject", "Object.Type", "GestureCondition", "
 with(AnimacySpatialScores, tapply(Casemarked, list(Object.Type, GestureCondition), mean, na.rm=TRUE), drop=TRUE)
 
 #CONF INTERVALS
+PersonFree.boot.mean = bootstrap(AnimacySpatialScores[AnimacySpatialScores$Object.Type=="Person" & AnimacySpatialScores$GestureCondition=="Free",]$Casemarked, 1000, mean)
+quantile(PersonFree.boot.mean$thetastar, c(0.025, 0.975))
+PersonHand.boot.mean = bootstrap(AnimacySpatialScores[AnimacySpatialScores$Object.Type=="Person" & AnimacySpatialScores$GestureCondition=="Case",]$Casemarked, 1000, mean)
+quantile(PersonHand.boot.mean$thetastar, c(0.025, 0.975))
+ObjectFree.boot.mean = bootstrap(AnimacySpatialScores[AnimacySpatialScores$Object.Type=="Object" & AnimacySpatialScores$GestureCondition=="Free",]$Casemarked, 1000, mean)
+quantile(ObjectFree.boot.mean$thetastar, c(0.025, 0.975))
+ObjectHand.boot.mean = bootstrap(AnimacySpatialScores[AnimacySpatialScores$Object.Type=="Object" & AnimacySpatialScores$GestureCondition=="Case",]$Casemarked, 1000, mean)
+quantile(ObjectHand.boot.mean$thetastar, c(0.025, 0.975))
+
 
 #MODEL
-#animacy_model <- lmer(Casemarked ~ Object.Type*GestureCondition  + (Object.Type*GestureCondition|Subject), data=alldata, family="binomial")
-#noconverge
-animacy_model <- lmer(Casemarked ~ Object.Type*GestureCondition  + (Object.Type|Subject) + (1|Trial.Number), data=alldata, family="binomial")
+animacy_model <- lmer(Casemarked ~ Object.Type*GestureCondition  + (Object.Type*GestureCondition|Subject) + (1|Sentence), data=alldata, family="binomial")
+#Failed to converge, start removing random effects
+animacy_model <- lmer(Casemarked ~ Object.Type*GestureCondition  + (Object.Type+GestureCondition|Subject) + (1|Sentence), data=alldata, family="binomial")
+animacy_model <- lmer(Casemarked ~ Object.Type*GestureCondition  + (GestureCondition|Subject) + (1|Sentence), data=alldata, family="binomial")
 
-animacy_model2 <- lmer(Casemarked ~ Object.Type+GestureCondition  + (Object.Type|Subject) + (1|Trial.Number), data=alldata, family="binomial")
+#Now start removing fixed effects for tests - first the interaction!
+animacy_model2 <- lmer(Casemarked ~ Object.Type+GestureCondition  + (GestureCondition|Subject) + (1|Sentence), data=alldata, family="binomial")
+anova(animacy_model, animacy_model2)
+
+#Then test removing GestureCondition
+animacy_model3 <- lmer(Casemarked ~ Object.Type  + (GestureCondition|Subject) + (1|Sentence), data=alldata, family="binomial")
+anova(animacy_model2, animacy_model3)
+
+#Or Object.Type
+animacy_model4 <- lmer(Casemarked ~ GestureCondition  + (GestureCondition|Subject) + (1|Sentence), data=alldata, family="binomial")
+anova(animacy_model2, animacy_model4)
+
 
 animacy_model3 <- lmer(Casemarked ~ GestureCondition  + (Object.Type|Subject) + (1|Trial.Number), data=alldata, family="binomial")
 
 anova(animacy_model2,animacy_model3)
+
 
 #Moral: Weak sig. by animacy, but swamped by the condition difference: casemarking carried over in a big way.
 
