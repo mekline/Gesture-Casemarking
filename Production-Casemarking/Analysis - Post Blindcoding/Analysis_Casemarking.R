@@ -777,7 +777,7 @@ anova(peopleexp_embod_model, peopleexp_embod_model2)
 
 
 #####
-# GRAPH 7 - Embodiment by Spatial Cuing (overally, showing that they trade off!)
+# GRAPH 7 (Figure 9)- Embodiment by Spatial Cuing (overally, showing that they trade off!)
 #####
 
 #Did casemarking actually trade off with embodiment? Let's look at how closely associated the 2 are. (Note: PVEmbod obly relevant on animates!)
