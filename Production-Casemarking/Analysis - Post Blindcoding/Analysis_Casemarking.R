@@ -602,7 +602,6 @@ alldata[is.na(alldata$SpatialCue),]$SpatialCue <- "Spatial.Absent"
 alldata[alldata$SpatialCue == "Spatial.Present",]$Casemarked <- 1
 
 
-
 ###
 # GRAPH 3 (FIGURE 5) - Spatial Cue by Animacy and Experiment
 ###
@@ -625,9 +624,9 @@ quantile(ObjectHand.boot.mean$thetastar, c(0.025, 0.975))
 
 
 #MODEL
-animacy_model <- lmer(Casemarked ~ Object.Type*GestureCondition  + (Object.Type*GestureCondition|Subject) + (1|Sentence), data=alldata, family="binomial")
+#animacy_model <- lmer(Casemarked ~ Object.Type*GestureCondition  + (Object.Type*GestureCondition|Subject) + (1|Sentence), data=alldata, family="binomial")
 #Failed to converge, start removing random effects
-animacy_model <- lmer(Casemarked ~ Object.Type*GestureCondition  + (Object.Type+GestureCondition|Subject) + (1|Sentence), data=alldata, family="binomial")
+#animacy_model <- lmer(Casemarked ~ Object.Type*GestureCondition  + (Object.Type+GestureCondition|Subject) + (1|Sentence), data=alldata, family="binomial")
 animacy_model <- lmer(Casemarked ~ Object.Type*GestureCondition  + (GestureCondition|Subject) + (1|Sentence), data=alldata, family="binomial")
 
 #Now start removing fixed effects for tests - first the interaction!
@@ -650,42 +649,12 @@ anova(animacy_model2,animacy_model3)
 
 #Moral: Weak sig. by animacy, but swamped by the condition difference: casemarking carried over in a big way.
 
-###
-# Graph 4 - ChoseLateral by Spatial Cue & Experiment - WITHIN PEOPLE TRIALS ONLY
-###
-
-#OK, what about casemarking within just people trials?
-peopledata <- alldata[alldata$Object.Type == 'Person',]
-PeopleSpatialScores <- aggregate(peopledata$ChoseLateral, by=list(peopledata$Subject, peopledata$Casemarked, peopledata$GestureCondition), mean.na.rm)
-names(PeopleSpatialScores) <- c("Subject", "Casemarked", "GestureCondition", "ChoseLateral")
-with(PeopleSpatialScores, tapply(ChoseLateral, list(Casemarked, GestureCondition), mean, na.rm=TRUE), drop=TRUE)
-
-peopledata_free <- peopledata[peopledata$GestureCondition == "Free",]
-peopledata_hand <- peopledata[peopledata$GestureCondition == "Case",]
-
-#CONF INTERVALS
-
-#MODEL
-#Check spatial pattern within JUST people trials!
-spatial_model_people_free <- lmer(ChoseLateral ~ SpatialCue  + (SpatialCue|Subject), data=peopledata_free, family="binomial")
-summary(spatial_model_people_free)
-
-#noconverge# spatial_model_people_hand <- lmer(ChoseLateral ~ SpatialCue  + (SpatialCue|Subject), data=peopledata_hand, family="binomial") 
-spatial_model_people_hand <- lmer(ChoseLateral ~ SpatialCue  + (1|Subject), data=peopledata_hand, family="binomial")
-summary(spatial_model_people_hand)
-
-#Diff across expeirments? No, no interaction
-#spatial_model_people <- lmer(ChoseLateral ~ SpatialCue*GestureCondition  + (SpatialCue*GestureCondition|Subject), data=peopledata, family="binomial")
-#Noconverge, remove slope
-spatial_model_people <- lmer(ChoseLateral ~ SpatialCue*GestureCondition  + (GestureCondition|Subject), data=peopledata, family="binomial")
-summary(spatial_model_people)
-
 
 ###################
 #BODY BASED
 
 #####
-# GRAPH 5 - Body-Based by Experiment (that's it!)
+# GRAPH 5 (Figure 6) - Body-Based by Animacy & Experiment
 #####
 #Embodiment/Body-Based signs - Did this change between experiments? (Remember, no PVEmbod predicted at all for ObjType=Object)
 
@@ -697,10 +666,135 @@ with(EmbodPVScores, tapply(PV.Embod, list(Object.Type, GestureCondition), mean, 
 
 #CONFINTERVALS
 
-#MODEL
+#(Only makes sense for animate cases...)
+PersonFree.boot.mean = bootstrap(EmbodPVScores[EmbodPVScores$Object.Type=="Person" & EmbodPVScores$GestureCondition=="Free",]$PV.Embod, 1000, mean)
+quantile(PersonFree.boot.mean$thetastar, c(0.025, 0.975))
+PersonHand.boot.mean = bootstrap(EmbodPVScores[EmbodPVScores$Object.Type=="Person" & EmbodPVScores$GestureCondition=="Case",]$PV.Embod, 1000, mean)
+quantile(PersonHand.boot.mean$thetastar, c(0.025, 0.975))
 
-embod_model <- lmer(PV.Embod ~ GestureCondition + (GestureCondition|Subject), data=alldata, family="binomial")
-summary(embod_model)
+#MODEL
+animdata <- alldata[alldata$Object.Type == "Person",]
+embod_model <- lmer(PV.Embod ~ GestureCondition  + (GestureCondition|Subject) + (1|Sentence), data=animdata, family="binomial")
+embod_model_nofix <- lmer(PV.Embod ~ 1  + (GestureCondition|Subject) + (1|Sentence), data=animdata, family="binomial")
+anova(embod_model, embod_model_nofix)
+
+
+
+###
+# Graph 4 (FIGURE 7)- ChoseLateral by Spatial Cue & Experiment - WITHIN PEOPLE TRIALS ONLY
+###
+
+peopledata <- alldata[alldata$Object.Type == 'Person',]
+PeopleSpatialScores <- aggregate(peopledata$ChoseLateral, by=list(peopledata$Subject, peopledata$Casemarked, peopledata$GestureCondition), mean.na.rm)
+names(PeopleSpatialScores) <- c("Subject", "Casemarked", "GestureCondition", "ChoseLateral")
+with(PeopleSpatialScores, tapply(ChoseLateral, list(Casemarked, GestureCondition), mean, na.rm=TRUE), drop=TRUE)
+
+
+
+#CONF INTERVALS
+CaseFree.boot.mean = bootstrap(PeopleSpatialScores[PeopleSpatialScores$Casemarked==1 & PeopleSpatialScores$GestureCondition=="Free",]$ChoseLateral, 1000, mean)
+quantile(CaseFree.boot.mean$thetastar, c(0.025, 0.975))
+NoCaseFree.boot.mean = bootstrap(PeopleSpatialScores[PeopleSpatialScores$Casemarked==0 & PeopleSpatialScores$GestureCondition=="Free",]$ChoseLateral, 1000, mean)
+quantile(NoCaseFree.boot.mean$thetastar, c(0.025, 0.975))
+CaseHand.boot.mean = bootstrap(PeopleSpatialScores[PeopleSpatialScores$Casemarked==1 & PeopleSpatialScores$GestureCondition=="Case",]$ChoseLateral, 1000, mean)
+quantile(CaseHand.boot.mean$thetastar, c(0.025, 0.975))
+NoCaseHand.boot.mean = bootstrap(PeopleSpatialScores[PeopleSpatialScores$Casemarked==0 & PeopleSpatialScores$GestureCondition=="Case",]$ChoseLateral, 1000, mean)
+quantile(NoCaseHand.boot.mean$thetastar, c(0.025, 0.975))
+
+#MODELS
+
+peopledata_free <- peopledata[peopledata$GestureCondition == "Free",]
+peopledata_hand <- peopledata[peopledata$GestureCondition == "Case",]
+
+#Check spatial pattern within JUST people trials!
+spatial_model_people_free <- lmer(ChoseLateral ~ SpatialCue  + (SpatialCue|Subject) + (1|Sentence), data=peopledata_free, family="binomial")
+spatial_nofix <- lmer(ChoseLateral ~ 1  + (SpatialCue|Subject) + (1|Sentence), data=peopledata_free, family="binomial")
+anova(spatial_model_people_free, spatial_nofix)
+
+spatial_model_people_hand <- lmer(ChoseLateral ~ SpatialCue  + (SpatialCue|Subject) + (1|Sentence), data=peopledata_hand, family="binomial")
+spatial_nofix_hand <- lmer(ChoseLateral ~ 1  + (SpatialCue|Subject) + (1|Sentence), data=peopledata_hand, family="binomial")
+anova(spatial_model_people_hand, spatial_nofix_hand)
+
+#Diff across expeirments?
+#spatial_model_people <- lmer(ChoseLateral ~ SpatialCue*GestureCondition  + (SpatialCue*GestureCondition|Subject) + (1|Sentence), data=peopledata, family="binomial")
+#noconverge
+spatial_model_people <- lmer(ChoseLateral ~ SpatialCue*GestureCondition  + (SpatialCue|Subject) + (1|Sentence), data=peopledata, family="binomial")
+
+#remove interaction
+spatial_model_people2 <- lmer(ChoseLateral ~ SpatialCue+GestureCondition  + (SpatialCue|Subject) + (1|Sentence), data=peopledata, family="binomial")
+anova(spatial_model_people, spatial_model_people2)
+
+#Nope, no interaction!
+
+#####
+# GRAPH 8 (FIGURE 8)- ChoseLateral by PV.Embod and Experiment - WITHIN ANIMATE PATIENTS ONLY!!!! (Graph 8 is to Graph 6 as Graph 4 is to Graph 2)
+#####
+
+#Now ask whether embodiment predicts word order, within animates (Parallel to casemarking predicting word order above)
+#Did the people who embodied their (verb/patient) gestures use more SVO (SV adj)?
+PeopleEmbodScores <- aggregate(peopledata$ChoseLateral, by=list(peopledata$Subject, peopledata$PV.Embod, peopledata$GestureCondition), mean.na.rm)
+names(PeopleEmbodScores) <- c("Subject", "PVEmbod", "GestureCondition", "ChoseLateral")
+#Table for scores too
+with(PeopleEmbodScores, tapply(ChoseLateral, list(PVEmbod, GestureCondition), mean, na.rm=TRUE), drop=TRUE)
+#Yes - if you embodied, your CHoseLateral (SOV) score is lower, in both experiments.
+
+# CONFINTS
+
+EmbodFree.boot.mean = bootstrap(PeopleEmbodScores[PeopleEmbodScores$PVEmbod==TRUE & PeopleEmbodScores$GestureCondition=="Free",]$ChoseLateral, 1000, mean)
+quantile(EmbodFree.boot.mean$thetastar, c(0.025, 0.975))
+NoEmbodFree.boot.mean = bootstrap(PeopleEmbodScores[PeopleEmbodScores$PVEmbod==FALSE & PeopleEmbodScores$GestureCondition=="Free",]$ChoseLateral, 1000, mean)
+quantile(NoEmbodFree.boot.mean$thetastar, c(0.025, 0.975))
+EmbodHand.boot.mean = bootstrap(PeopleEmbodScores[PeopleEmbodScores$PVEmbod==TRUE & PeopleEmbodScores$GestureCondition=="Case",]$ChoseLateral, 1000, mean)
+quantile(EmbodHand.boot.mean$thetastar, c(0.025, 0.975))
+NoEmbodHand.boot.mean = bootstrap(PeopleEmbodScores[PeopleEmbodScores$PVEmbod==FALSE & PeopleEmbodScores$GestureCondition=="Case",]$ChoseLateral, 1000, mean)
+quantile(NoEmbodHand.boot.mean$thetastar, c(0.025, 0.975))
+
+
+
+#MODEL
+#In each experiment
+peopleembod_model_free <- lmer(WordOrder.Classified ~ PV.Embod  + (PV.Embod|Subject) + (1|Sentence), data=peopledata_free, family="binomial")
+people_nofix <- lmer(WordOrder.Classified ~ 1  + (PV.Embod|Subject) + (1|Sentence), data=peopledata_free, family="binomial")
+anova(peopleembod_model_free,people_nofix)
+
+#peopleembod_model_hand <- lmer(WordOrder.Classified ~ PV.Embod  + (PV.Embod|Subject) + (1|Sentence), data=peopledata_hand, family="binomial")
+#no embod
+peopleembod_model_hand <- lmer(WordOrder.Classified ~ PV.Embod  + (1|Subject) + (1|Sentence), data=peopledata_hand, family="binomial")
+peopleembod_nofix2 <- lmer(WordOrder.Classified ~ 1  + (1|Subject) + (1|Sentence), data=peopledata_hand, family="binomial")
+anova(peopleembod_model_hand,peopleembod_nofix2)
+
+
+#Did this differ between Experiments?
+#peopleexp_embod_model <- lmer(ChoseLateral ~ GestureCondition*PV.Embod  + (GestureCondition*PV.Embod|Subject) + (1|Sentence), data=peopledata, family="binomial")
+#Doesn't converge, drop a slope
+#peopleexp_embod_model <- lmer(ChoseLateral ~ GestureCondition*PV.Embod  + (GestureCondition+PV.Embod|Subject) + (1|Sentence), data=peopledata, family="binomial")
+peopleexp_embod_model <- lmer(ChoseLateral ~ GestureCondition*PV.Embod  + (PV.Embod|Subject) + (1|Sentence), data=peopledata, family="binomial")
+
+#Compare to dropped interaction
+peopleexp_embod_model2 <- lmer(ChoseLateral ~ GestureCondition+PV.Embod  + (PV.Embod|Subject) + (1|Sentence), data=peopledata, family="binomial")
+anova(peopleexp_embod_model, peopleexp_embod_model2)
+
+
+
+#####
+# GRAPH 7 - Embodiment by Spatial Cuing (overally, showing that they trade off!)
+#####
+
+#Did casemarking actually trade off with embodiment? Let's look at how closely associated the 2 are. (Note: PVEmbod obly relevant on animates!)
+peopledata <- alldata[alldata$Object.Type == 'Person',]
+table(peopledata$PV.Embod, peopledata$SpatialCue)
+
+#CONFINTS
+
+#MODEL
+embod_case_model <- lmer(PV.Embod ~ SpatialCue  + (SpatialCue|Subject) + (1|Sentence), data=peopledata, family="binomial")
+embod_nofix <- lmer(PV.Embod ~ 1  + (SpatialCue|Subject) + (1|Sentence), data=peopledata, family="binomial")
+anova(embod_case_model, embod_nofix)
+
+
+
+
+#(Graphs not included in paper for space/clarity)
 
 #####
 # GRAPH 6 - ChoseLateral by PV.Embod and Experiment  [FOR ALL TRIALS, MIGHT NOT REPORT SINCE ANIMATE TRIALS ARE KEY TEST]
@@ -730,53 +824,6 @@ exp_embod_model <- lmer(ChoseLateral ~ GestureCondition*PV.Embod  + (GestureCond
 summary(exp_embod_model)
 
 #Summary: Embodiment definitely predicted ordering in experiment 1, marginally in epximent 2 (NOTE, this is possibly becuase Embodiment is RARE in exp 2!!!!)
-
-#####
-# GRAPH 7 - Embodiment by Spatial Cuing (overally, showing that they trade off!)
-#####
-
-#Did casemarking actually trade off with embodiment? Let's look at how closely associated the 2 are. (Note: PVEmbod obly relevant on animates!)
-peopledata <- alldata[alldata$Object.Type == 'Person',]
-table(peopledata$PV.Embod, peopledata$SpatialCue)
-
-#CONFINTS
-
-#MODEL
-embod_case_model <- lmer(PV.Embod ~ SpatialCue  + (SpatialCue|Subject), data=alldata, family="binomial")
-summary(embod_case_model)
-
-#####
-# GRAPH 8 - ChoseLateral by PV.Embod and Experiment - WITHIN ANIMATE PATIENTS ONLY!!!! (Graph 8 is to Graph 6 as Graph 4 is to Graph 2)
-#####
-
-#Now ask whether embodiment predicts word order, within animates (Parallel to casemarking predicting word order above)
-#Did the people who embodied their (verb/patient) gestures use more SVO (SV adj)?
-PeopleEmbodScores <- aggregate(peopledata$ChoseLateral, by=list(peopledata$Subject, peopledata$PV.Embod, peopledata$GestureCondition), mean.na.rm)
-names(PeopleEmbodScores) <- c("Subject", "PVEmbod", "GestureCondition", "ChoseLateral")
-#Table for scores too
-with(PeopleEmbodScores, tapply(ChoseLateral, list(PVEmbod, GestureCondition), mean, na.rm=TRUE), drop=TRUE)
-#Yes - if you embodied, your CHoseLateral (SOV) score is lower, in both experiments.
-
-# CONFINTS
-
-#MODEL
-#In each experiment
-peopleembod_model_free <- lmer(WordOrder.Classified ~ PV.Embod  + (PV.Embod|Subject), data=peopledata_free, family="binomial")
-summary(peopleembod_model_free)
-
-peopleembod_model_hand <- lmer(WordOrder.Classified ~ PV.Embod  + (PV.Embod|Subject), data=peopledata_hand, family="binomial")
-summary(peopleembod_model_hand)
-
-#Did this differ between Experiments?
-#peopleexp_embod_model <- lmer(ChoseLateral ~ GestureCondition*PV.Embod  + (GestureCondition*PV.Embod|Subject), data=peopledata, family="binomial")
-#Doesn't converge, drop a slope
-peopleexp_embod_model <- lmer(ChoseLateral ~ GestureCondition*PV.Embod  + (PV.Embod|Subject), data=peopledata, family="binomial")
-summary(peopleexp_embod_model)
-
-
-
-
-
 
 #####
 # GRAPH N? (Optional, probably just state...)
