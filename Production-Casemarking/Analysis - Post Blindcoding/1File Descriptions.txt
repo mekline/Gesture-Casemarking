@@ -7,6 +7,9 @@ SpatialCasemarking_AllGestureData.csv - Contains all data regarding gestures pro
 
 SpatialCasemarking_SubjectInfo.csv - Contains information regarding coders and participants.
 
+SpatialCasemarking_BlindCodingInfo.csv - We chopped up the files for blind coding, here’s correspondences between the whole file and part file (‘Spatial_Clipped_xxx’) name schemes.
+
+
 Last3NoAgreeReconciliation.csv - Table that contains responses where the original and blind coder disagree on the word order of the last 3 gestures produced by the participant. Similar to Last3NoAgree.csv, but contains a final column with the discussed final decision regarding word order.
 
 SpatialNoAgreeReconciliation.csv - Table that contains responses where the original and blind coder’s Spatial.Cue coding do not match. Similar to SpatialNoAgree, but contains a final column with the discussed final decision regarding the presence of spatial cues.
