@@ -450,7 +450,7 @@ goo[order(goo$foo),]
 # alongside...).  For this, read in the new Embodiment coding that Miguel
 # did ~ 10/22/14
 
-embodiment_data <- read.csv(paste0(directory, "/EmbodimentRecode.csv"), header = TRUE)
+embodiment_data <- read.csv(paste0(directory, "/EmbodimentHallRecode.csv"), header = TRUE)
 
 #drop some duplicate columns we dont' need...
 embodiment_data <- embodiment_data[,c("Clipped.Movie.File","Trial.Number", "Agent.Embod","Verb.Embod","Patient.Embod")]
@@ -582,7 +582,7 @@ word_order_model <- lmer(WordOrder.Classified ~ Object.Type*GestureCondition  + 
 #Check effects by removal!
 
 #no interaction
-word_order_model2 <- lmer(WordOrder.Classified ~ Object.Type+GestureCondition  + (1|Subject) + (1|Sentence), data=alldata, family="binomial")
+word_order_model2 <- lmer(WordOrder.Classified ~ Object.Type + GestureCondition  + (1|Subject) + (1|Sentence), data=alldata, family="binomial")
 anova(word_order_model, word_order_model2)
 
 #then no Animacy
