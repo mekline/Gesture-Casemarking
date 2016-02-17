@@ -570,7 +570,8 @@ hand_model <- lmer(WordOrder.Classified ~ Object.Type  + (Object.Type|Subject) +
 hand_nofix <- lmer(WordOrder.Classified ~  (Object.Type|Subject) + (1|Sentence), data=handdata, family="binomial")
 anova(hand_model,hand_nofix)
 
-#Does that differ between experiments? (Yes)
+#ROMAN NOTES 2/16
+#Does that differ between experiments? (Yes) #TOFIX - ADD RANDOM SLOPE FOR GESTURE/SENTENCE
 #word_order_model <- lmer(WordOrder.Classified ~ Object.Type*GestureCondition  + (Object.Type*GestureCondition|Subject) + (1|Sentence), data=alldata, family="binomial")
 #doesn't converge! Remove interaction...
 #word_order_model <- lmer(WordOrder.Classified ~ Object.Type*GestureCondition  + (Object.Type+GestureCondition|Subject) + (1|Sentence), data=alldata, family="binomial")
@@ -578,6 +579,13 @@ anova(hand_model,hand_nofix)
 #word_order_model <- lmer(WordOrder.Classified ~ Object.Type*GestureCondition  + (Object.Type|Subject) + (1|Sentence), data=alldata, family="binomial")
 #still no
 word_order_model <- lmer(WordOrder.Classified ~ Object.Type*GestureCondition  + (1|Subject) + (1|Sentence), data=alldata, family="binomial")
+
+is.numeric(alldata$Object.Type)
+alldata$Object.Type<-as.numeric(alldata$Object.Type)-1
+alldata$GestureCondition<-as.numeric(alldata$GestureCondition)-1
+word_order_model <- lmer(WordOrder.Classified ~ Object.Type*GestureCondition  + (1|Subject) + (0+Object.Type*GestureCondition|Subject) + (1|Sentence) + (0+GestureCondition|Sentence), data=alldata, family="binomial")
+
+# END ROMAN NOTES
 
 #Check effects by removal!
 
