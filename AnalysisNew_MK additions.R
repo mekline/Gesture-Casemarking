@@ -16,12 +16,15 @@ library(lme4)
 library(multcomp)
 library(binom)
 library(bootstrap)
+library(RColorBrewer)
+library(ggplot2)
 mean.na.rm <- function(x) { mean(x,na.rm=T) }
 sum.na.rm <- function(x) { sum(x,na.rm=T) }
 stderr <- function(x) sqrt(var(x)/length(x))
 
 #Get directory of this file
-directory = '/Users/mekline/Dropbox/_Projects/Gesture - Case Marking/Analysis - Post Blindcoding'
+#directory = '/Users/mekline/Dropbox/_Projects/Gesture - Case Marking/Analysis - Post Blindcoding'
+directory = '/Users/mekline/Dropbox/_Projects/Gesture/Gesture-Casemark Repo/Production-Casemarking/Analysis - Post Blindcoding'
 
 #Initialize dataset
 gestable = data.frame(NULL)
@@ -244,13 +247,13 @@ kappa2(gestable[,c('Eun.Last3','Mig.Last3')]) #Not sure about the weight paradig
 noagreetable2 <- gestable[gestable$Last3.Compare == 0,]
 noagreetable2 <- noagreetable2[,c("Subject", "GestureCondition", "Trial.Number", "Clipped.Movie.File", "Event", "Eun.Last3", "Mig.Last3", "Initial.Coder", "Blind.Coder")]
 
-write.csv(noagreetable2, file = paste0(directory, "/Last3NoAgree.csv"))
+#write.csv(noagreetable2, file = paste0(directory, "/Last3NoAgree.csv"))
 
 #Produce table that spits out disagreement on SPATIAL.
 noagreetable4 <- gestable[gestable$SpaCue.Agree == 0,]
 noagreetable4 <- noagreetable4[,c("Subject", "GestureCondition", "Trial.Number", "Clipped.Movie.File", "Event", "Spatial.Cue", "Spatial.Cue.Recode", "Initial.Coder", "Blind.Coder")]
 
-write.csv(noagreetable4, file = paste0(directory, "/SpatialNoAgree.csv"))
+#write.csv(noagreetable4, file = paste0(directory, "/SpatialNoAgree.csv"))
 
 
 ########
@@ -501,15 +504,6 @@ names(AnimacySpatialScores) <- c("Subject", "Object.Type", "GestureCondition", "
 
 with(AnimacySpatialScores, tapply(Casemarked, list(Object.Type, GestureCondition), mean, na.rm=TRUE), drop=TRUE)
 
-#Time for bootstrapped confidence intervals around the means of the 4 conditions!
-PersonFree.boot.mean = bootstrap(AnimacySpatialScores[AnimacySpatialScores$Object.Type=="Person" & AnimacySpatialScores$GestureCondition=="Free",]$Casemarked, 1000, mean)
-quantile(PersonFree.boot.mean$thetastar, c(0.025, 0.975))
-PersonHand.boot.mean = bootstrap(AnimacySpatialScores[AnimacySpatialScores$Object.Type=="Person" & AnimacySpatialScores$GestureCondition=="Case",]$Casemarked, 1000, mean)
-quantile(PersonHand.boot.mean$thetastar, c(0.025, 0.975))
-ObjectFree.boot.mean = bootstrap(AnimacySpatialScores[AnimacySpatialScores$Object.Type=="Object" & AnimacySpatialScores$GestureCondition=="Free",]$Casemarked, 1000, mean)
-quantile(ObjectFree.boot.mean$thetastar, c(0.025, 0.975))
-ObjectHand.boot.mean = bootstrap(AnimacySpatialScores[AnimacySpatialScores$Object.Type=="Object" & AnimacySpatialScores$GestureCondition=="Case",]$Casemarked, 1000, mean)
-quantile(ObjectHand.boot.mean$thetastar, c(0.025, 0.975))
 
 #########################################
 ##STATISTICAL TESTS!!
@@ -572,7 +566,7 @@ write.csv(foo, file = paste0(directory, "/SpatialCasemarking_OnlyCaseTrials.csv"
 # manipulation...).  For this, read in the new Embodiment coding that Miguel
 # did ~ 10/22/14
 
-embodiment_data <- read.csv(paste0(directory, "/EmbodimentRecode.csv"), header = TRUE)
+embodiment_data <- read.csv(paste0(directory, "/EmbodimentHallRecode.csv"), header = TRUE)
 
 #drop some duplicate columns we dont' need...
 embodiment_data <- embodiment_data[,c("Clipped.Movie.File","Trial.Number", "Agent.Embod","Verb.Embod","Patient.Embod")]
@@ -663,6 +657,97 @@ peopledata <- alldata[alldata$Object.Type == 'Person',]
 
 table(peopledata$PV.Embod, peopledata$SpatialCue)
 
+#########
+# GRAPHS
+#########
+
+#Copying code from above to make sure we have the right data...
+ParticipantScores <- aggregate(alldata$ChoseLateral, by=list(alldata$Subject, alldata$Object.Type, alldata$GestureCondition), mean.na.rm)
+names(ParticipantScores) <- c("Subject", "Object.Type", "GestureCondition", "ChoseLateral")
+
+#Time for bootstrapped confidence intervals around the means of the 4 conditions!
+PersonFree.boot.mean = bootstrap(ParticipantScores[ParticipantScores$Object.Type=="Person" & ParticipantScores$GestureCondition=="Free",]$ChoseLateral, 1000, mean)
+quantile(PersonFree.boot.mean$thetastar, c(0.025, 0.975))
+PersonHand.boot.mean = bootstrap(ParticipantScores[ParticipantScores$Object.Type=="Person" & ParticipantScores$GestureCondition=="Case",]$ChoseLateral, 1000, mean)
+quantile(PersonHand.boot.mean$thetastar, c(0.025, 0.975))
+ObjectFree.boot.mean = bootstrap(ParticipantScores[ParticipantScores$Object.Type=="Object" & ParticipantScores$GestureCondition=="Free",]$ChoseLateral, 1000, mean)
+quantile(ObjectFree.boot.mean$thetastar, c(0.025, 0.975))
+ObjectHand.boot.mean = bootstrap(ParticipantScores[ParticipantScores$Object.Type=="Object" & ParticipantScores$GestureCondition=="Case",]$ChoseLateral, 1000, mean)
+quantile(ObjectHand.boot.mean$thetastar, c(0.025, 0.975))
+
+
+GraphScores <- aggregate(ParticipantScores$ChoseLateral, by=list(ParticipantScores$Object.Type, ParticipantScores$GestureCondition), mean.na.rm)
+names(GraphScores) <- c("Object.Type", "GestureCondition", "ChoseLateral")
+GraphScores$errorLow = 0
+GraphScores$errorHigh = 0
+GraphScores[GraphScores$Object.Type == "Person" & GraphScores$GestureCondition == "Free",]$errorLow = quantile(PersonFree.boot.mean$thetastar, 0.025)
+GraphScores[GraphScores$Object.Type == "Person" & GraphScores$GestureCondition == "Free",]$errorHigh = quantile(PersonFree.boot.mean$thetastar, 0.975)
+GraphScores[GraphScores$Object.Type == "Person" & GraphScores$GestureCondition == "Case",]$errorLow = quantile(PersonHand.boot.mean$thetastar, 0.025)
+GraphScores[GraphScores$Object.Type == "Person" & GraphScores$GestureCondition == "Case",]$errorHigh = quantile(PersonHand.boot.mean$thetastar, 0.975)
+GraphScores[GraphScores$Object.Type == "Object" & GraphScores$GestureCondition == "Free",]$errorLow = quantile(ObjectFree.boot.mean$thetastar, 0.025)
+GraphScores[GraphScores$Object.Type == "Object" & GraphScores$GestureCondition == "Free",]$errorHigh = quantile(ObjectFree.boot.mean$thetastar, 0.975)
+GraphScores[GraphScores$Object.Type == "Object" & GraphScores$GestureCondition == "Case",]$errorLow = quantile(ObjectHand.boot.mean$thetastar, 0.025)
+GraphScores[GraphScores$Object.Type == "Object" & GraphScores$GestureCondition == "Case",]$errorHigh = quantile(ObjectHand.boot.mean$thetastar, 0.975)
+
+
+
+GraphScores$ObLabel <- ""
+GraphScores[GraphScores$Object.Type == "Object",]$ObLabel <- "Inanimate patient"
+GraphScores[GraphScores$Object.Type == "Person",]$ObLabel <- "Animate patient"
+GraphScores$ExpLabel <- ""
+GraphScores[GraphScores$GestureCondition == "Free",]$ExpLabel <- "Task 1 (Free gesture)"
+GraphScores[GraphScores$GestureCondition == "Case",]$ExpLabel <- "Task 2 (Spatial instructions)"
+
+my.cols <- brewer.pal(9, "Purples")
+my.cols <- c(my.cols[6], my.cols[3])
+
+#Fix for recalcitrant column ordering
+GraphScores$ObLabel <- factor(GraphScores$ObLabel, levels = c("Inanimate patient", "Animate patient"))
+GraphScores$ExpLabel <- factor(GraphScores$ExpLabel, levels = c("Task 1 (Free gesture)", "Task 2 (Spatial instructions)"))
+
+ggplot(data=GraphScores, aes(x=ExpLabel, y=ChoseLateral, fill=ObLabel)) + 
+  geom_bar(position=position_dodge(), stat="identity") +
+  geom_errorbar(aes(ymin=errorLow, ymax=errorHigh), colour="black", width=.1, position=position_dodge(.9)) +
+  scale_fill_manual(values=my.cols) +
+  coord_cartesian(ylim=c(0,1)) +
+  scale_y_continuous(breaks = seq(0, 1, 0.1))+
+  xlab('') +
+  ylab('proportion of SOV-type gesture orders') +
+  theme_bw() +
+  theme(legend.title=element_blank())
+
+ggsave('glyphgrid_condition_vs_order.jpg')
+
+##
+#responses with case vs with role conflict orders...
+PeopleScores <- table(peopledata$PV.Embod, peopledata$SpatialCue)
+GraphScores <- as.data.frame(PeopleScores)
+names(GraphScores) <- c("PV.Embod", "SpatialCue", "count")
+
+GraphScores$EmbodLabel <- ""
+GraphScores[GraphScores$PV.Embod == TRUE,]$EmbodLabel <- "Gesture order with RCP"
+GraphScores[GraphScores$PV.Embod == FALSE,]$EmbodLabel <- "Gesture order without RCP"
+
+GraphScores$SpatLabel <- ""
+GraphScores[GraphScores$SpatialCue == "Spatial.Absent",]$SpatLabel <- "Gesture with no spatial encoding"
+GraphScores[GraphScores$SpatialCue == "Spatial.Present",]$SpatLabel <- "Gesture with spatial encoding"
+
+my.cols <- brewer.pal(9, "Greens")
+my.cols <- c(my.cols[6], my.cols[3])
+
+#Fix for recalcitrant column ordering
+GraphScores$EmbodLabel <- factor(GraphScores$EmbodLabel, levels = c("Gesture order with RCP", "Gesture order without RCP"))
+GraphScores$SpatLabel <- factor(GraphScores$SpatLabel, levels = c("Gesture with spatial encoding","Gesture with no spatial encoding"))
+
+ggplot(data=GraphScores, aes(x=SpatLabel, y=count, fill=EmbodLabel)) + 
+  geom_bar(position=position_dodge(), stat="identity") +
+  scale_fill_manual(values=my.cols) +
+  xlab('') +
+  ylab('Number of gesture sequences produced') +
+  theme_bw() +
+  theme(legend.title=element_blank())
+
+ggsave('glyphgrid_space_vs_order.jpg')
 ########
 #Code snippets from miguel, no longer in use...
 ######## 
