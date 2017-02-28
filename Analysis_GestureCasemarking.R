@@ -3,7 +3,7 @@
 #Preprocessing of blind coding data developed by Miguel Salinas. Code copied over on 8/12 and commented
 #(up thru the indicated area) but otherwise left alone for now.
 #
-#Note: First part of this file produces output files: LiteralNoAgree.csv and Last3NoAgree.csv, the latter of
+#Note: First part of this file reproduces output files: LiteralNoAgree.csv and Last3NoAgree.csv, the latter of
 #which was then tiebroken by hand by trained RAs. This tiebreaking is stored in Last3NoAgree_Reconciliation.csv,
 # which gets read in and used for subsequent analyses.
 #
@@ -22,9 +22,9 @@ mean.na.rm <- function(x) { mean(x,na.rm=T) }
 sum.na.rm <- function(x) { sum(x,na.rm=T) }
 stderr <- function(x) sqrt(var(x)/length(x))
 
-#Get directory of this file
+#Get directory of this file. (CHANGE THIS IF RUNNING ON A COMPUTER OTHER THAN MK'S LAPTOP)
 #directory = '/Users/mekline/Dropbox/_Projects/Gesture - Case Marking/Analysis - Post Blindcoding'
-directory = '/Users/mekline/Dropbox/_Projects/Gesture/Gesture-Casemark Repo/Production-Casemarking/Analysis - Post Blindcoding'
+directory = '/Users/mekline/Dropbox/_Projects/Gesture/Gesture-Casemark Repo/Analysis - Post Blindcoding'
 
 #Initialize dataset
 gestable = data.frame(NULL)
@@ -716,7 +716,7 @@ ggplot(data=GraphScores, aes(x=ExpLabel, y=ChoseLateral, fill=ObLabel)) +
   theme_bw() +
   theme(legend.title=element_blank())
 
-ggsave('glyphgrid_condition_vs_order.jpg')
+ggsave('gesture_condition_vs_order.jpg')
 
 ##
 #responses with case vs with role conflict orders...
@@ -747,7 +747,7 @@ ggplot(data=GraphScores, aes(x=SpatLabel, y=count, fill=EmbodLabel)) +
   theme_bw() +
   theme(legend.title=element_blank())
 
-ggsave('glyphgrid_space_vs_order.jpg')
+ggsave('gesture_space_vs_order.jpg')
 ########
 #Code snippets from miguel, no longer in use...
 ######## 
