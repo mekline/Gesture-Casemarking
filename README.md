@@ -34,8 +34,8 @@ Because this was an in-person study that produced dense video data, and because 
 
 Initial results by EL (who conducted the study) - we later determined that we really needed blind-to-hypothesis coding, but retain the original codings for completeness.  
 
-####FreeGestureData.csv contains all trial data from the no-instruction task
-####CaseInstructionData.csv contains all trial data from task performed after instructions about marking participants were given
-####GestureCaseMarking.R contains my initial analysis on these datasets
+* FreeGestureData.csv contains all trial data from the no-instruction task
+* CaseInstructionData.csv contains all trial data from task performed after instructions about marking participants were given
+* GestureCaseMarking.R contains my initial analysis on these datasets
 
 
