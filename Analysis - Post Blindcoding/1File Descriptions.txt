@@ -18,7 +18,7 @@ SpatialNoAgreeReconciliation.csv - Table that contains responses where the origi
 
 Analysis files
 
-AnalysisNew_MK additions.R: Final/main analysis doc.  Contains a copy of all miguel’s preprocessing, so all the preliminary ‘compare’ files can be generated/compared to those produced by the reconciliation processes. 
+Analysis_Casemarking_OLD.R: a draft of the main script at the top level of the Repo, I hate deleting things. 
 
 
 LiteralNoAgree, Last3NoAgree, SpatialNoAgree: files produced by Analysis_Casemarking that were used for code reconciliation. 
