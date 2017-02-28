@@ -446,9 +446,8 @@ goo[order(goo$foo),]
 #################################################################
 #'Embodiment' (presence of body-based sign) - added coding and recalculating orders in the way relevant to Hall's theory (deal w edge cases)
 # We want to check if Embodiment (in the second task)
-# made a difference for SOV use (ie maybe we did an embodiment manipulation
-# alongside...).  For this, read in the new Embodiment coding that Miguel
-# did ~ 10/22/14
+# made a difference for SOV use For this, read in the new Embodiment coding 
+#that MS did
 
 embodiment_data <- read.csv(paste0(directory, "/EmbodimentHallRecode.csv"), header = TRUE)
 
@@ -537,7 +536,7 @@ names(ParticipantScores) <- c("Subject", "Object.Type", "GestureCondition", "Cho
 
 #### GRAPHS AND STATS!!!! ######
 
-# 3/20/15 Reordering stats to match paper order, calculating confints, and redoing model comparisons (adding item intercepts and rather than reporting p vals from the wrong variable coding)
+# 3/20/15 Reordering stats to match diss order, calculating confints, and redoing model comparisons (adding item intercepts and rather than reporting p vals from the wrong variable coding)
 
 
 

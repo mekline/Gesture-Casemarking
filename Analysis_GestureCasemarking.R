@@ -409,14 +409,14 @@ length(unique(alldata$Subject))
 #Report counts of SOV versus SVO instances in Free and Hand conditions
 table(alldata$WordOrder.Classified, alldata$Object.Type, alldata$GestureCondition)
 
-#And when were spatial cues actually produced?
+#And when were spatial cues actually produced? (OLD SPATIAL, see line 553)
 table(alldata$SpatialCue, alldata$WordOrder.Classified, alldata$Object.Type)
 
-#Let's look just at the second experiment to see if they really did it...
+#Let's look just at the second experiment to see if they really produced spatial info as instructed...
 instructiondata <- alldata[alldata$GestureCondition == "Case",]
 table(instructiondata$SpatialCue, instructiondata$WordOrder.Classified, instructiondata$Object.Type)
 
-#What about early casemarkers?
+#What about early casemarkers in task ?
 noinstructiondata <- alldata[alldata$GestureCondition == "Free",]
 table(noinstructiondata$SpatialCue, noinstructiondata$WordOrder.Classified, noinstructiondata$Object.Type)
 
@@ -429,28 +429,78 @@ table(noinstructiondata$SpatialCue, noinstructiondata$WordOrder.Classified, noin
 #Does Long not equal Clean?
 #Does type equal Unclassified? 191
 #Parentheses?
-nrow(alldata[alldata$WordOrder == "(SO)V",]) <- actually all got coded this way!
+nrow(alldata[alldata$WordOrder == "(SO)V",]) #The gesture string has simultaneous S and O, then V
 
-#Eh, let's go ahead and mark those in case anyone is worried about our data coding....
-
+#Mark all of these in case anyone is worried about our data coding (we keep all, but option to drop SuperGoodResponse=='No')
+#If this isn't working, it's because the WordORder columns have been made into factors.  as.character() them)
 alldata$SuperGoodResponse <- "Yes"
-alldata[alldata$Final.Full.WordOrder != alldata$WordOrder,]$SuperGoodResponse <- "No"
+alldata[as.character(alldata$Final.Full.WordOrder) != as.character(alldata$WordOrder),]$SuperGoodResponse <- "No"
 alldata[alldata$WordOrder.Classified == "Unclassified",]$SuperGoodResponse <- "No"
 alldata[alldata$WordOrder == "(SO)V",]$SuperGoodResponse <- "No"
 
-#Little pause for some calculations about our classification scheme...
-foo <- alldata[alldata$Final.Full.WordOrder != alldata$WordOrder & alldata$WordOrder.Classified != "Unclassified",]$Final.Full.WordOrder
-goo <- as.data.frame(foo)
-goo$len <- unlist(lapply(foo, nchar))
-goo <- goo[goo$len > 3,]
-goo[order(goo$foo),]
-#(And do some manual checking about items that might have been misclassified)
 #Look here if you're curious about weird word orders that we classified as verb medial or lateral!
+#Uncomment to see the full list of 'oddball' gesture orders produced
+#foo <- alldata[as.character(alldata$Final.Full.WordOrder) != as.character(alldata$WordOrder) & alldata$WordOrder.Classified != "Unclassified",]$Final.Full.WordOrder
+#table(foo)
+
+################
+#################################################################
+#'Embodiment' (presence of body-based sign) - added coding and recalculating orders in the way relevant to Hall's theory (deal w edge cases)
+# We want to check if Embodiment (in the second task)
+# made a difference for SOV use For this, read in the new Embodiment coding 
+#that MS did
+
+embodiment_data <- read.csv(paste0(directory, "/EmbodimentHallRecode.csv"), header = TRUE)
+
+#drop some duplicate columns we dont' need...
+embodiment_data <- embodiment_data[,c("Clipped.Movie.File","Trial.Number", "Agent.Embod","Verb.Embod","Patient.Embod")]
+
+alldata <- merge(alldata, embodiment_data, by=c("Clipped.Movie.File","Trial.Number"),all.X=TRUE, all.y=FALSE)
+alldata <- na.omit(alldata) #a recalcitrate NA line...
+
+#Did Embodiment change across the 2 conditions? Check Agent Verb Patient
+table(alldata$Agent.Embod, alldata$Object.Type, alldata$GestureCondition)
+table(alldata$Verb.Embod, alldata$Object.Type, alldata$GestureCondition)
+table(alldata$Patient.Embod, alldata$Object.Type, alldata$GestureCondition)
+
+
+
+#Code ?s which we can't tell if have embodiment as not having embodiment (~12 items total)
+alldata[alldata$Agent.Embod == "?",]$Agent.Embod <- 0
+alldata[alldata$Verb.Embod == "?",]$Verb.Embod <- 0
+alldata[alldata$Patient.Embod == "?",]$Patient.Embod <- 0
+alldata[alldata$Patient.Embod == "o",]$Patient.Embod <- 0
+
+alldata$Agent.Embod <- as.numeric(as.character(alldata$Agent.Embod))
+alldata$Verb.Embod <- as.numeric(as.character(alldata$Verb.Embod))
+alldata$Patient.Embod <- as.numeric(as.character(alldata$Patient.Embod))
+alldata$PV.Embod <- (alldata$Verb.Embod == 1) & (alldata$Patient.Embod == 1)
+
+#Add New WordOrder classifications! The distinction is whether s is the last
+#entity before the v. (this is what the constraint wants)
+
+alldata[is.na(alldata$WordOrder),]$WordOrder <- "Unclassified"
+alldata$WordOrder.Embod.Classified <- "Unclassified"
+alldata[alldata$WordOrder == "SOV",]$WordOrder.Embod.Classified <- "NonAdjacent"
+alldata[alldata$WordOrder == "OSV",]$WordOrder.Embod.Classified <- "Adjacent"
+alldata[alldata$WordOrder == "VSO",]$WordOrder.Embod.Classified <- "NonAdjacent"
+alldata[alldata$WordOrder == "VOS",]$WordOrder.Embod.Classified <- "NonAdjacent"
+#Parenthesis cases
+alldata[alldata$WordOrder == "V(OS)",]$WordOrder.Embod.Classified <- "NonAdjacent"
+alldata[alldata$WordOrder == "V(SO)",]$WordOrder.Embod.Classified <- "NonAdjacent"
+alldata[alldata$WordOrder == "(SO)V",]$WordOrder.Embod.Classified <- "NonAdjacent"
+alldata[alldata$WordOrder == "(OS)V",]$WordOrder.Embod.Classified <- "NonAdjacent"
+
+alldata[alldata$WordOrder == "SVO",]$WordOrder.Embod.Classified <- "Adjacent"
+alldata[alldata$WordOrder == "OVS",]$WordOrder.Embod.Classified <- "NonAdjacent"
+
+##########################################
+#Finished incorporating Hall-style embodiment coding
 
 
 
 ####
-# Now do it by scores-per-participant. (Need this to make the bootstrapped confidence intervals...)
+# Add scores-per-participant. (Need this to make the bootstrapped confidence intervals for the graphs...)
 
 #Drop Unclassified items!!
 
@@ -470,7 +520,7 @@ names(ParticipantScores) <- c("Subject", "Object.Type", "GestureCondition", "Cho
 #Table for scores too
 with(ParticipantScores, tapply(ChoseLateral, list(Object.Type, GestureCondition), mean, na.rm=TRUE), drop=TRUE)
 
-#Time for bootstrapped confidence intervals around the means of the 4 conditions!
+#Time for bootstrapped confidence intervals around the means of the 4 conditions! (for the graphs)
 PersonFree.boot.mean = bootstrap(ParticipantScores[ParticipantScores$Object.Type=="Person" & ParticipantScores$GestureCondition=="Free",]$ChoseLateral, 1000, mean)
 quantile(PersonFree.boot.mean$thetastar, c(0.025, 0.975))
 PersonHand.boot.mean = bootstrap(ParticipantScores[ParticipantScores$Object.Type=="Person" & ParticipantScores$GestureCondition=="Case",]$ChoseLateral, 1000, mean)
@@ -513,6 +563,7 @@ with(AnimacySpatialScores, tapply(Casemarked, list(Object.Type, GestureCondition
 ##STATISTICAL TESTS!!
 #########################################
 
+#Factorizing everything for the (g)lmers
 alldata$WordOrder.Classified <- as.factor(alldata$WordOrder.Classified)
 alldata$Object.Type <- as.factor(alldata$Object.Type)
 alldata$SpatialCue <- as.factor(alldata$SpatialCue)
@@ -525,14 +576,28 @@ handdata$WordOrder.Classified <- as.factor(handdata$WordOrder.Classified)
 freedata$Object.Type <- as.factor(freedata$Object.Type)
 handdata$Object.Type <- as.factor(handdata$Object.Type)
 
+########
 #Within Experiments- were people more likely to use SVO with Animate?
-free_model <- lmer(WordOrder.Classified ~ Object.Type  + (1+Object.Type|Subject), data=freedata, family="binomial")
-summary(free_model)
+########
 
-hand_model <- lmer(WordOrder.Classified ~ Object.Type  + (1+Object.Type|Subject), data=handdata, family="binomial")
-summary(hand_model)
+free_model <- lmer(WordOrder.Classified ~ Object.Type  + (Object.Type|Subject) + (1|Sentence), data=freedata, family="binomial")
+free_nofix <- lmer(WordOrder.Classified ~ (Object.Type|Subject) + (1|Sentence), data=freedata, family="binomial")
+anova(free_model,free_nofix)
 
+#Text to report in paper: "This ordering difference was statistically significant
+#in a two-tailed, mixed-effects logistic regression that included random 
+#participant slopes and item intercepts, X2 = 18.979, df = 6, p < .001"
+
+hand_model <- lmer(WordOrder.Classified ~ Object.Type  + (Object.Type|Subject) + (1|Sentence), data=handdata, family="binomial")
+hand_nofix <- lmer(WordOrder.Classified ~  (Object.Type|Subject) + (1|Sentence), data=handdata, family="binomial")
+anova(hand_model,hand_nofix)
+
+#XXXXXText: The difference in verb-final gestures for animate and inanimate patients was not statistically 
+#significant for this task (X2 = 0.07, df=6, p = .79).
+
+#######
 #Between Experiments! - was there an interaction between Experiment and the above?
+#######
 word_order_model <- lmer(WordOrder.Classified ~ Object.Type*GestureCondition  + (1+Object.Type|Subject), data=alldata, family="binomial")
 summary(word_order_model)
 
@@ -549,6 +614,9 @@ summary(word_order_spatial_model)
 cue_model <- lmer(SpatialCue ~ Object.Type*GestureCondition  + (1+Object.Type|Subject), data=alldata, family="binomial")
 summary(cue_model)
 
+#Text to report: Analyzing the two gesture tasks together, we found a significant task by animacy 
+#interaction (X2 = 16.91, df = 6, p < .001), as well as main effects of animacy (X2 = 18.22, df = 5, p < .001) 
+#and gesture task (X2 = 184.1, df = 5, p < .001).
 
 ######
 # A new thing. Need more detail about the casemarking in the casemarked trials! To facilitate, print out
