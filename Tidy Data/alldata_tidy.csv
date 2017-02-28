@@ -1,0 +1,1153 @@
+"","Subject","GestureCondition","Trial.Number","Object.Type","Sentence","Used.ASL","Final.Full.WordOrder","WordOrder","WordOrder.Classified","SpatialCue","Clipped.Movie.File","ToInclude"
+"1",1,"Case",5,"Object","Boy kicks ball","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_031",1
+"2",1,"Case",6,"Object","Girl pushes car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_031",1
+"3",1,"Case",8,"Person","Fireman pushes boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_031",1
+"4",1,"Case",9,"Object","Old lady elbows ball","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_032",1
+"5",1,"Case",11,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_032",1
+"6",1,"Case",12,"Person","Boy lifts girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_032",1
+"7",1,"Case",13,"Object","Fireman throws star","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_033",1
+"8",1,"Case",15,"Person","Girl elbows old lady","A","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_033",1
+"9",1,"Case",17,"Person","Fireman kicks girl","A","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_034",1
+"10",1,"Case",18,"Object","Old lady kisses star","A","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_034",1
+"11",1,"Case",19,"Person","Old lady rubs fireman","A","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_034",1
+"12",1,"Case",20,"Person","Girl throws old lady","A","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_034",1
+"13",1,"Case",24,"Object","Boy pokes heart","A","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_035",1
+"14",1,"Case",25,"Object","Fireman lifts car","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_036",1
+"15",1,"Case",26,"Person","Old lady pokes fireman","A","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_036",1
+"16",1,"Case",28,"Person","Girl kisses boy","A","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_036",1
+"17",1,"Free",5,"Object","Boy kicks ball","","SVOV","VOV","Unclassified","Spatial.Absent","Spatial_Clipped_025",1
+"18",1,"Free",6,"Object","Girl pushes car","A","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_025",1
+"19",1,"Free",8,"Person","Fireman pushes boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_025",1
+"20",1,"Free",9,"Object","Old lady elbows ball","A","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_026",1
+"21",1,"Free",11,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_026",1
+"22",1,"Free",12,"Person","Boy lifts girl","","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_026",1
+"23",1,"Free",13,"Object","Fireman throws star","","OV","OV","Unclassified","Spatial.Present","Spatial_Clipped_027",1
+"24",1,"Free",15,"Person","Girl elbows old lady","A","OSSVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_027",1
+"25",1,"Free",17,"Person","Fireman kicks girl","","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_028",1
+"26",1,"Free",18,"Object","Old lady kisses star","A","SOV","SOV","VerbLateral","?","Spatial_Clipped_028",1
+"27",1,"Free",19,"Person","Old lady rubs fireman","A","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_028",1
+"28",1,"Free",20,"Person","Girl throws old lady","A","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_028",1
+"29",1,"Free",24,"Object","Boy pokes heart","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_029",1
+"30",1,"Free",25,"Object","Fireman lifts car","","OSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_030",1
+"31",1,"Free",26,"Person","Old lady pokes fireman","A","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_030",1
+"32",1,"Free",28,"Person","Girl kisses boy","A","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_030",1
+"33",3,"Case",5,"Object","Boy kicks ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_055",1
+"34",3,"Case",6,"Object","Girl pushes car","","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_055",1
+"35",3,"Case",8,"Person","Fireman pushes boy","","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_055",1
+"36",3,"Case",9,"Object","Old lady elbows ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_056",1
+"37",3,"Case",11,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_056",1
+"38",3,"Case",12,"Person","Boy lifts girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_056",1
+"39",3,"Case",13,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_057",1
+"40",3,"Case",15,"Person","Girl elbows old lady","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_057",1
+"41",3,"Case",17,"Person","Fireman kicks girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_058",1
+"42",3,"Case",18,"Object","Old lady kisses star","","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_058",1
+"43",3,"Case",19,"Person","Old lady rubs fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_058",1
+"44",3,"Case",20,"Person","Girl throws old lady","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_058",1
+"45",3,"Case",24,"Object","Boy pokes heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_059",1
+"46",3,"Case",25,"Object","Fireman lifts car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_060",1
+"47",3,"Case",26,"Person","Old lady pokes fireman","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_060",1
+"48",3,"Case",28,"Person","Girl kisses boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_060",1
+"49",3,"Free",5,"Object","Boy kicks ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_049",1
+"50",3,"Free",6,"Object","Girl pushes car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_049",1
+"51",3,"Free",8,"Person","Fireman pushes boy","","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_049",1
+"52",3,"Free",9,"Object","Old lady elbows ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_050",1
+"53",3,"Free",11,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_050",1
+"54",3,"Free",12,"Person","Boy lifts girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_050",1
+"55",3,"Free",13,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_051",1
+"56",3,"Free",15,"Person","Girl elbows old lady","","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_051",1
+"57",3,"Free",17,"Person","Fireman kicks girl","","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_052",1
+"58",3,"Free",18,"Object","Old lady kisses star","","SOSVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_052",1
+"59",3,"Free",19,"Person","Old lady rubs fireman","","SOSVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_052",1
+"60",3,"Free",20,"Person","Girl throws old lady","","SOSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_052",1
+"61",3,"Free",24,"Object","Boy pokes heart","","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_053",1
+"62",3,"Free",25,"Object","Fireman lifts car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_054",1
+"63",3,"Free",26,"Person","Old lady pokes fireman","","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_054",1
+"64",3,"Free",28,"Person","Girl kisses boy","","SOSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_054",1
+"65",4,"Case",5,"Person","Girl kisses boy","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_067",1
+"66",4,"Case",7,"Person","Old lady pokes fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_067",1
+"67",4,"Case",8,"Object","Fireman lifts car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_067",1
+"68",4,"Case",9,"Object","Boy pokes heart","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_068",1
+"69",4,"Case",13,"Person","Girl throws old lady","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_069",1
+"70",4,"Case",14,"Person","Old lady rubs fireman","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_069",1
+"71",4,"Case",15,"Object","Old lady kisses star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_069",1
+"72",4,"Case",16,"Person","Fireman kicks girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_069",1
+"73",4,"Case",18,"Person","Girl elbows old lady","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_070",1
+"74",4,"Case",20,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_070",1
+"75",4,"Case",21,"Person","Boy lifts girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_071",1
+"76",4,"Case",22,"Object","Girl rubs heart","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_071",1
+"77",4,"Case",24,"Object","Old lady elbows ball","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_071",1
+"78",4,"Case",25,"Person","Fireman pushes boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_072",1
+"79",4,"Case",27,"Object","Girl pushes car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_072",1
+"80",4,"Case",28,"Object","Boy kicks ball","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_072",1
+"81",4,"Free",5,"Person","Girl kisses boy","","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_061",1
+"82",4,"Free",7,"Person","Old lady pokes fireman","","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_061",1
+"83",4,"Free",8,"Object","Fireman lifts car","","VO","VO","Unclassified","Spatial.Absent","Spatial_Clipped_061",1
+"84",4,"Free",9,"Object","Boy pokes heart","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_062",1
+"85",4,"Free",13,"Person","Girl throws old lady","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_063",1
+"86",4,"Free",14,"Person","Old lady rubs fireman","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_063",1
+"87",4,"Free",15,"Object","Old lady kisses star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_063",1
+"88",4,"Free",16,"Person","Fireman kicks girl","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_063",1
+"89",4,"Free",18,"Person","Girl elbows old lady","","OSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_064",1
+"90",4,"Free",20,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_064",1
+"91",4,"Free",21,"Person","Boy lifts girl","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_065",1
+"92",4,"Free",22,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_065",1
+"93",4,"Free",24,"Object","Old lady elbows ball","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_065",1
+"94",4,"Free",25,"Person","Fireman pushes boy","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_066",1
+"95",4,"Free",27,"Object","Girl pushes car","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_066",1
+"96",4,"Free",28,"Object","Boy kicks ball","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_066",1
+"97",5,"Case",5,"Object","Boy kicks ball","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_079",1
+"98",5,"Case",6,"Object","Girl pushes car","","VSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_079",1
+"99",5,"Case",8,"Person","Fireman pushes boy","","VSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_079",1
+"100",5,"Case",9,"Object","Old lady elbows ball","","VOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_080",1
+"101",5,"Case",11,"Object","Girl rubs heart","","VSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_080",1
+"102",5,"Case",12,"Person","Boy lifts girl","","VSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_080",1
+"103",5,"Case",13,"Object","Fireman throws star","","VSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_081",1
+"104",5,"Case",15,"Person","Girl elbows old lady","","VOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_081",1
+"105",5,"Case",17,"Person","Fireman kicks girl","","VSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_082",1
+"106",5,"Case",18,"Object","Old lady kisses star","","VOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_082",1
+"107",5,"Case",19,"Person","Old lady rubs fireman","","VOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_082",1
+"108",5,"Case",20,"Person","Girl throws old lady","","VSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_082",1
+"109",5,"Case",24,"Object","Boy pokes heart","","VOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_083",1
+"110",5,"Case",25,"Object","Fireman lifts car","","VSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_084",1
+"111",5,"Case",26,"Person","Old lady pokes fireman","","VSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_084",1
+"112",5,"Case",28,"Person","Girl kisses boy","","VOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_084",1
+"113",5,"Free",5,"Object","Boy kicks ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_073",1
+"114",5,"Free",6,"Object","Girl pushes car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_073",1
+"115",5,"Free",8,"Person","Fireman pushes boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_073",1
+"116",5,"Free",9,"Object","Old lady elbows ball","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_074",1
+"117",5,"Free",11,"Object","Girl rubs heart","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_074",1
+"118",5,"Free",12,"Person","Boy lifts girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_074",1
+"119",5,"Free",13,"Object","Fireman throws star","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_075",1
+"120",5,"Free",15,"Person","Girl elbows old lady","","SVOV","VOV","Unclassified","Spatial.Present","Spatial_Clipped_075",1
+"121",5,"Free",17,"Person","Fireman kicks girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_076",1
+"122",5,"Free",18,"Object","Old lady kisses star","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_076",1
+"123",5,"Free",19,"Person","Old lady rubs fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_076",1
+"124",5,"Free",20,"Person","Girl throws old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_076",1
+"125",5,"Free",24,"Object","Boy pokes heart","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_077",1
+"126",5,"Free",25,"Object","Fireman lifts car","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_078",1
+"127",5,"Free",26,"Person","Old lady pokes fireman","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_078",1
+"128",5,"Free",28,"Person","Girl kisses boy","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_078",1
+"129",6,"Case",5,"Object","Boy kicks ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_091",1
+"130",6,"Case",6,"Object","Girl pushes car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_091",1
+"131",6,"Case",8,"Person","Fireman pushes boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_091",1
+"132",6,"Case",9,"Object","Old lady elbows ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_092",1
+"133",6,"Case",11,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_092",1
+"134",6,"Case",12,"Person","Boy lifts girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_092",1
+"135",6,"Case",13,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_093",1
+"136",6,"Case",15,"Person","Girl elbows old lady","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_093",1
+"137",6,"Case",17,"Person","Fireman kicks girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_094",1
+"138",6,"Case",18,"Object","Old lady kisses star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_094",1
+"139",6,"Case",19,"Person","Old lady rubs fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_094",1
+"140",6,"Case",20,"Person","Girl throws old lady","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_094",1
+"141",6,"Case",24,"Object","Boy pokes heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_095",1
+"142",6,"Case",25,"Object","Fireman lifts car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_096",1
+"143",6,"Case",26,"Person","Old lady pokes fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_096",1
+"144",6,"Case",28,"Person","Girl kisses boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_096",1
+"145",6,"Free",5,"Object","Boy kicks ball","","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_085",1
+"146",6,"Free",6,"Object","Girl pushes car","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_085",1
+"147",6,"Free",8,"Person","Fireman pushes boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_085",1
+"148",6,"Free",9,"Object","Old lady elbows ball","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_086",1
+"149",6,"Free",11,"Object","Girl rubs heart","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_086",1
+"150",6,"Free",12,"Person","Boy lifts girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_086",1
+"151",6,"Free",13,"Object","Fireman throws star","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_087",1
+"152",6,"Free",15,"Person","Girl elbows old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_087",1
+"153",6,"Free",17,"Person","Fireman kicks girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_088",1
+"154",6,"Free",18,"Object","Old lady kisses star","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_088",1
+"155",6,"Free",19,"Person","Old lady rubs fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_088",1
+"156",6,"Free",20,"Person","Girl throws old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_088",1
+"157",6,"Free",24,"Object","Boy pokes heart","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_089",1
+"158",6,"Free",25,"Object","Fireman lifts car","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_090",1
+"159",6,"Free",26,"Person","Old lady pokes fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_090",1
+"160",6,"Free",28,"Person","Girl kisses boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_090",1
+"161",7,"Case",5,"Person","Girl kisses boy","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_103",1
+"162",7,"Case",7,"Person","Old lady pokes fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_103",1
+"163",7,"Case",8,"Object","Fireman lifts car","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_103",1
+"164",7,"Case",9,"Object","Boy pokes heart","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_104",1
+"165",7,"Case",13,"Person","Girl throws old lady","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_105",1
+"166",7,"Case",14,"Person","Old lady rubs fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_105",1
+"167",7,"Case",15,"Object","Old lady kisses star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_105",1
+"168",7,"Case",16,"Person","Fireman kicks girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_105",1
+"169",7,"Case",18,"Person","Girl elbows old lady","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_106",1
+"170",7,"Case",20,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_106",1
+"171",7,"Case",21,"Person","Boy lifts girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_107",1
+"172",7,"Case",22,"Object","Girl rubs heart","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_107",1
+"173",7,"Case",24,"Object","Old lady elbows ball","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_107",1
+"174",7,"Case",25,"Person","Fireman pushes boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_108",1
+"175",7,"Case",27,"Object","Girl pushes car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_108",1
+"176",7,"Case",28,"Object","Boy kicks ball","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_108",1
+"177",7,"Free",5,"Person","Girl kisses boy","","OSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_097",1
+"178",7,"Free",7,"Person","Old lady pokes fireman","","OSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_097",1
+"179",7,"Free",8,"Object","Fireman lifts car","","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_097",1
+"180",7,"Free",9,"Object","Boy pokes heart","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_098",1
+"181",7,"Free",13,"Person","Girl throws old lady","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_099",1
+"182",7,"Free",14,"Person","Old lady rubs fireman","","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_099",1
+"183",7,"Free",15,"Object","Old lady kisses star","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_099",1
+"184",7,"Free",16,"Person","Fireman kicks girl","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_099",1
+"185",7,"Free",18,"Person","Girl elbows old lady","","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_100",1
+"186",7,"Free",20,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_100",1
+"187",7,"Free",21,"Person","Boy lifts girl","","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_101",1
+"188",7,"Free",22,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_101",1
+"189",7,"Free",24,"Object","Old lady elbows ball","","OSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_101",1
+"190",7,"Free",25,"Person","Fireman pushes boy","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_102",1
+"191",7,"Free",27,"Object","Girl pushes car","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_102",1
+"192",7,"Free",28,"Object","Boy kicks ball","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_102",1
+"193",8,"Case",5,"Object","Boy kicks ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_115",1
+"194",8,"Case",6,"Object","Girl pushes car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_115",1
+"195",8,"Case",8,"Person","Fireman pushes boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_115",1
+"196",8,"Case",9,"Object","Old lady elbows ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_116",1
+"197",8,"Case",11,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_116",1
+"198",8,"Case",12,"Person","Boy lifts girl","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_116",1
+"199",8,"Case",13,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_117",1
+"200",8,"Case",15,"Person","Girl elbows old lady","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_117",1
+"201",8,"Case",17,"Person","Fireman kicks girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_118",1
+"202",8,"Case",18,"Object","Old lady kisses star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_118",1
+"203",8,"Case",19,"Person","Old lady rubs fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_118",1
+"204",8,"Case",20,"Person","Girl throws old lady","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_118",1
+"205",8,"Case",24,"Object","Boy pokes heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_119",1
+"206",8,"Case",25,"Object","Fireman lifts car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_120",1
+"207",8,"Case",26,"Person","Old lady pokes fireman","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_120",1
+"208",8,"Case",28,"Person","Girl kisses boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_120",1
+"209",8,"Free",5,"Object","Boy kicks ball","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_109",1
+"210",8,"Free",6,"Object","Girl pushes car","","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_109",1
+"211",8,"Free",8,"Person","Fireman pushes boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_109",1
+"212",8,"Free",9,"Object","Old lady elbows ball","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_110",1
+"213",8,"Free",11,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_110",1
+"214",8,"Free",12,"Person","Boy lifts girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_110",1
+"215",8,"Free",13,"Object","Fireman throws star","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_111",1
+"216",8,"Free",15,"Person","Girl elbows old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_111",1
+"217",8,"Free",17,"Person","Fireman kicks girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_112",1
+"218",8,"Free",18,"Object","Old lady kisses star","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_112",1
+"219",8,"Free",19,"Person","Old lady rubs fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_112",1
+"220",8,"Free",20,"Person","Girl throws old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_112",1
+"221",8,"Free",24,"Object","Boy pokes heart","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_113",1
+"222",8,"Free",25,"Object","Fireman lifts car","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_114",1
+"223",8,"Free",26,"Person","Old lady pokes fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_114",1
+"224",8,"Free",28,"Person","Girl kisses boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_114",1
+"225",21,"Case",5,"Object","Boy kicks ball","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_007",1
+"226",21,"Case",6,"Object","Girl pushes car","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_007",1
+"227",21,"Case",8,"Person","Fireman pushes boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_007",1
+"228",21,"Case",9,"Object","Old lady elbows ball","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_008",1
+"229",21,"Case",11,"Object","Girl rubs heart","","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_008",1
+"230",21,"Case",12,"Person","Boy lifts girl","","SVOV","VOV","Unclassified","Spatial.Absent","Spatial_Clipped_008",1
+"231",21,"Case",13,"Object","Fireman throws star","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_009",1
+"232",21,"Case",15,"Person","Girl elbows old lady","","SVOV","VOV","Unclassified","Spatial.Absent","Spatial_Clipped_009",1
+"233",21,"Case",17,"Person","Fireman kicks girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_010",1
+"234",21,"Case",18,"Object","Old lady kisses star","","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_010",1
+"235",21,"Case",19,"Person","Old lady rubs fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_010",1
+"236",21,"Case",20,"Person","Girl throws old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_010",1
+"237",21,"Case",24,"Object","Boy pokes heart","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_011",1
+"238",21,"Case",25,"Object","Fireman lifts car","","SVOV","VOV","Unclassified","Spatial.Absent","Spatial_Clipped_012",1
+"239",21,"Case",26,"Person","Old lady pokes fireman","","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_012",1
+"240",21,"Case",28,"Person","Girl kisses boy","","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_012",1
+"241",21,"Free",5,"Object","Boy kicks ball","","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_001",1
+"242",21,"Free",6,"Object","Girl pushes car","","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_001",1
+"243",21,"Free",8,"Person","Fireman pushes boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_001",1
+"244",21,"Free",9,"Object","Old lady elbows ball","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_002",1
+"245",21,"Free",11,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_002",1
+"246",21,"Free",12,"Person","Boy lifts girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_002",1
+"247",21,"Free",13,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_003",1
+"248",21,"Free",15,"Person","Girl elbows old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_003",1
+"249",21,"Free",17,"Person","Fireman kicks girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_004",1
+"250",21,"Free",18,"Object","Old lady kisses star","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_004",1
+"251",21,"Free",19,"Person","Old lady rubs fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_004",1
+"252",21,"Free",20,"Person","Girl throws old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_004",1
+"253",21,"Free",24,"Object","Boy pokes heart","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_005",1
+"254",21,"Free",25,"Object","Fireman lifts car","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_006",1
+"255",21,"Free",26,"Person","Old lady pokes fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_006",1
+"256",21,"Free",28,"Person","Girl kisses boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_006",1
+"257",22,"Case",5,"Object","Boy kicks ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_019",1
+"258",22,"Case",6,"Object","Girl pushes car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_019",1
+"259",22,"Case",8,"Person","Fireman pushes boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_019",1
+"260",22,"Case",9,"Object","Old lady elbows ball","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_020",1
+"261",22,"Case",11,"Object","Girl rubs heart","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_020",1
+"262",22,"Case",12,"Person","Boy lifts girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_020",1
+"263",22,"Case",13,"Object","Fireman throws star","","SVOV","VOV","Unclassified","Spatial.Absent","Spatial_Clipped_021",1
+"264",22,"Case",15,"Person","Girl elbows old lady","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_021",1
+"265",22,"Case",17,"Person","Fireman kicks girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_022",1
+"266",22,"Case",18,"Object","Old lady kisses star","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_022",1
+"267",22,"Case",19,"Person","Old lady rubs fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_022",1
+"268",22,"Case",20,"Person","Girl throws old lady","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_022",1
+"269",22,"Case",24,"Object","Boy pokes heart","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_023",1
+"270",22,"Case",25,"Object","Fireman lifts car","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_024",1
+"271",22,"Case",26,"Person","Old lady pokes fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_024",1
+"272",22,"Case",28,"Person","Girl kisses boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_024",1
+"273",22,"Free",5,"Object","Boy kicks ball","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_013",1
+"274",22,"Free",6,"Object","Girl pushes car","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_013",1
+"275",22,"Free",8,"Person","Fireman pushes boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_013",1
+"276",22,"Free",9,"Object","Old lady elbows ball","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_014",1
+"277",22,"Free",11,"Object","Girl rubs heart","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_014",1
+"278",22,"Free",12,"Person","Boy lifts girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_014",1
+"279",22,"Free",13,"Object","Fireman throws star","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_015",1
+"280",22,"Free",15,"Person","Girl elbows old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_015",1
+"281",22,"Free",17,"Person","Fireman kicks girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_016",1
+"282",22,"Free",18,"Object","Old lady kisses star","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_016",1
+"283",22,"Free",19,"Person","Old lady rubs fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_016",1
+"284",22,"Free",20,"Person","Girl throws old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_016",1
+"285",22,"Free",24,"Object","Boy pokes heart","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_017",1
+"286",22,"Free",25,"Object","Fireman lifts car","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_018",1
+"287",22,"Free",26,"Person","Old lady pokes fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_018",1
+"288",22,"Free",28,"Person","Girl kisses boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_018",1
+"289",25,"Case",5,"Person","Girl kisses boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_139",1
+"290",25,"Case",7,"Person","Old lady pokes fireman","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_139",1
+"291",25,"Case",8,"Object","Fireman lifts car","","S(OV)","S(OV)","Unclassified","Spatial.Present","Spatial_Clipped_139",1
+"292",25,"Case",9,"Object","Boy pokes heart","","OV","OV","Unclassified","Spatial.Present","Spatial_Clipped_140",1
+"293",25,"Case",13,"Person","Girl throws old lady","","V","V","Unclassified","Spatial.Present","Spatial_Clipped_141",1
+"294",25,"Case",14,"Person","Old lady rubs fireman","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_141",1
+"295",25,"Case",15,"Object","Old lady kisses star","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_141",1
+"296",25,"Case",16,"Person","Fireman kicks girl","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_141",1
+"297",25,"Case",18,"Person","Girl elbows old lady","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_142",1
+"298",25,"Case",20,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_142",1
+"299",25,"Case",21,"Person","Boy lifts girl","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_143",1
+"300",25,"Case",22,"Object","Girl rubs heart","","OVS","OVS","VerbMedial","Spatial.Present","Spatial_Clipped_143",1
+"301",25,"Case",24,"Object","Old lady elbows ball","","OSV","","Unclassified","Spatial.Present","Spatial_Clipped_143",1
+"302",25,"Case",25,"Person","Fireman pushes boy","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_144",1
+"303",25,"Case",27,"Object","Girl pushes car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_144",1
+"304",25,"Case",28,"Object","Boy kicks ball","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_144",1
+"305",25,"Free",5,"Person","Girl kisses boy","","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_133",1
+"306",25,"Free",7,"Person","Old lady pokes fireman","","VSOV","","Unclassified","Spatial.Absent","Spatial_Clipped_133",1
+"307",25,"Free",8,"Object","Fireman lifts car","","VO","VO","Unclassified","Spatial.Absent","Spatial_Clipped_133",1
+"308",25,"Free",9,"Object","Boy pokes heart","","VO","VO","Unclassified","Spatial.Absent","Spatial_Clipped_134",1
+"309",25,"Free",13,"Person","Girl throws old lady","","VO","VO","Unclassified","Spatial.Absent","Spatial_Clipped_135",1
+"310",25,"Free",14,"Person","Old lady rubs fireman","","OVS","OVS","VerbMedial","Spatial.Absent","Spatial_Clipped_135",1
+"311",25,"Free",15,"Object","Old lady kisses star","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_135",1
+"312",25,"Free",16,"Person","Fireman kicks girl","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_135",1
+"313",25,"Free",18,"Person","Girl elbows old lady","","VO","VO","Unclassified","Spatial.Absent","Spatial_Clipped_136",1
+"314",25,"Free",20,"Object","Fireman throws star","","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_136",1
+"315",25,"Free",21,"Person","Boy lifts girl","","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_137",1
+"316",25,"Free",22,"Object","Girl rubs heart","","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_137",1
+"317",25,"Free",24,"Object","Old lady elbows ball","","VO","VO","Unclassified","Spatial.Absent","Spatial_Clipped_137",1
+"318",25,"Free",25,"Person","Fireman pushes boy","","VO","VO","Unclassified","Spatial.Absent","Spatial_Clipped_138",1
+"319",25,"Free",27,"Object","Girl pushes car","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_138",1
+"320",25,"Free",28,"Object","Boy kicks ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_138",1
+"321",26,"Case",5,"Object","Boy kicks ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_151",1
+"322",26,"Case",6,"Object","Girl pushes car","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_151",1
+"323",26,"Case",8,"Person","Fireman pushes boy","","SVOSVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_151",1
+"324",26,"Case",9,"Object","Old lady elbows ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_152",1
+"325",26,"Case",11,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_152",1
+"326",26,"Case",12,"Person","Boy lifts girl","","SVOV","VOV","Unclassified","Spatial.Absent","Spatial_Clipped_152",1
+"327",26,"Case",13,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_153",1
+"328",26,"Case",15,"Person","Girl elbows old lady","","SOSOVSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_153",1
+"329",26,"Case",17,"Person","Fireman kicks girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_154",1
+"330",26,"Case",18,"Object","Old lady kisses star","","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_154",1
+"331",26,"Case",19,"Person","Old lady rubs fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_154",1
+"332",26,"Case",20,"Person","Girl throws old lady","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_154",1
+"333",26,"Case",24,"Object","Boy pokes heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_155",1
+"334",26,"Case",25,"Object","Fireman lifts car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_156",1
+"335",26,"Case",26,"Person","Old lady pokes fireman","","SOSVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_156",1
+"336",26,"Case",28,"Person","Girl kisses boy","","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_156",1
+"337",26,"Free",5,"Object","Boy kicks ball","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_145",1
+"338",26,"Free",6,"Object","Girl pushes car","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_145",1
+"339",26,"Free",8,"Person","Fireman pushes boy","","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_145",1
+"340",26,"Free",9,"Object","Old lady elbows ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_146",1
+"341",26,"Free",11,"Object","Girl rubs heart","","OVS","OVS","VerbMedial","Spatial.Absent","Spatial_Clipped_146",1
+"342",26,"Free",12,"Person","Boy lifts girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_146",1
+"343",26,"Free",13,"Object","Fireman throws star","","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_147",1
+"344",26,"Free",15,"Person","Girl elbows old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_147",1
+"345",26,"Free",17,"Person","Fireman kicks girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_148",1
+"346",26,"Free",18,"Object","Old lady kisses star","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_148",1
+"347",26,"Free",19,"Person","Old lady rubs fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_148",1
+"348",26,"Free",20,"Person","Girl throws old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_148",1
+"349",26,"Free",24,"Object","Boy pokes heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_149",1
+"350",26,"Free",25,"Object","Fireman lifts car","","SOSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_150",1
+"351",26,"Free",26,"Person","Old lady pokes fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_150",1
+"352",26,"Free",28,"Person","Girl kisses boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_150",1
+"353",27,"Case",5,"Person","Girl kisses boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_163",1
+"354",27,"Case",7,"Person","Old lady pokes fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_163",1
+"355",27,"Case",8,"Object","Fireman lifts car","","VOV","VOV","Unclassified","Spatial.Absent","Spatial_Clipped_163",1
+"356",27,"Case",9,"Object","Boy pokes heart","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_164",1
+"357",27,"Case",13,"Person","Girl throws old lady","","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_165",1
+"358",27,"Case",14,"Person","Old lady rubs fireman","","OSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_165",1
+"359",27,"Case",15,"Object","Old lady kisses star","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_165",1
+"360",27,"Case",16,"Person","Fireman kicks girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_165",1
+"361",27,"Case",18,"Person","Girl elbows old lady","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_166",1
+"362",27,"Case",20,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_166",1
+"363",27,"Case",21,"Person","Boy lifts girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_167",1
+"364",27,"Case",22,"Object","Girl rubs heart","","SVOV","VOV","Unclassified","Spatial.Absent","Spatial_Clipped_167",1
+"365",27,"Case",24,"Object","Old lady elbows ball","","VOV","VOV","Unclassified","Spatial.Absent","Spatial_Clipped_167",1
+"366",27,"Case",25,"Person","Fireman pushes boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_168",1
+"367",27,"Case",27,"Object","Girl pushes car","","SVOVO","OVO","Unclassified","Spatial.Absent","Spatial_Clipped_168",1
+"368",27,"Case",28,"Object","Boy kicks ball","","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_168",1
+"369",27,"Free",5,"Person","Girl kisses boy","","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_157",1
+"370",27,"Free",7,"Person","Old lady pokes fireman","","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_157",1
+"371",27,"Free",8,"Object","Fireman lifts car","","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_157",1
+"372",27,"Free",9,"Object","Boy pokes heart","","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_158",1
+"373",27,"Free",13,"Person","Girl throws old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_159",1
+"374",27,"Free",14,"Person","Old lady rubs fireman","","OSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_159",1
+"375",27,"Free",15,"Object","Old lady kisses star","","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_159",1
+"376",27,"Free",16,"Person","Fireman kicks girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_159",1
+"377",27,"Free",18,"Person","Girl elbows old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_160",1
+"378",27,"Free",20,"Object","Fireman throws star","","VOV","VOV","Unclassified","Spatial.Absent","Spatial_Clipped_160",1
+"379",27,"Free",21,"Person","Boy lifts girl","","VO","VO","Unclassified","Spatial.Absent","Spatial_Clipped_161",1
+"380",27,"Free",22,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_161",1
+"381",27,"Free",24,"Object","Old lady elbows ball","","OSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_161",1
+"382",27,"Free",25,"Person","Fireman pushes boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_162",1
+"383",27,"Free",27,"Object","Girl pushes car","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_162",1
+"384",27,"Free",28,"Object","Boy kicks ball","","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_162",1
+"385",29,"Case",5,"Person","Girl kisses boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_187",1
+"386",29,"Case",7,"Person","Old lady pokes fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_187",1
+"387",29,"Case",8,"Object","Fireman lifts car","","SV(OV)","SV(OV)","Unclassified","Spatial.Present","Spatial_Clipped_187",1
+"388",29,"Case",9,"Object","Boy pokes heart","","SOSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_188",1
+"389",29,"Case",13,"Person","Girl throws old lady","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_189",1
+"390",29,"Case",14,"Person","Old lady rubs fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_189",1
+"391",29,"Case",15,"Object","Old lady kisses star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_189",1
+"392",29,"Case",16,"Person","Fireman kicks girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_189",1
+"393",29,"Case",18,"Person","Girl elbows old lady","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_190",1
+"394",29,"Case",20,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_190",1
+"395",29,"Case",21,"Person","Boy lifts girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_191",1
+"396",29,"Case",22,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_191",1
+"397",29,"Case",24,"Object","Old lady elbows ball","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_191",1
+"398",29,"Case",25,"Person","Fireman pushes boy","","SVOV","VOV","Unclassified","Spatial.Present","Spatial_Clipped_192",1
+"399",29,"Case",27,"Object","Girl pushes car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_192",1
+"400",29,"Case",28,"Object","Boy kicks ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_192",1
+"401",29,"Free",5,"Person","Girl kisses boy","","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_181",1
+"402",29,"Free",7,"Person","Old lady pokes fireman","","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_181",1
+"403",29,"Free",8,"Object","Fireman lifts car","","VOV","VOV","Unclassified","Spatial.Absent","Spatial_Clipped_181",1
+"404",29,"Free",9,"Object","Boy pokes heart","","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_182",1
+"405",29,"Free",13,"Person","Girl throws old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_183",1
+"406",29,"Free",14,"Person","Old lady rubs fireman","","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_183",1
+"407",29,"Free",15,"Object","Old lady kisses star","","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_183",1
+"408",29,"Free",16,"Person","Fireman kicks girl","","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_183",1
+"409",29,"Free",18,"Person","Girl elbows old lady","","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_184",1
+"410",29,"Free",20,"Object","Fireman throws star","","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_184",1
+"411",29,"Free",21,"Person","Boy lifts girl","","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_185",1
+"412",29,"Free",22,"Object","Girl rubs heart","","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_185",1
+"413",29,"Free",24,"Object","Old lady elbows ball","","VO","VO","Unclassified","Spatial.Absent","Spatial_Clipped_185",1
+"414",29,"Free",25,"Person","Fireman pushes boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_186",1
+"415",29,"Free",27,"Object","Girl pushes car","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_186",1
+"416",29,"Free",28,"Object","Boy kicks ball","","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_186",1
+"417",30,"Case",5,"Object","Boy kicks ball","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_199",1
+"418",30,"Case",6,"Object","Girl pushes car","","OSVS","SVS","Unclassified","Spatial.Absent","Spatial_Clipped_199",1
+"419",30,"Case",8,"Person","Fireman pushes boy","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_199",1
+"420",30,"Case",9,"Object","Old lady elbows ball","","SOVOV","VOV","Unclassified","Spatial.Present","Spatial_Clipped_200",1
+"421",30,"Case",11,"Object","Girl rubs heart","","SOVSVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_200",1
+"422",30,"Case",12,"Person","Boy lifts girl","","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_200",1
+"423",30,"Case",13,"Object","Fireman throws star","","SOVSVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_201",1
+"424",30,"Case",15,"Person","Girl elbows old lady","","SOSVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_201",1
+"425",30,"Case",17,"Person","Fireman kicks girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_202",1
+"426",30,"Case",18,"Object","Old lady kisses star","","SOSVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_202",1
+"427",30,"Case",19,"Person","Old lady rubs fireman","","SOVOSVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_202",1
+"428",30,"Case",20,"Person","Girl throws old lady","","SOSVOV","VOV","Unclassified","Spatial.Present","Spatial_Clipped_202",1
+"429",30,"Case",24,"Object","Boy pokes heart","","OSVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_203",1
+"430",30,"Case",25,"Object","Fireman lifts car","","OSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_204",1
+"431",30,"Case",26,"Person","Old lady pokes fireman","","SOSVOVSV","VSV","Unclassified","Spatial.Absent","Spatial_Clipped_204",1
+"432",30,"Case",28,"Person","Girl kisses boy","","SOSVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_204",1
+"433",30,"Free",5,"Object","Boy kicks ball","","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_193",1
+"434",30,"Free",6,"Object","Girl pushes car","","OVS","OVS","VerbMedial","Spatial.Present","Spatial_Clipped_193",1
+"435",30,"Free",8,"Person","Fireman pushes boy","","VOSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_193",1
+"436",30,"Free",9,"Object","Old lady elbows ball","","SVOV","VOV","Unclassified","Spatial.Absent","Spatial_Clipped_194",1
+"437",30,"Free",11,"Object","Girl rubs heart","","SOVOV","VOV","Unclassified","Spatial.Absent","Spatial_Clipped_194",1
+"438",30,"Free",12,"Person","Boy lifts girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_194",1
+"439",30,"Free",13,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_195",1
+"440",30,"Free",15,"Person","Girl elbows old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_195",1
+"441",30,"Free",17,"Person","Fireman kicks girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_196",1
+"442",30,"Free",18,"Object","Old lady kisses star","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_196",1
+"443",30,"Free",19,"Person","Old lady rubs fireman","","SVOV","VOV","Unclassified","Spatial.Absent","Spatial_Clipped_196",1
+"444",30,"Free",20,"Person","Girl throws old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_196",1
+"445",30,"Free",24,"Object","Boy pokes heart","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_197",1
+"446",30,"Free",25,"Object","Fireman lifts car","","OSVOV","VOV","Unclassified","Spatial.Absent","Spatial_Clipped_198",1
+"447",30,"Free",26,"Person","Old lady pokes fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_198",1
+"448",30,"Free",28,"Person","Girl kisses boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_198",1
+"449",31,"Case",5,"Object","Boy kicks ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_211",1
+"450",31,"Case",6,"Object","Girl pushes car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_211",1
+"451",31,"Case",8,"Person","Fireman pushes boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_211",1
+"452",31,"Case",9,"Object","Old lady elbows ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_212",1
+"453",31,"Case",11,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_212",1
+"454",31,"Case",12,"Person","Boy lifts girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_212",1
+"455",31,"Case",13,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_213",1
+"456",31,"Case",15,"Person","Girl elbows old lady","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_213",1
+"457",31,"Case",17,"Person","Fireman kicks girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_214",1
+"458",31,"Case",18,"Object","Old lady kisses star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_214",1
+"459",31,"Case",19,"Person","Old lady rubs fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_214",1
+"460",31,"Case",20,"Person","Girl throws old lady","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_214",1
+"461",31,"Case",24,"Object","Boy pokes heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_215",1
+"462",31,"Case",25,"Object","Fireman lifts car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_216",1
+"463",31,"Case",26,"Person","Old lady pokes fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_216",1
+"464",31,"Case",28,"Person","Girl kisses boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_216",1
+"465",31,"Free",5,"Object","Boy kicks ball","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_205",1
+"466",31,"Free",6,"Object","Girl pushes car","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_205",1
+"467",31,"Free",8,"Person","Fireman pushes boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_205",1
+"468",31,"Free",9,"Object","Old lady elbows ball","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_206",1
+"469",31,"Free",11,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_206",1
+"470",31,"Free",12,"Person","Boy lifts girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_206",1
+"471",31,"Free",13,"Object","Fireman throws star","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_207",1
+"472",31,"Free",15,"Person","Girl elbows old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_207",1
+"473",31,"Free",17,"Person","Fireman kicks girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_208",1
+"474",31,"Free",18,"Object","Old lady kisses star","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_208",1
+"475",31,"Free",19,"Person","Old lady rubs fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_208",1
+"476",31,"Free",20,"Person","Girl throws old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_208",1
+"477",31,"Free",24,"Object","Boy pokes heart","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_209",1
+"478",31,"Free",25,"Object","Fireman lifts car","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_210",1
+"479",31,"Free",26,"Person","Old lady pokes fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_210",1
+"480",31,"Free",28,"Person","Girl kisses boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_210",1
+"481",32,"Case",5,"Person","Girl kisses boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_223",1
+"482",32,"Case",7,"Person","Old lady pokes fireman","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_223",1
+"483",32,"Case",8,"Object","Fireman lifts car","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_223",1
+"484",32,"Case",9,"Object","Boy pokes heart","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_224",1
+"485",32,"Case",13,"Person","Girl throws old lady","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_225",1
+"486",32,"Case",14,"Person","Old lady rubs fireman","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_225",1
+"487",32,"Case",15,"Object","Old lady kisses star","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_225",1
+"488",32,"Case",16,"Person","Fireman kicks girl","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_225",1
+"489",32,"Case",18,"Person","Girl elbows old lady","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_226",1
+"490",32,"Case",20,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_226",1
+"491",32,"Case",21,"Person","Boy lifts girl","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_227",1
+"492",32,"Case",22,"Object","Girl rubs heart","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_227",1
+"493",32,"Case",24,"Object","Old lady elbows ball","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_227",1
+"494",32,"Case",25,"Person","Fireman pushes boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_228",1
+"495",32,"Case",27,"Object","Girl pushes car","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_228",1
+"496",32,"Case",28,"Object","Boy kicks ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_228",1
+"497",32,"Free",5,"Person","Girl kisses boy","","SV","SV","Unclassified","Spatial.Present","Spatial_Clipped_217",1
+"498",32,"Free",7,"Person","Old lady pokes fireman","","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_217",1
+"499",32,"Free",8,"Object","Fireman lifts car","","OV","OV","Unclassified","Spatial.Present","Spatial_Clipped_217",1
+"500",32,"Free",9,"Object","Boy pokes heart","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_218",1
+"501",32,"Free",13,"Person","Girl throws old lady","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_219",1
+"502",32,"Free",14,"Person","Old lady rubs fireman","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_219",1
+"503",32,"Free",15,"Object","Old lady kisses star","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_219",1
+"504",32,"Free",16,"Person","Fireman kicks girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_219",1
+"505",32,"Free",18,"Person","Girl elbows old lady","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_220",1
+"506",32,"Free",20,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_220",1
+"507",32,"Free",21,"Person","Boy lifts girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_221",1
+"508",32,"Free",22,"Object","Girl rubs heart","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_221",1
+"509",32,"Free",24,"Object","Old lady elbows ball","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_221",1
+"510",32,"Free",25,"Person","Fireman pushes boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_222",1
+"511",32,"Free",27,"Object","Girl pushes car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_222",1
+"512",32,"Free",28,"Object","Boy kicks ball","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_222",1
+"513",33,"Case",5,"Person","Girl kisses boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_235",1
+"514",33,"Case",7,"Person","Old lady pokes fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_235",1
+"515",33,"Case",8,"Object","Fireman lifts car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_235",1
+"516",33,"Case",9,"Object","Boy pokes heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_236",1
+"517",33,"Case",13,"Person","Girl throws old lady","","SOSOVSVOV","VOV","Unclassified","Spatial.Present","Spatial_Clipped_237",1
+"518",33,"Case",14,"Person","Old lady rubs fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_237",1
+"519",33,"Case",15,"Object","Old lady kisses star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_237",1
+"520",33,"Case",16,"Person","Fireman kicks girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_237",1
+"521",33,"Case",18,"Person","Girl elbows old lady","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_238",1
+"522",33,"Case",20,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_238",1
+"523",33,"Case",21,"Person","Boy lifts girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_239",1
+"524",33,"Case",22,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_239",1
+"525",33,"Case",24,"Object","Old lady elbows ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_239",1
+"526",33,"Case",25,"Person","Fireman pushes boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_240",1
+"527",33,"Case",27,"Object","Girl pushes car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_240",1
+"528",33,"Case",28,"Object","Boy kicks ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_240",1
+"529",33,"Free",5,"Person","Girl kisses boy","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_229",1
+"530",33,"Free",7,"Person","Old lady pokes fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_229",1
+"531",33,"Free",8,"Object","Fireman lifts car","","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_229",1
+"532",33,"Free",9,"Object","Boy pokes heart","","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_230",1
+"533",33,"Free",13,"Person","Girl throws old lady","","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_231",1
+"534",33,"Free",14,"Person","Old lady rubs fireman","","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_231",1
+"535",33,"Free",15,"Object","Old lady kisses star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_231",1
+"536",33,"Free",16,"Person","Fireman kicks girl","","SOSVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_231",1
+"537",33,"Free",18,"Person","Girl elbows old lady","","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_232",1
+"538",33,"Free",20,"Object","Fireman throws star","","SOSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_232",1
+"539",33,"Free",21,"Person","Boy lifts girl","","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_233",1
+"540",33,"Free",22,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_233",1
+"541",33,"Free",24,"Object","Old lady elbows ball","","SOSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_233",1
+"542",33,"Free",25,"Person","Fireman pushes boy","","SOSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_234",1
+"543",33,"Free",27,"Object","Girl pushes car","","SOSVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_234",1
+"544",33,"Free",28,"Object","Boy kicks ball","","SOSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_234",1
+"545",34,"Case",5,"Object","Boy kicks ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_247",1
+"546",34,"Case",6,"Object","Girl pushes car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_247",1
+"547",34,"Case",8,"Person","Fireman pushes boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_247",1
+"548",34,"Case",9,"Object","Old lady elbows ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_248",1
+"549",34,"Case",11,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_248",1
+"550",34,"Case",12,"Person","Boy lifts girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_248",1
+"551",34,"Case",13,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_249",1
+"552",34,"Case",15,"Person","Girl elbows old lady","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_249",1
+"553",34,"Case",17,"Person","Fireman kicks girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_250",1
+"554",34,"Case",18,"Object","Old lady kisses star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_250",1
+"555",34,"Case",19,"Person","Old lady rubs fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_250",1
+"556",34,"Case",20,"Person","Girl throws old lady","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_250",1
+"557",34,"Case",24,"Object","Boy pokes heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_251",1
+"558",34,"Case",25,"Object","Fireman lifts car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_252",1
+"559",34,"Case",26,"Person","Old lady pokes fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_252",1
+"560",34,"Case",28,"Person","Girl kisses boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_252",1
+"561",34,"Free",5,"Object","Boy kicks ball","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_241",1
+"562",34,"Free",6,"Object","Girl pushes car","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_241",1
+"563",34,"Free",8,"Person","Fireman pushes boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_241",1
+"564",34,"Free",9,"Object","Old lady elbows ball","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_242",1
+"565",34,"Free",11,"Object","Girl rubs heart","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_242",1
+"566",34,"Free",12,"Person","Boy lifts girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_242",1
+"567",34,"Free",13,"Object","Fireman throws star","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_243",1
+"568",34,"Free",15,"Person","Girl elbows old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_243",1
+"569",34,"Free",17,"Person","Fireman kicks girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_244",1
+"570",34,"Free",18,"Object","Old lady kisses star","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_244",1
+"571",34,"Free",19,"Person","Old lady rubs fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_244",1
+"572",34,"Free",20,"Person","Girl throws old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_244",1
+"573",34,"Free",24,"Object","Boy pokes heart","","SO","SO","Unclassified","Spatial.Absent","Spatial_Clipped_245",1
+"574",34,"Free",25,"Object","Fireman lifts car","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_246",1
+"575",34,"Free",26,"Person","Old lady pokes fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_246",1
+"576",34,"Free",28,"Person","Girl kisses boy","","OSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_246",1
+"577",36,"Case",5,"Object","Boy kicks ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_259",1
+"578",36,"Case",6,"Object","Girl pushes car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_259",1
+"579",36,"Case",8,"Person","Fireman pushes boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_259",1
+"580",36,"Case",9,"Object","Old lady elbows ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_260",1
+"581",36,"Case",11,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_260",1
+"582",36,"Case",12,"Person","Boy lifts girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_260",1
+"583",36,"Case",13,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_261",1
+"584",36,"Case",15,"Person","Girl elbows old lady","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_261",1
+"585",36,"Case",17,"Person","Fireman kicks girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_262",1
+"586",36,"Case",18,"Object","Old lady kisses star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_262",1
+"587",36,"Case",19,"Person","Old lady rubs fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_262",1
+"588",36,"Case",20,"Person","Girl throws old lady","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_262",1
+"589",36,"Case",24,"Object","Boy pokes heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_263",1
+"590",36,"Case",25,"Object","Fireman lifts car","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_264",1
+"591",36,"Case",26,"Person","Old lady pokes fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_264",1
+"592",36,"Case",28,"Person","Girl kisses boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_264",1
+"593",36,"Free",5,"Object","Boy kicks ball","","VO","VO","Unclassified","Spatial.Absent","Spatial_Clipped_253",1
+"594",36,"Free",6,"Object","Girl pushes car","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_253",1
+"595",36,"Free",8,"Person","Fireman pushes boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_253",1
+"596",36,"Free",9,"Object","Old lady elbows ball","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_254",1
+"597",36,"Free",11,"Object","Girl rubs heart","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_254",1
+"598",36,"Free",12,"Person","Boy lifts girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_254",1
+"599",36,"Free",13,"Object","Fireman throws star","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_255",1
+"600",36,"Free",15,"Person","Girl elbows old lady","","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_255",1
+"601",36,"Free",17,"Person","Fireman kicks girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_256",1
+"602",36,"Free",18,"Object","Old lady kisses star","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_256",1
+"603",36,"Free",19,"Person","Old lady rubs fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_256",1
+"604",36,"Free",20,"Person","Girl throws old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_256",1
+"605",36,"Free",24,"Object","Boy pokes heart","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_257",1
+"606",36,"Free",25,"Object","Fireman lifts car","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_258",1
+"607",36,"Free",26,"Person","Old lady pokes fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_258",1
+"608",36,"Free",28,"Person","Girl kisses boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_258",1
+"609",37,"Case",5,"Person","Girl kisses boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_271",1
+"610",37,"Case",7,"Person","Old lady pokes fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_271",1
+"611",37,"Case",8,"Object","Fireman lifts car","","OV","OV","Unclassified","Spatial.Present","Spatial_Clipped_271",1
+"612",37,"Case",9,"Object","Boy pokes heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_272",1
+"613",37,"Case",13,"Person","Girl throws old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_273",1
+"614",37,"Case",14,"Person","Old lady rubs fireman","","SVOV","VOV","Unclassified","Spatial.Absent","Spatial_Clipped_273",1
+"615",37,"Case",15,"Object","Old lady kisses star","","SOV","SOV","VerbLateral","?","Spatial_Clipped_273",1
+"616",37,"Case",16,"Person","Fireman kicks girl","","SVOV","VOV","Unclassified","Spatial.Absent","Spatial_Clipped_273",1
+"617",37,"Case",18,"Person","Girl elbows old lady","","OVSV","VSV","Unclassified","Spatial.Present","Spatial_Clipped_274",1
+"618",37,"Case",20,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_274",1
+"619",37,"Case",21,"Person","Boy lifts girl","","SVOV","VOV","Unclassified","Spatial.Present","Spatial_Clipped_275",1
+"620",37,"Case",22,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_275",1
+"621",37,"Case",24,"Object","Old lady elbows ball","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_275",1
+"622",37,"Case",25,"Person","Fireman pushes boy","","SVOV","VOV","Unclassified","Spatial.Present","Spatial_Clipped_276",1
+"623",37,"Case",27,"Object","Girl pushes car","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_276",1
+"624",37,"Case",28,"Object","Boy kicks ball","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_276",1
+"625",37,"Free",5,"Person","Girl kisses boy","","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_265",1
+"626",37,"Free",7,"Person","Old lady pokes fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_265",1
+"627",37,"Free",8,"Object","Fireman lifts car","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_265",1
+"628",37,"Free",9,"Object","Boy pokes heart","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_266",1
+"629",37,"Free",13,"Person","Girl throws old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_267",1
+"630",37,"Free",14,"Person","Old lady rubs fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_267",1
+"631",37,"Free",15,"Object","Old lady kisses star","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_267",1
+"632",37,"Free",16,"Person","Fireman kicks girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_267",1
+"633",37,"Free",18,"Person","Girl elbows old lady","","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_268",1
+"634",37,"Free",20,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_268",1
+"635",37,"Free",21,"Person","Boy lifts girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_269",1
+"636",37,"Free",22,"Object","Girl rubs heart","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_269",1
+"637",37,"Free",24,"Object","Old lady elbows ball","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_269",1
+"638",37,"Free",25,"Person","Fireman pushes boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_270",1
+"639",37,"Free",27,"Object","Girl pushes car","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_270",1
+"640",37,"Free",28,"Object","Boy kicks ball","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_270",1
+"641",38,"Case",5,"Object","Boy kicks ball","","SO,SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_283",1
+"642",38,"Case",6,"Object","Girl pushes car","A","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_283",1
+"643",38,"Case",8,"Person","Fireman pushes boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_283",1
+"644",38,"Case",9,"Object","Old lady elbows ball","","SO,SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_284",1
+"645",38,"Case",11,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_284",1
+"646",38,"Case",12,"Person","Boy lifts girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_284",1
+"647",38,"Case",13,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_285",1
+"648",38,"Case",15,"Person","Girl elbows old lady","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_285",1
+"649",38,"Case",17,"Person","Fireman kicks girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_286",1
+"650",38,"Case",18,"Object","Old lady kisses star","","SO,SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_286",1
+"651",38,"Case",19,"Person","Old lady rubs fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_286",1
+"652",38,"Case",20,"Person","Girl throws old lady","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_286",1
+"653",38,"Case",24,"Object","Boy pokes heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_287",1
+"654",38,"Case",25,"Object","Fireman lifts car","A","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_288",1
+"655",38,"Case",26,"Person","Old lady pokes fireman","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_288",1
+"656",38,"Case",28,"Person","Girl kisses boy","","SO,SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_288",1
+"657",38,"Free",5,"Object","Boy kicks ball","","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_277",1
+"658",38,"Free",6,"Object","Girl pushes car","A","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_277",1
+"659",38,"Free",8,"Person","Fireman pushes boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_277",1
+"660",38,"Free",9,"Object","Old lady elbows ball","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_278",1
+"661",38,"Free",11,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","?","Spatial_Clipped_278",1
+"662",38,"Free",12,"Person","Boy lifts girl","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_278",1
+"663",38,"Free",13,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_279",1
+"664",38,"Free",15,"Person","Girl elbows old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_279",1
+"665",38,"Free",17,"Person","Fireman kicks girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_280",1
+"666",38,"Free",18,"Object","Old lady kisses star","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_280",1
+"667",38,"Free",19,"Person","Old lady rubs fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_280",1
+"668",38,"Free",20,"Person","Girl throws old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_280",1
+"669",38,"Free",24,"Object","Boy pokes heart","","SOV","SOV","VerbLateral","?","Spatial_Clipped_281",1
+"670",38,"Free",25,"Object","Fireman lifts car","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_282",1
+"671",38,"Free",26,"Person","Old lady pokes fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_282",1
+"672",38,"Free",28,"Person","Girl kisses boy","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_282",1
+"673",46,"Case",5,"Object","Boy kicks ball","No","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_307",1
+"674",46,"Case",6,"Object","Girl pushes car","No","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_307",1
+"675",46,"Case",8,"Person","Fireman pushes boy","No","VO","VO","Unclassified","Spatial.Present","Spatial_Clipped_307",1
+"676",46,"Case",9,"Object","Old lady elbows ball","No","OV","OV","Unclassified","Spatial.Present","Spatial_Clipped_308",1
+"677",46,"Case",11,"Object","Girl rubs heart","No","OV","OV","Unclassified","Spatial.Present","Spatial_Clipped_308",1
+"678",46,"Case",12,"Person","Boy lifts girl","No","V","V","Unclassified","Spatial.Present","Spatial_Clipped_308",1
+"679",46,"Case",13,"Object","Fireman throws star","No","OV","OV","Unclassified","Spatial.Present","Spatial_Clipped_309",1
+"680",46,"Case",15,"Person","Girl elbows old lady","No","VO","VO","Unclassified","Spatial.Present","Spatial_Clipped_309",1
+"681",46,"Case",17,"Person","Fireman kicks girl","No","V","V","Unclassified","Spatial.Present","Spatial_Clipped_310",1
+"682",46,"Case",18,"Object","Old lady kisses star","No","OV","OV","Unclassified","Spatial.Present","Spatial_Clipped_310",1
+"683",46,"Case",19,"Person","Old lady rubs fireman","No","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_310",1
+"684",46,"Case",20,"Person","Girl throws old lady","No","V","V","Unclassified","Spatial.Present","Spatial_Clipped_310",1
+"685",46,"Case",24,"Object","Boy pokes heart","No","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_311",1
+"686",46,"Case",25,"Object","Fireman lifts car","No","OV","OV","Unclassified","Spatial.Present","Spatial_Clipped_312",1
+"687",46,"Case",26,"Person","Old lady pokes fireman","No","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_312",1
+"688",46,"Case",28,"Person","Girl kisses boy","No","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_312",1
+"689",46,"Free",5,"Object","Boy kicks ball","No","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_301",1
+"690",46,"Free",6,"Object","Girl pushes car","No","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_301",1
+"691",46,"Free",8,"Person","Fireman pushes boy","No","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_301",1
+"692",46,"Free",9,"Object","Old lady elbows ball","No","SVOV","VOV","Unclassified","Spatial.Absent","Spatial_Clipped_302",1
+"693",46,"Free",11,"Object","Girl rubs heart","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_302",1
+"694",46,"Free",12,"Person","Boy lifts girl","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_302",1
+"695",46,"Free",13,"Object","Fireman throws star","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_303",1
+"696",46,"Free",15,"Person","Girl elbows old lady","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_303",1
+"697",46,"Free",17,"Person","Fireman kicks girl","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_304",1
+"698",46,"Free",18,"Object","Old lady kisses star","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_304",1
+"699",46,"Free",19,"Person","Old lady rubs fireman","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_304",1
+"700",46,"Free",20,"Person","Girl throws old lady","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_304",1
+"701",46,"Free",24,"Object","Boy pokes heart","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_305",1
+"702",46,"Free",25,"Object","Fireman lifts car","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_306",1
+"703",46,"Free",26,"Person","Old lady pokes fireman","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_306",1
+"704",46,"Free",28,"Person","Girl kisses boy","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_306",1
+"705",47,"Case",5,"Person","Girl kisses boy","no","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_319",1
+"706",47,"Case",7,"Person","Old lady pokes fireman","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_319",1
+"707",47,"Case",8,"Object","Fireman lifts car","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_319",1
+"708",47,"Case",9,"Object","Boy pokes heart","no","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_320",1
+"709",47,"Case",13,"Person","Girl throws old lady","no","VOV","VOV","Unclassified","Spatial.Absent","Spatial_Clipped_321",1
+"710",47,"Case",14,"Person","Old lady rubs fireman","no","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_321",1
+"711",47,"Case",15,"Object","Old lady kisses star","no","SOSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_321",1
+"712",47,"Case",16,"Person","Fireman kicks girl","no","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_321",1
+"713",47,"Case",18,"Person","Girl elbows old lady","no","SOSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_322",1
+"714",47,"Case",20,"Object","Fireman throws star","no","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_322",1
+"715",47,"Case",21,"Person","Boy lifts girl","no","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_323",1
+"716",47,"Case",22,"Object","Girl rubs heart","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_323",1
+"717",47,"Case",24,"Object","Old lady elbows ball","no","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_323",1
+"718",47,"Case",25,"Person","Fireman pushes boy","no","SOSVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_324",1
+"719",47,"Case",27,"Object","Girl pushes car","no","SOSOVO","OVO","Unclassified","Spatial.Present","Spatial_Clipped_324",1
+"720",47,"Case",28,"Object","Boy kicks ball","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_324",1
+"721",47,"Free",5,"Person","Girl kisses boy","no","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_313",1
+"722",47,"Free",7,"Person","Old lady pokes fireman","no","VO","VO","Unclassified","Spatial.Absent","Spatial_Clipped_313",1
+"723",47,"Free",8,"Object","Fireman lifts car","no","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_313",1
+"724",47,"Free",9,"Object","Boy pokes heart","no","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_314",1
+"725",47,"Free",13,"Person","Girl throws old lady","no","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_315",1
+"726",47,"Free",14,"Person","Old lady rubs fireman","no","SOSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_315",1
+"727",47,"Free",15,"Object","Old lady kisses star","no","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_315",1
+"728",47,"Free",16,"Person","Fireman kicks girl","no","SOSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_315",1
+"729",47,"Free",18,"Person","Girl elbows old lady","no","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_316",1
+"730",47,"Free",20,"Object","Fireman throws star","no","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_316",1
+"731",47,"Free",21,"Person","Boy lifts girl","no","SOSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_317",1
+"732",47,"Free",22,"Object","Girl rubs heart","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_317",1
+"733",47,"Free",24,"Object","Old lady elbows ball","no","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_317",1
+"734",47,"Free",25,"Person","Fireman pushes boy","no","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_318",1
+"735",47,"Free",27,"Object","Girl pushes car","no","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_318",1
+"736",47,"Free",28,"Object","Boy kicks ball","no","OSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_318",1
+"739",49,"Case",5,"Person","Girl kisses boy","No","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_343",1
+"740",49,"Case",7,"Person","Old lady pokes fireman","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_343",1
+"741",49,"Case",8,"Object","Fireman lifts car","No","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_343",1
+"742",49,"Case",9,"Object","Boy pokes heart","No","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_344",1
+"743",49,"Case",13,"Person","Girl throws old lady","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_345",1
+"744",49,"Case",14,"Person","Old lady rubs fireman","No","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_345",1
+"745",49,"Case",15,"Object","Old lady kisses star","No","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_345",1
+"746",49,"Case",16,"Person","Fireman kicks girl","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_345",1
+"747",49,"Case",18,"Person","Girl elbows old lady","No","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_346",1
+"748",49,"Case",20,"Object","Fireman throws star","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_346",1
+"749",49,"Case",21,"Person","Boy lifts girl","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_347",1
+"750",49,"Case",22,"Object","Girl rubs heart","No","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_347",1
+"751",49,"Case",24,"Object","Old lady elbows ball","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_347",1
+"752",49,"Case",25,"Person","Fireman pushes boy","","---","","Unclassified","Spatial.Absent","Spatial_Clipped_348",1
+"753",49,"Case",27,"Object","Girl pushes car","","---","","Unclassified","Spatial.Absent","Spatial_Clipped_348",1
+"754",49,"Case",28,"Object","Boy kicks ball","","---","","Unclassified","Spatial.Absent","Spatial_Clipped_348",1
+"755",49,"Free",5,"Person","Girl kisses boy","No","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_337",1
+"756",49,"Free",7,"Person","Old lady pokes fireman","No","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_337",1
+"757",49,"Free",8,"Object","Fireman lifts car","No","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_337",1
+"758",49,"Free",9,"Object","Boy pokes heart","No","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_338",1
+"759",49,"Free",13,"Person","Girl throws old lady","No","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_339",1
+"760",49,"Free",14,"Person","Old lady rubs fireman","No","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_339",1
+"761",49,"Free",15,"Object","Old lady kisses star","No","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_339",1
+"762",49,"Free",16,"Person","Fireman kicks girl","No","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_339",1
+"763",49,"Free",18,"Person","Girl elbows old lady","No","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_340",1
+"764",49,"Free",20,"Object","Fireman throws star","No","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_340",1
+"765",49,"Free",21,"Person","Boy lifts girl","No","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_341",1
+"766",49,"Free",22,"Object","Girl rubs heart","No","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_341",1
+"767",49,"Free",24,"Object","Old lady elbows ball","No","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_341",1
+"768",49,"Free",25,"Person","Fireman pushes boy","No","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_342",1
+"769",49,"Free",27,"Object","Girl pushes car","No","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_342",1
+"770",49,"Free",28,"Object","Boy kicks ball","No","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_342",1
+"771",50,"Case",5,"Object","Boy kicks ball","no","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_355",1
+"772",50,"Case",6,"Object","Girl pushes car","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_355",1
+"773",50,"Case",8,"Person","Fireman pushes boy","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_355",1
+"774",50,"Case",9,"Object","Old lady elbows ball","no","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_356",1
+"775",50,"Case",11,"Object","Girl rubs heart","no","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_356",1
+"776",50,"Case",12,"Person","Boy lifts girl","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_356",1
+"777",50,"Case",13,"Object","Fireman throws star","no","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_357",1
+"778",50,"Case",15,"Person","Girl elbows old lady","no","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_357",1
+"779",50,"Case",17,"Person","Fireman kicks girl","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_358",1
+"780",50,"Case",18,"Object","Old lady kisses star","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_358",1
+"781",50,"Case",19,"Person","Old lady rubs fireman","no","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_358",1
+"782",50,"Case",20,"Person","Girl throws old lady","no","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_358",1
+"783",50,"Case",24,"Object","Boy pokes heart","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_359",1
+"784",50,"Case",25,"Object","Fireman lifts car","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_360",1
+"785",50,"Case",26,"Person","Old lady pokes fireman","no","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_360",1
+"786",50,"Case",28,"Person","Girl kisses boy","no","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_360",1
+"787",50,"Free",5,"Object","Boy kicks ball","no","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_349",1
+"788",50,"Free",6,"Object","Girl pushes car","no","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_349",1
+"789",50,"Free",8,"Person","Fireman pushes boy","no","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_349",1
+"790",50,"Free",9,"Object","Old lady elbows ball","no","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_350",1
+"791",50,"Free",11,"Object","Girl rubs heart","no","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_350",1
+"792",50,"Free",12,"Person","Boy lifts girl","no","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_350",1
+"793",50,"Free",13,"Object","Fireman throws star","no","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_351",1
+"794",50,"Free",15,"Person","Girl elbows old lady","no","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_351",1
+"795",50,"Free",17,"Person","Fireman kicks girl","no","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_352",1
+"796",50,"Free",18,"Object","Old lady kisses star","no","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_352",1
+"797",50,"Free",19,"Person","Old lady rubs fireman","no","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_352",1
+"798",50,"Free",20,"Person","Girl throws old lady","no","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_352",1
+"799",50,"Free",24,"Object","Boy pokes heart","no","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_353",1
+"800",50,"Free",25,"Object","Fireman lifts car","N/A","SKIPPED","","Unclassified","Spatial.Absent","Spatial_Clipped_354",1
+"801",50,"Free",26,"Person","Old lady pokes fireman","no","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_354",1
+"802",50,"Free",28,"Person","Girl kisses boy","no","(SO)V","(SO)V","VerbLateral","Spatial.Absent","Spatial_Clipped_354",1
+"803",52,"Case",5,"Object","Boy kicks ball","No","OSSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_367",1
+"804",52,"Case",6,"Object","Girl pushes car","No","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_367",1
+"805",52,"Case",8,"Person","Fireman pushes boy","No","SOSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_367",1
+"806",52,"Case",9,"Object","Old lady elbows ball","No","OSOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_368",1
+"807",52,"Case",11,"Object","Girl rubs heart","No","OSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_368",1
+"808",52,"Case",12,"Person","Boy lifts girl","No","SOSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_368",1
+"809",52,"Case",13,"Object","Fireman throws star","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_369",1
+"810",52,"Case",15,"Person","Girl elbows old lady","No","OSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_369",1
+"811",52,"Case",17,"Person","Fireman kicks girl","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_370",1
+"812",52,"Case",18,"Object","Old lady kisses star","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_370",1
+"813",52,"Case",19,"Person","Old lady rubs fireman","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_370",1
+"814",52,"Case",20,"Person","Girl throws old lady","No","SOSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_370",1
+"815",52,"Case",24,"Object","Boy pokes heart","No","OSSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_371",1
+"816",52,"Case",25,"Object","Fireman lifts car","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_372",1
+"817",52,"Case",26,"Person","Old lady pokes fireman","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_372",1
+"818",52,"Case",28,"Person","Girl kisses boy","No","OSOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_372",1
+"819",52,"Free",5,"Object","Boy kicks ball","No","OSOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_361",1
+"820",52,"Free",6,"Object","Girl pushes car","No","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_361",1
+"821",52,"Free",8,"Person","Fireman pushes boy","No","SOSVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_361",1
+"822",52,"Free",9,"Object","Old lady elbows ball","No","SOSOVO","OVO","Unclassified","Spatial.Present","Spatial_Clipped_362",1
+"823",52,"Free",11,"Object","Girl rubs heart","No","OSOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_362",1
+"824",52,"Free",12,"Person","Boy lifts girl","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_362",1
+"825",52,"Free",13,"Object","Fireman throws star","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_363",1
+"826",52,"Free",15,"Person","Girl elbows old lady","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_363",1
+"827",52,"Free",17,"Person","Fireman kicks girl","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_364",1
+"828",52,"Free",18,"Object","Old lady kisses star","No","SOVO","OVO","Unclassified","Spatial.Present","Spatial_Clipped_364",1
+"829",52,"Free",19,"Person","Old lady rubs fireman","No","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_364",1
+"830",52,"Free",20,"Person","Girl throws old lady","No","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_364",1
+"831",52,"Free",24,"Object","Boy pokes heart","No","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_365",1
+"832",52,"Free",25,"Object","Fireman lifts car","No","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_366",1
+"833",52,"Free",26,"Person","Old lady pokes fireman","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_366",1
+"834",52,"Free",28,"Person","Girl kisses boy","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_366",1
+"835",53,"Case",5,"Person","Girl kisses boy","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_379",1
+"836",53,"Case",7,"Person","Old lady pokes fireman","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_379",1
+"837",53,"Case",8,"Object","Fireman lifts car","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_379",1
+"838",53,"Case",9,"Object","Boy pokes heart","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_380",1
+"839",53,"Case",13,"Person","Girl throws old lady","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_381",1
+"840",53,"Case",14,"Person","Old lady rubs fireman","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_381",1
+"841",53,"Case",15,"Object","Old lady kisses star","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_381",1
+"842",53,"Case",16,"Person","Fireman kicks girl","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_381",1
+"843",53,"Case",18,"Person","Girl elbows old lady","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_382",1
+"844",53,"Case",20,"Object","Fireman throws star","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_382",1
+"845",53,"Case",21,"Person","Boy lifts girl","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_383",1
+"846",53,"Case",22,"Object","Girl rubs heart","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_383",1
+"847",53,"Case",24,"Object","Old lady elbows ball","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_383",1
+"848",53,"Case",25,"Person","Fireman pushes boy","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_384",1
+"849",53,"Case",27,"Object","Girl pushes car","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_384",1
+"850",53,"Case",28,"Object","Boy kicks ball","no","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_384",1
+"851",53,"Free",5,"Person","Girl kisses boy","no","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_373",1
+"852",53,"Free",7,"Person","Old lady pokes fireman","no","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_373",1
+"853",53,"Free",8,"Object","Fireman lifts car","no","SO","SO","Unclassified","Spatial.Absent","Spatial_Clipped_373",1
+"854",53,"Free",9,"Object","Boy pokes heart","no","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_374",1
+"855",53,"Free",13,"Person","Girl throws old lady","no","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_375",1
+"856",53,"Free",14,"Person","Old lady rubs fireman","no","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_375",1
+"857",53,"Free",15,"Object","Old lady kisses star","no","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_375",1
+"858",53,"Free",16,"Person","Fireman kicks girl","no","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_375",1
+"859",53,"Free",18,"Person","Girl elbows old lady","no","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_376",1
+"860",53,"Free",20,"Object","Fireman throws star","no","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_376",1
+"861",53,"Free",21,"Person","Boy lifts girl","no","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_377",1
+"862",53,"Free",22,"Object","Girl rubs heart","no","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_377",1
+"863",53,"Free",24,"Object","Old lady elbows ball","no","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_377",1
+"864",53,"Free",25,"Person","Fireman pushes boy","no","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_378",1
+"865",53,"Free",27,"Object","Girl pushes car","no","SVOV","VOV","Unclassified","Spatial.Absent","Spatial_Clipped_378",1
+"866",53,"Free",28,"Object","Boy kicks ball","no","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_378",1
+"867",58,"Case",5,"Object","Boy kicks ball","No","S(VO)","S(VO)","Unclassified","Spatial.Present","Spatial_Clipped_415",1
+"868",58,"Case",6,"Object","Girl pushes car","No","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_415",1
+"869",58,"Case",8,"Person","Fireman pushes boy","No","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_415",1
+"870",58,"Case",9,"Object","Old lady elbows ball","No","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_416",1
+"871",58,"Case",11,"Object","Girl rubs heart","No","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_416",1
+"872",58,"Case",12,"Person","Boy lifts girl","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_416",1
+"873",58,"Case",13,"Object","Fireman throws star","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_417",1
+"874",58,"Case",15,"Person","Girl elbows old lady","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_417",1
+"875",58,"Case",17,"Person","Fireman kicks girl","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_418",1
+"876",58,"Case",18,"Object","Old lady kisses star","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_418",1
+"877",58,"Case",19,"Person","Old lady rubs fireman","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_418",1
+"878",58,"Case",20,"Person","Girl throws old lady","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_418",1
+"879",58,"Case",24,"Object","Boy pokes heart","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_419",1
+"880",58,"Case",25,"Object","Fireman lifts car","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_420",1
+"881",58,"Case",26,"Person","Old lady pokes fireman","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_420",1
+"882",58,"Case",28,"Person","Girl kisses boy","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_420",1
+"883",58,"Free",5,"Object","Boy kicks ball","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_409",1
+"884",58,"Free",6,"Object","Girl pushes car","No","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_409",1
+"885",58,"Free",8,"Person","Fireman pushes boy","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_409",1
+"886",58,"Free",9,"Object","Old lady elbows ball","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_410",1
+"887",58,"Free",11,"Object","Girl rubs heart","No","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_410",1
+"888",58,"Free",12,"Person","Boy lifts girl","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_410",1
+"889",58,"Free",13,"Object","Fireman throws star","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_411",1
+"890",58,"Free",15,"Person","Girl elbows old lady","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_411",1
+"891",58,"Free",17,"Person","Fireman kicks girl","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_412",1
+"892",58,"Free",18,"Object","Old lady kisses star","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_412",1
+"893",58,"Free",19,"Person","Old lady rubs fireman","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_412",1
+"894",58,"Free",20,"Person","Girl throws old lady","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_412",1
+"895",58,"Free",24,"Object","Boy pokes heart","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_413",1
+"896",58,"Free",25,"Object","Fireman lifts car","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_414",1
+"897",58,"Free",26,"Person","Old lady pokes fireman","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_414",1
+"898",58,"Free",28,"Person","Girl kisses boy","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_414",1
+"899",60,"Case",5,"Object","Boy kicks ball","No","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_427",1
+"900",60,"Case",6,"Object","Girl pushes car","No","OV","OV","Unclassified","Spatial.Present","Spatial_Clipped_427",1
+"901",60,"Case",8,"Person","Fireman pushes boy","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_427",1
+"902",60,"Case",9,"Object","Old lady elbows ball","No","OVOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_428",1
+"903",60,"Case",11,"Object","Girl rubs heart","No","O(SV)","O(SV)","Unclassified","Spatial.Present","Spatial_Clipped_428",1
+"904",60,"Case",12,"Person","Boy lifts girl","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_428",1
+"905",60,"Case",13,"Object","Fireman throws star","No","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_429",1
+"906",60,"Case",15,"Person","Girl elbows old lady","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_429",1
+"907",60,"Case",17,"Person","Fireman kicks girl","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_430",1
+"908",60,"Case",18,"Object","Old lady kisses star","No","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_430",1
+"909",60,"Case",19,"Person","Old lady rubs fireman","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_430",1
+"910",60,"Case",20,"Person","Girl throws old lady","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_430",1
+"911",60,"Case",24,"Object","Boy pokes heart","No","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_431",1
+"912",60,"Case",25,"Object","Fireman lifts car","No","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_432",1
+"913",60,"Case",26,"Person","Old lady pokes fireman","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_432",1
+"914",60,"Case",28,"Person","Girl kisses boy","No","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_432",1
+"915",60,"Free",5,"Object","Boy kicks ball","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_421",1
+"916",60,"Free",6,"Object","Girl pushes car","No","OV","OV","Unclassified","Spatial.Present","Spatial_Clipped_421",1
+"917",60,"Free",8,"Person","Fireman pushes boy","No","VO","VO","Unclassified","Spatial.Absent","Spatial_Clipped_421",1
+"918",60,"Free",9,"Object","Old lady elbows ball","No","OV","OV","Unclassified","Spatial.Present","Spatial_Clipped_422",1
+"919",60,"Free",11,"Object","Girl rubs heart","No","OV","OV","Unclassified","Spatial.Present","Spatial_Clipped_422",1
+"920",60,"Free",12,"Person","Boy lifts girl","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_422",1
+"921",60,"Free",13,"Object","Fireman throws star","No","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_423",1
+"922",60,"Free",15,"Person","Girl elbows old lady","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_423",1
+"923",60,"Free",17,"Person","Fireman kicks girl","No","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_424",1
+"924",60,"Free",18,"Object","Old lady kisses star","No","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_424",1
+"925",60,"Free",19,"Person","Old lady rubs fireman","No","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_424",1
+"926",60,"Free",20,"Person","Girl throws old lady","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_424",1
+"927",60,"Free",24,"Object","Boy pokes heart","No","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_425",1
+"928",60,"Free",25,"Object","Fireman lifts car","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_426",1
+"929",60,"Free",26,"Person","Old lady pokes fireman","No","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_426",1
+"930",60,"Free",28,"Person","Girl kisses boy","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_426",1
+"931",61,"Case",5,"Person","Girl kisses boy","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_439",1
+"932",61,"Case",7,"Person","Old lady pokes fireman","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_439",1
+"933",61,"Case",8,"Object","Fireman lifts car","No","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_439",1
+"934",61,"Case",9,"Object","Boy pokes heart","No","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_440",1
+"935",61,"Case",13,"Person","Girl throws old lady","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_441",1
+"936",61,"Case",14,"Person","Old lady rubs fireman","No","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_441",1
+"937",61,"Case",15,"Object","Old lady kisses star","No","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_441",1
+"938",61,"Case",16,"Person","Fireman kicks girl","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_441",1
+"939",61,"Case",18,"Person","Girl elbows old lady","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_442",1
+"940",61,"Case",20,"Object","Fireman throws star","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_442",1
+"941",61,"Case",21,"Person","Boy lifts girl","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_443",1
+"942",61,"Case",22,"Object","Girl rubs heart","No","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_443",1
+"943",61,"Case",24,"Object","Old lady elbows ball","No","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_443",1
+"944",61,"Case",25,"Person","Fireman pushes boy","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_444",1
+"945",61,"Case",27,"Object","Girl pushes car","No","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_444",1
+"946",61,"Case",28,"Object","Boy kicks ball","No","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_444",1
+"947",61,"Free",5,"Person","Girl kisses boy","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_433",1
+"948",61,"Free",7,"Person","Old lady pokes fireman","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_433",1
+"949",61,"Free",8,"Object","Fireman lifts car","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_433",1
+"950",61,"Free",9,"Object","Boy pokes heart","No","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_434",1
+"951",61,"Free",13,"Person","Girl throws old lady","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_435",1
+"952",61,"Free",14,"Person","Old lady rubs fireman","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_435",1
+"953",61,"Free",15,"Object","Old lady kisses star","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_435",1
+"954",61,"Free",16,"Person","Fireman kicks girl","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_435",1
+"955",61,"Free",18,"Person","Girl elbows old lady","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_436",1
+"956",61,"Free",20,"Object","Fireman throws star","No","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_436",1
+"957",61,"Free",21,"Person","Boy lifts girl","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_437",1
+"958",61,"Free",22,"Object","Girl rubs heart","No","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_437",1
+"959",61,"Free",24,"Object","Old lady elbows ball","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_437",1
+"960",61,"Free",25,"Person","Fireman pushes boy","No","(SO)V","(SO)V","VerbLateral","Spatial.Present","Spatial_Clipped_438",1
+"961",61,"Free",27,"Object","Girl pushes car","No","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_438",1
+"962",61,"Free",28,"Object","Boy kicks ball","No","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_438",1
+"963",62,"Case",5,"Object","Boy kicks ball ","No ","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_451 ",1
+"964",62,"Case",6,"Object","Girl pushes car ","No ","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_451 ",1
+"965",62,"Case",8,"Person","Fireman pushes boy ","No ","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_451 ",1
+"966",62,"Case",9,"Object","Old lady elbows ball ","No ","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_452 ",1
+"967",62,"Case",11,"Object","Girl rubs heart ","No ","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_452 ",1
+"968",62,"Case",12,"Person","Boy lifts girl ","No ","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_452 ",1
+"969",62,"Case",13,"Object","Fireman throws star ","No ","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_453 ",1
+"970",62,"Case",15,"Person","Girl elbows old lady ","No ","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_453 ",1
+"971",62,"Case",17,"Person","Fireman kicks girl ","No ","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_454 ",1
+"972",62,"Case",18,"Object","Old lady kisses star ","No ","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_454 ",1
+"973",62,"Case",19,"Person","Old lady rubs fireman ","No ","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_454 ",1
+"974",62,"Case",20,"Person","Girl throws old lady ","No ","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_454 ",1
+"975",62,"Case",24,"Object","Boy pokes heart ","No ","SOVO","OVO","Unclassified","Spatial.Present","Spatial_Clipped_455 ",1
+"976",62,"Case",25,"Object","Fireman lifts car ","No ","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_456 ",1
+"977",62,"Case",26,"Person","Old lady pokes fireman ","No ","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_456 ",1
+"978",62,"Case",28,"Person","Girl kisses boy ","No ","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_456 ",1
+"979",62,"Free",5,"Object","Boy kicks ball ","No ","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_445 ",1
+"980",62,"Free",6,"Object","Girl pushes car ","No ","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_445 ",1
+"981",62,"Free",8,"Person","Fireman pushes boy ","No ","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_445 ",1
+"982",62,"Free",9,"Object","Old lady elbows ball ","No ","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_446 ",1
+"983",62,"Free",11,"Object","Girl rubs heart ","No ","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_446 ",1
+"984",62,"Free",12,"Person","Boy lifts girl ","No ","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_446 ",1
+"985",62,"Free",13,"Object","Fireman throws star ","No ","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_447 ",1
+"986",62,"Free",15,"Person","Girl elbows old lady ","No ","OSVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_447 ",1
+"987",62,"Free",17,"Person","Fireman kicks girl ","No ","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_448 ",1
+"988",62,"Free",18,"Object","Old lady kisses star ","No ","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_448 ",1
+"989",62,"Free",19,"Person","Old lady rubs fireman ","No ","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_448 ",1
+"990",62,"Free",20,"Person","Girl throws old lady ","No ","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_448 ",1
+"991",62,"Free",24,"Object","Boy pokes heart ","No ","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_449 ",1
+"992",62,"Free",25,"Object","Fireman lifts car ","No ","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_450 ",1
+"993",62,"Free",26,"Person","Old lady pokes fireman ","No ","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_450 ",1
+"994",62,"Free",28,"Person","Girl kisses boy ","No ","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_450 ",1
+"995",63,"Case",5,"Person","Girl kisses boy","No","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_463",1
+"996",63,"Case",7,"Person","Old lady pokes fireman","No","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_463",1
+"997",63,"Case",8,"Object","Fireman lifts car","No","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_463",1
+"998",63,"Case",9,"Object","Boy pokes heart","No","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_464",1
+"999",63,"Case",13,"Person","Girl throws old lady","No","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_465",1
+"1000",63,"Case",14,"Person","Old lady rubs fireman","No","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_465",1
+"1001",63,"Case",15,"Object","Old lady kisses star","No","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_465",1
+"1002",63,"Case",16,"Person","Fireman kicks girl","No","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_465",1
+"1003",63,"Case",18,"Person","Girl elbows old lady","No","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_466",1
+"1004",63,"Case",20,"Object","Fireman throws star","No","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_466",1
+"1005",63,"Case",21,"Person","Boy lifts girl","No","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_467",1
+"1006",63,"Case",22,"Object","Girl rubs heart","No","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_467",1
+"1007",63,"Case",24,"Object","Old lady elbows ball","No","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_467",1
+"1008",63,"Case",25,"Person","Fireman pushes boy","No","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_468",1
+"1009",63,"Case",27,"Object","Girl pushes car","No","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_468",1
+"1010",63,"Case",28,"Object","Boy kicks ball","No","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_468",1
+"1011",63,"Free",5,"Person","Girl kisses boy","No ","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_457",1
+"1012",63,"Free",7,"Person","Old lady pokes fireman","No ","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_457",1
+"1013",63,"Free",8,"Object","Fireman lifts car","No ","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_457",1
+"1014",63,"Free",9,"Object","Boy pokes heart","No ","OSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_458",1
+"1015",63,"Free",13,"Person","Girl throws old lady","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_459",1
+"1016",63,"Free",14,"Person","Old lady rubs fireman","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_459",1
+"1017",63,"Free",15,"Object","Old lady kisses star","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_459",1
+"1018",63,"Free",16,"Person","Fireman kicks girl","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_459",1
+"1019",63,"Free",18,"Person","Girl elbows old lady","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_460",1
+"1020",63,"Free",20,"Object","Fireman throws star","No","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_460",1
+"1021",63,"Free",21,"Person","Boy lifts girl","No","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_461",1
+"1022",63,"Free",22,"Object","Girl rubs heart","No","OSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_461",1
+"1023",63,"Free",24,"Object","Old lady elbows ball","No","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_461",1
+"1024",63,"Free",25,"Person","Fireman pushes boy","No","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_462",1
+"1025",63,"Free",27,"Object","Girl pushes car","No","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_462",1
+"1026",63,"Free",28,"Object","Boy kicks ball","No","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_462",1
+"1027",64,"Case",5,"Object","Boy kicks ball","NO","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_475",1
+"1028",64,"Case",6,"Object","Girl pushes car","NO","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_475",1
+"1029",64,"Case",8,"Person","Fireman pushes boy","NO","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_475",1
+"1030",64,"Case",9,"Object","Old lady elbows ball","NO","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_476",1
+"1031",64,"Case",11,"Object","Girl rubs heart","NO","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_476",1
+"1032",64,"Case",12,"Person","Boy lifts girl","NO","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_476",1
+"1033",64,"Case",13,"Object","Fireman throws star","NO","SO","SO","Unclassified","Spatial.Present","Spatial_Clipped_477",1
+"1034",64,"Case",15,"Person","Girl elbows old lady","NO","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_477",1
+"1035",64,"Case",17,"Person","Fireman kicks girl","NO","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_478",1
+"1036",64,"Case",18,"Object","Old lady kisses star","NO","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_478",1
+"1037",64,"Case",19,"Person","Old lady rubs fireman","NO","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_478",1
+"1038",64,"Case",20,"Person","Girl throws old lady","NO","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_478",1
+"1039",64,"Case",24,"Object","Boy pokes heart","NO","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_479",1
+"1040",64,"Case",25,"Object","Fireman lifts car","NO","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_480",1
+"1041",64,"Case",26,"Person","Old lady pokes fireman","NO","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_480",1
+"1042",64,"Case",28,"Person","Girl kisses boy","NO","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_480",1
+"1043",64,"Free",5,"Object","Boy kicks ball","NO","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_469",1
+"1044",64,"Free",6,"Object","Girl pushes car","NO","SOVO","OVO","Unclassified","Spatial.Present","Spatial_Clipped_469",1
+"1045",64,"Free",8,"Person","Fireman pushes boy","NO","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_469",1
+"1046",64,"Free",9,"Object","Old lady elbows ball","NO","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_470",1
+"1047",64,"Free",11,"Object","Girl rubs heart","NO","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_470",1
+"1048",64,"Free",12,"Person","Boy lifts girl","NO","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_470",1
+"1049",64,"Free",13,"Object","Fireman throws star","NO","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_471",1
+"1050",64,"Free",15,"Person","Girl elbows old lady","NO","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_471",1
+"1051",64,"Free",17,"Person","Fireman kicks girl","NO","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_472",1
+"1052",64,"Free",18,"Object","Old lady kisses star","NO","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_472",1
+"1053",64,"Free",19,"Person","Old lady rubs fireman","NO","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_472",1
+"1054",64,"Free",20,"Person","Girl throws old lady","NO","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_472",1
+"1055",64,"Free",24,"Object","Boy pokes heart","NO","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_473",1
+"1056",64,"Free",25,"Object","Fireman lifts car","NO","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_474",1
+"1057",64,"Free",26,"Person","Old lady pokes fireman","NO","SVOVO","OVO","Unclassified","Spatial.Present","Spatial_Clipped_474",1
+"1058",64,"Free",28,"Person","Girl kisses boy","NO","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_474",1
+"1059",65,"Case",5,"Object","Boy kicks ball","NO","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_487",1
+"1060",65,"Case",6,"Object","Girl pushes car","NO","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_487",1
+"1061",65,"Case",8,"Person","Fireman pushes boy","NO","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_487",1
+"1062",65,"Case",9,"Object","Old lady elbows ball","NO","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_488",1
+"1063",65,"Case",11,"Object","Girl rubs heart","NO","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_488",1
+"1064",65,"Case",12,"Person","Boy lifts girl","NO","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_488",1
+"1065",65,"Case",13,"Object","Fireman throws star","NO","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_489",1
+"1066",65,"Case",15,"Person","Girl elbows old lady","NO","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_489",1
+"1067",65,"Case",17,"Person","Fireman kicks girl","NO","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_490",1
+"1068",65,"Case",18,"Object","Old lady kisses star","NO","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_490",1
+"1069",65,"Case",19,"Person","Old lady rubs fireman","NO","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_490",1
+"1070",65,"Case",20,"Person","Girl throws old lady","NO","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_490",1
+"1071",65,"Case",24,"Object","Boy pokes heart","NO","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_491",1
+"1072",65,"Case",25,"Object","Fireman lifts car","NO","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_492",1
+"1073",65,"Case",26,"Person","Old lady pokes fireman","NO","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_492",1
+"1074",65,"Case",28,"Person","Girl kisses boy","NO","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_492",1
+"1075",65,"Free",5,"Object","Boy kicks ball","NO","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_481",1
+"1076",65,"Free",6,"Object","Girl pushes car","NO","V","V","Unclassified","Spatial.Absent","Spatial_Clipped_481",1
+"1077",65,"Free",8,"Person","Fireman pushes boy","NO","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_481",1
+"1078",65,"Free",9,"Object","Old lady elbows ball","NO","OSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_482",1
+"1079",65,"Free",11,"Object","Girl rubs heart","NO","OSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_482",1
+"1080",65,"Free",12,"Person","Boy lifts girl","NO","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_482",1
+"1081",65,"Free",13,"Object","Fireman throws star","NO","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_483",1
+"1082",65,"Free",15,"Person","Girl elbows old lady","NO","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_483",1
+"1083",65,"Free",17,"Person","Fireman kicks girl","NO","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_484",1
+"1084",65,"Free",18,"Object","Old lady kisses star","NO","OSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_484",1
+"1085",65,"Free",19,"Person","Old lady rubs fireman","NO","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_484",1
+"1086",65,"Free",20,"Person","Girl throws old lady","NO","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_484",1
+"1087",65,"Free",24,"Object","Boy pokes heart","NO","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_485",1
+"1088",65,"Free",25,"Object","Fireman lifts car","NO","OSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_486",1
+"1089",65,"Free",26,"Person","Old lady pokes fireman","NO","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_486",1
+"1090",65,"Free",28,"Person","Girl kisses boy","NO","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_486",1
+"1091",66,"Case",5,"Person","Girl kisses boy","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_499",1
+"1092",66,"Case",7,"Person","Old lady pokes fireman","","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_499",1
+"1093",66,"Case",8,"Object","Fireman lifts car","","SV","SV","Unclassified","Spatial.Present","Spatial_Clipped_499",1
+"1094",66,"Case",9,"Object","Boy pokes heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_500",1
+"1095",66,"Case",13,"Person","Girl throws old lady","","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_501",1
+"1096",66,"Case",14,"Person","Old lady rubs fireman","","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_501",1
+"1097",66,"Case",15,"Object","Old lady kisses star","","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_501",1
+"1098",66,"Case",16,"Person","Fireman kicks girl","","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_501",1
+"1099",66,"Case",18,"Person","Girl elbows old lady","","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_502",1
+"1100",66,"Case",20,"Object","Fireman throws star","","SOVSO","VSO","VerbLateral","Spatial.Present","Spatial_Clipped_502",1
+"1101",66,"Case",21,"Person","Boy lifts girl","","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_503",1
+"1102",66,"Case",22,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_503",1
+"1103",66,"Case",24,"Object","Old lady elbows ball","","SOSOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_503",1
+"1104",66,"Case",25,"Person","Fireman pushes boy","","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_504",1
+"1105",66,"Case",27,"Object","Girl pushes car","","SVOSVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_504",1
+"1106",66,"Case",28,"Object","Boy kicks ball","","SVO","SVO","VerbMedial","Spatial.Present","Spatial_Clipped_504",1
+"1107",66,"Free",5,"Person","Girl kisses boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_493",1
+"1108",66,"Free",7,"Person","Old lady pokes fireman","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_493",1
+"1109",66,"Free",8,"Object","Fireman lifts car","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_493",1
+"1110",66,"Free",9,"Object","Boy pokes heart","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_494",1
+"1111",66,"Free",13,"Person","Girl throws old lady","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_495",1
+"1112",66,"Free",14,"Person","Old lady rubs fireman","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_495",1
+"1113",66,"Free",15,"Object","Old lady kisses star","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_495",1
+"1114",66,"Free",16,"Person","Fireman kicks girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_495",1
+"1115",66,"Free",18,"Person","Girl elbows old lady","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_496",1
+"1116",66,"Free",20,"Object","Fireman throws star","","OVS","OVS","VerbMedial","Spatial.Absent","Spatial_Clipped_496",1
+"1117",66,"Free",21,"Person","Boy lifts girl","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_497",1
+"1118",66,"Free",22,"Object","Girl rubs heart","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_497",1
+"1119",66,"Free",24,"Object","Old lady elbows ball","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_497",1
+"1120",66,"Free",25,"Person","Fireman pushes boy","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_498",1
+"1121",66,"Free",27,"Object","Girl pushes car","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_498",1
+"1122",66,"Free",28,"Object","Boy kicks ball","","SVO","SVO","VerbMedial","Spatial.Absent","Spatial_Clipped_498",1
+"1123",67,"Case",5,"Object","Boy kicks ball","","OVSV","VSV","Unclassified","Spatial.Present","Spatial_Clipped_511",1
+"1124",67,"Case",6,"Object","Girl pushes car","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_511",1
+"1125",67,"Case",8,"Person","Fireman pushes boy","","OSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_511",1
+"1126",67,"Case",9,"Object","Old lady elbows ball","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_512",1
+"1127",67,"Case",11,"Object","Girl rubs heart","","SOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_512",1
+"1128",67,"Case",12,"Person","Boy lifts girl","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_512",1
+"1129",67,"Case",13,"Object","Fireman throws star","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_513",1
+"1130",67,"Case",15,"Person","Girl elbows old lady","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_513",1
+"1131",67,"Case",17,"Person","Fireman kicks girl","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_514",1
+"1132",67,"Case",18,"Object","Old lady kisses star","","OSVSV","VSV","Unclassified","Spatial.Present","Spatial_Clipped_514",1
+"1133",67,"Case",19,"Person","Old lady rubs fireman","","VOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_514",1
+"1134",67,"Case",20,"Person","Girl throws old lady","","VOS","VOS","VerbLateral","Spatial.Present","Spatial_Clipped_514",1
+"1135",67,"Case",24,"Object","Boy pokes heart","","OSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_515",1
+"1136",67,"Case",25,"Object","Fireman lifts car","","VOS","VOS","VerbLateral","Spatial.Present","Spatial_Clipped_516",1
+"1137",67,"Case",26,"Person","Old lady pokes fireman","","VOS","VOS","VerbLateral","Spatial.Present","Spatial_Clipped_516",1
+"1138",67,"Case",28,"Person","Girl kisses boy","","VOSV","OSV","VerbLateral","Spatial.Present","Spatial_Clipped_516",1
+"1139",67,"Free",5,"Object","Boy kicks ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_505",1
+"1140",67,"Free",6,"Object","Girl pushes car","","OV","OV","Unclassified","Spatial.Present","Spatial_Clipped_505",1
+"1141",67,"Free",8,"Person","Fireman pushes boy","","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_505",1
+"1142",67,"Free",9,"Object","Old lady elbows ball","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_506",1
+"1143",67,"Free",11,"Object","Girl rubs heart","","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_506",1
+"1144",67,"Free",12,"Person","Boy lifts girl","","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_506",1
+"1145",67,"Free",13,"Object","Fireman throws star","","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_507",1
+"1146",67,"Free",15,"Person","Girl elbows old lady","","VO","VO","Unclassified","Spatial.Absent","Spatial_Clipped_507",1
+"1147",67,"Free",17,"Person","Fireman kicks girl","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_508",1
+"1148",67,"Free",18,"Object","Old lady kisses star","","OSV","OSV","VerbLateral","Spatial.Absent","Spatial_Clipped_508",1
+"1149",67,"Free",19,"Person","Old lady rubs fireman","","SV","SV","Unclassified","Spatial.Absent","Spatial_Clipped_508",1
+"1150",67,"Free",20,"Person","Girl throws old lady","","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_508",1
+"1151",67,"Free",24,"Object","Boy pokes heart","","SOV","SOV","VerbLateral","Spatial.Present","Spatial_Clipped_509",1
+"1152",67,"Free",25,"Object","Fireman lifts car","","OV","OV","Unclassified","Spatial.Present","Spatial_Clipped_510",1
+"1153",67,"Free",26,"Person","Old lady pokes fireman","","SOV","SOV","VerbLateral","Spatial.Absent","Spatial_Clipped_510",1
+"1154",67,"Free",28,"Person","Girl kisses boy","","OV","OV","Unclassified","Spatial.Absent","Spatial_Clipped_510",1

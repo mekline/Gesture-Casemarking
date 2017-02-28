@@ -1,0 +1,30 @@
+alldata_tidy_columns.txt
+
+What are all those columns?
+
+"X" - row numbers
+"Subject" - unique participant number
+
+"GestureCondition" - which gesture task was being performed?
+	"Free" - Task 1 (free gesture)
+	"Case" - Task 2 (spatial instructions)
+
+"Trial.Number" - order performed (missing #s are warmup or intransitive trials)
+
+"Object.Type" - Person (animate patient) or Object (inanimate patient)        
+
+"Sentence" - the depicted event, unique item descriptor
+
+"Used.ASL" - rarely, participants used lexical items (or near approximation) of ASL in their gestures, we aren't confident about interpreting gesture orders in that case
+
+"Final.Full.WordOrder" - the full gloss of what the participant signed, from beginning to end. (See preprint: for 'The old lady throws the ball', GLASSES CANE THROW BALL is coded as SVO (not SSVO), but GLASSES THROW CANE BALL is coded as SVSO).  Usually, this is just one instance each of S, V, and O, but not always.  ("Final" here refers to the fact that coder disagreement on full word order has already been resolved here.)
+
+ "WordOrder" - the basic word order we use if participants produced something longer.  Usually but not always this is identical to Final.Full.WordOrder.
+
+"WordOrder.Classified" - The word orders are classified as Verb Medial, Verb Final, or Unclassified if we couldn't assign them to one of those two.
+
+"SpatialCue" - Indicates whether *any* contrastive spatial info was included in the sign. NOTE that later in the script (and for reported analysis) we upload the additional coding of which elements (S, V, O) are marked spatially (see Analysis Post Blindcoding/EmbodimentHallRecode.csv.   
+
+"Clipped.Movie.File" - refers to the raw video of the gestures the participant produced on this trial. (This is identifiable data, not currently shared because our IRB doesn't allow for it.)  We can make this available to individual researchers on request.
+
+"ToInclude" - Final decisions on whether to include a trial in analyses; see lines above #400 and preprint for all explanation of dropped trials or subjects.        

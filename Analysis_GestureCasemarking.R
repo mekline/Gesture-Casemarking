@@ -1,6 +1,6 @@
 #Full analysis for GestureCaseMarking experiment
 #
-#Preprocessing of blind coding data developed by Miguel Salinas. Code copied over on 8/12 and commented
+#Preprocessing of blind coding data developed by MS . Code copied over on 8/12 and commented
 #(up thru the indicated area) but otherwise left alone for now.
 #
 #Note: First part of this file reproduces output files: LiteralNoAgree.csv and Last3NoAgree.csv, the latter of
@@ -22,9 +22,12 @@ mean.na.rm <- function(x) { mean(x,na.rm=T) }
 sum.na.rm <- function(x) { sum(x,na.rm=T) }
 stderr <- function(x) sqrt(var(x)/length(x))
 
-#Get directory of this file. (CHANGE THIS IF RUNNING ON A COMPUTER OTHER THAN MK'S LAPTOP)
-#directory = '/Users/mekline/Dropbox/_Projects/Gesture - Case Marking/Analysis - Post Blindcoding'
-directory = '/Users/mekline/Dropbox/_Projects/Gesture/Gesture-Casemark Repo/Analysis - Post Blindcoding'
+#Get directory of this file. (CHANGE THIS IF RUNNING ON A COMPUTER OTHER THAN MK'S LAPTOP) ##LINE TO REDACT FOR PEER REVIEW
+#directory = '/Users/mekline/Dropbox/_Projects/Gesture - Case Marking/Analysis - Post Blindcoding' ##LINE TO REDACT FOR PEER REVIEW
+directory = '/Users/mekline/Dropbox/_Projects/Gesture/Gesture-Casemark Repo/Analysis - Post Blindcoding' ##LINE TO REDACT FOR PEER REVIEW
+
+#There is also a tidy data table for people who don't want to debug blind coding/merging steps. (in that case, comment out from line 33 to line 400)
+tidydir <- '/Users/mekline/Dropbox/_Projects/Gesture/Gesture-Casemark Repo/Tidy Data/' #CHANGE THIS IF RUNNING ON NOT MY LAPTOP ##LINE TO REDACT FOR PEER REVIEW
 
 #Initialize dataset
 gestable = data.frame(NULL)
@@ -63,7 +66,7 @@ write.csv(noagreetable, file = paste0(directory, "/LiteralNoAgree.csv"))
 #Calculate Cohen's Kappa for Literal Compare 
 #####
 
-# Note, Miguel did this by hand! Whoa!
+# Note, MS did this by hand! Whoa!
 
 firstlev <- levels(factor(gestable$Word.Order))
 secondlev <- levels(factor(gestable$Word.Order.Recode))
@@ -107,7 +110,7 @@ print(paste0('Literal Kappa (manual): ', litkappa))
 # OK, now let's try kappa2 from the irr package, does it match?
 ####
 
-kappa2(gestable[,c('Word.Order','Word.Order.Recode')]) #Not sure about the weight paradigm! but this matches Miguel ok
+kappa2(gestable[,c('Word.Order','Word.Order.Recode')]) #Not sure about the weight paradigm! but this matches MS ok
 
 #Add column that compares coding regarding spatial cues.
 gestable$SpaCue.Agree = as.character((as.numeric(gestable$Spatial.Cue) == as.numeric(gestable$Spatial.Cue.Recode)))
@@ -115,13 +118,13 @@ spacueavg = mean(as.logical(gestable$SpaCue.Agree))
 
 ####
 #Serious data cleaning starts here: We want to compare strings just based on the last 3 symbols of participants'
-#final gesture string. (See the document called gesture testing & coding procedures for details on this)
+#final gesture string. (See the preprint for details & justification on why we do this)
 #This will be our main unit of analysis going forward. We'll report kappa on this, as well as breaking down
 #those calculations based on what kind of disagreement was found (main takehome: SVO vs SOV is a more serious
 #error than SOV vs. OSV)
 ####
 
-#Get rid of intransitive responses from analysis
+#Get rid of intransitive responses from analysis, they are filler trials
 gestable <- gestable[ ! gestable$Type.of.Action %in% "Intransitive",]
 
 
@@ -132,22 +135,22 @@ j = 0
 k = 0
 l = 0
 	
-#Get the last chunk of string after the Slash (Eunice's coding)
+#Get the last chunk of string after the Slash (EL's coding) #NOTE: Eun/Mig are actually just labels for the first and second coder, although EL and MS were the first 2 people to work on it. The actual coders are listed in the Initial.Coder and Blind.Coder columns 
 oldSsplit = NULL
 for (k in as.character(gestable$Word.Order)) {
 	splt = unlist(strsplit(k, "[/]"))
 	lst = splt[length(splt)]
 	oldSsplit <- append(oldSsplit, lst)}
-gestable$Eun.S.Split <- oldSsplit
+gestable$Eun.S.Split <- oldSsplit #(Eun=EL)
 
 
-#Get the last chunk of string after the Slash (Miguel's coding)
+#Get the last chunk of string after the Slash (MS's coding)
 newSsplit = NULL
 for (l in as.character(gestable$Word.Order.Recode)) {
 	splt = unlist(strsplit(l, "[/]"))
 	lst = splt[length(splt)]
 	newSsplit <- append(newSsplit, lst)}
-gestable$Mig.S.Split <- newSsplit
+gestable$Mig.S.Split <- newSsplit #(Mig=MS)
 
 
 #Insert blank column for organization
@@ -240,24 +243,24 @@ print(paste0('Last3 Kappa (Manual): ', lst3kappa))
 # OK, now let's try kappa2 from the irr package, does it match?
 ####
 
-kappa2(gestable[,c('Eun.Last3','Mig.Last3')]) #Not sure about the weight paradigm! but this matches Miguel
+kappa2(gestable[,c('Eun.Last3','Mig.Last3')]) #Not sure about the weight paradigm! but this matches MS
 
 
 #Produce table that spits out disagreement on WORD ORDER.
 noagreetable2 <- gestable[gestable$Last3.Compare == 0,]
 noagreetable2 <- noagreetable2[,c("Subject", "GestureCondition", "Trial.Number", "Clipped.Movie.File", "Event", "Eun.Last3", "Mig.Last3", "Initial.Coder", "Blind.Coder")]
 
-#write.csv(noagreetable2, file = paste0(directory, "/Last3NoAgree.csv"))
+write.csv(noagreetable2, file = paste0(directory, "/Last3NoAgree.csv"))
 
 #Produce table that spits out disagreement on SPATIAL.
 noagreetable4 <- gestable[gestable$SpaCue.Agree == 0,]
 noagreetable4 <- noagreetable4[,c("Subject", "GestureCondition", "Trial.Number", "Clipped.Movie.File", "Event", "Spatial.Cue", "Spatial.Cue.Recode", "Initial.Coder", "Blind.Coder")]
 
-#write.csv(noagreetable4, file = paste0(directory, "/SpatialNoAgree.csv"))
+write.csv(noagreetable4, file = paste0(directory, "/SpatialNoAgree.csv"))
 
 
 ########
-# AT THIS POINT, a third coder worked with Miguel to tiebreak/resolve by discussion any video that had been coded
+# AT THIS POINT, a third coder worked with MS to tiebreak/resolve by discussion any video that had been coded
 # differently by the two coders. For Word Order, their final judgement, and the nature of the disagreement, are recorded in 2
 # new columns in the file Last3NoAgree_Reconciliation.csv, loaded back in below.
 #
@@ -283,7 +286,7 @@ spatialNoAgreeTable <- spatialNoAgreeTable[,c('Subject','GestureCondition','Tria
 #For WordOrder, We need to make a 'final clean' column that takes 1) Eun Last3 coding where there
 #is no disagreement, and 2) FinalClean where there was disagreement. Also mark disagreement type as either what
 #it was, or as noDisagreement.
-#For Spatial, FinalDecision will be the final decision from Miguel/Mitchell discussion, OR the original if there was
+#For Spatial, FinalDecision will be the final decision from MS/Mitchell discussion, OR the original if there was
 #no disagreement. Disagreement type isn't marked, there's just spatial or no...
 #
 # Also keep a 'final long' column that lists people's whole gesture sequence, so we can compare those...
@@ -298,13 +301,13 @@ alldata[is.na(alldata$Final.Clean),]$Final.Clean <- alldata[is.na(alldata$Final.
 alldata[is.na(alldata$Spatial.Final.Decision),]$Spatial.Final.Decision <- alldata[is.na(alldata$Spatial.Final.Decision),]$Spatial.Cue
 
 alldata$Final.Long <- as.character(alldata$Final.Decision)
-alldata[is.na(alldata$Final.Long),]$Final.Long <- alldata[is.na(alldata$Final.Long),]$Word.Order #Miguel/Eunice's original original coding!
+alldata[is.na(alldata$Final.Long),]$Final.Long <- alldata[is.na(alldata$Final.Long),]$Word.Order #MS/EL's original original coding!
 
 #######
 # Final agreement calculations to report!
 
 #Classify all items as VerbMedial, VerbLateral, or Unclassified
-#This also decides individual items to exclude (for not consisting of exactly one S,V,O, or for having 
+#This will also decide individual items to exclude (for not consisting of exactly one S,V,O, or for having 
 # parenthesis orders that make verb medial/final judgment impossible.
 
 alldata$WordOrder.Classified <- "Unclassified"
@@ -349,7 +352,7 @@ alldata[alldata$Mig.Last3 == "(OS)V",]$Mig.Classified <- "VerbLateral"
 alldata[alldata$Mig.Last3 == "SVO",]$Mig.Classified <- "VerbMedial"
 alldata[alldata$Mig.Last3 == "OVS",]$Mig.Classified <- "VerbMedial"
 
-kappa2(alldata[,c('Mig.Classified','Eun.Classified')]) #Not sure about the weight paradigm! but this matches Miguel
+kappa2(alldata[,c('Mig.Classified','Eun.Classified')]) #Not sure about the weight paradigm! but this matches MS
 alldata$Classified.WO.Compare <- alldata$Mig.Classified == alldata$Eun.Classified
 mean(alldata$Classified.WO.Compare)
 
@@ -360,17 +363,13 @@ kappa2(katydata[,c('Spatial.Cue.Katy','Spatial.Final.Decision')])
 katydata$Classified.Spatial.Compare <- katydata$Spatial.Cue.Katy == katydata$Spatial.Final.Decision
 mean(katydata$Classified.Spatial.Compare)
 
-
-# Now lets do some checking to see what's going on with those extra signs that people used.  How often did we get parentheses, long gesture sequences, etc.
-
-
 ######
 # Column cleanup and renaming
 #Now drop all the preliminary codings & 'mush' columns, leaving us with just Final.WordOrder.Clean and Final.Spatial.Clean
 #And give them slightly more transparent names...
 
-alldata <- alldata[,c("Subject","GestureCondition","Trial.Number","Object.Type","Event","Used.ASL","X.Embodied..in.some.way","Final.Long", "Final.Clean","WordOrder.Classified","Spatial.Final.Decision","Clipped.Movie.File")]     
-names(alldata) <- c("Subject", "GestureCondition","Trial.Number", "Object.Type", "Sentence", "Used.ASL", "Embodiment", "Final.Full.WordOrder", "WordOrder","WordOrder.Classified","SpatialCue","Clipped.Movie.File" )
+alldata <- alldata[,c("Subject","GestureCondition","Trial.Number","Object.Type","Event","Used.ASL", "Final.Long", "Final.Clean","WordOrder.Classified","Spatial.Final.Decision","Clipped.Movie.File")]     
+names(alldata) <- c("Subject", "GestureCondition","Trial.Number", "Object.Type", "Sentence", "Used.ASL", "Final.Full.WordOrder", "WordOrder","WordOrder.Classified","SpatialCue","Clipped.Movie.File" )
 
 #Make some columns easier for humans to read...
 alldata$SpatialCue <- as.character(alldata$SpatialCue)
@@ -392,7 +391,14 @@ alldata <- alldata[alldata$ToInclude == 1,]
 numSigns <- aggregate(alldata$WordOrder, by=list(alldata$Subject),length)
 #Yay! Everyone did all the trials!
 
+#Print out a tidy data table for people who don't want to debug blind coding/merging steps.
+tidydir <- '/Users/mekline/Dropbox/_Projects/Gesture/Gesture-Casemark Repo/Tidy data/' #CHANGE THIS IF RUNNING ON NOT MY LAPTOP ##LINE TO REDACT FOR PEER REVIEW
+write.csv(alldata, file = paste0(tidydir, "alldata_tidy.csv"))
 
+
+
+###### START HERE TO USE TIDY DATA INSTEAD OF FULL CODER RECONCILIATION (uncomment the next line)
+ alldata <- read.csv(paste0(tidydir, "alldata_tidy.csv"), header = TRUE)
 
 #################################################################
 ## REPORT DESCRIPTIVES
@@ -439,9 +445,7 @@ goo$len <- unlist(lapply(foo, nchar))
 goo <- goo[goo$len > 3,]
 goo[order(goo$foo),]
 #(And do some manual checking about items that might have been misclassified)
-#OK: For items longer than length 3 that DID get classified, here are places we might have mistakes:
-# OVOSV - maybe not SOV
-# SOVSVO 2 - maybe not SVO
+#Look here if you're curious about weird word orders that we classified as verb medial or lateral!
 
 
 
@@ -561,9 +565,9 @@ write.csv(foo, file = paste0(directory, "/SpatialCasemarking_OnlyCaseTrials.csv"
 
 
 #####
-# Another new thing.  We want to check if Embodiment (in the second task)
-# made a difference for SOV use (ie maybe we accidentally did an embodiment
-# manipulation...).  For this, read in the new Embodiment coding that Miguel
+# We want to check if Embodiment (in the second task) made a difference for SOV use 
+#(to see if was also did an embodiment
+# manipulation...).  For this, read in the new Embodiment coding that MS
 # did ~ 10/22/14
 
 embodiment_data <- read.csv(paste0(directory, "/EmbodimentHallRecode.csv"), header = TRUE)
@@ -616,8 +620,6 @@ with(EmbodPVScores, tapply(PV.Embod, list(Object.Type, GestureCondition), mean, 
 
 #OK! So it looks like our manipulation did decrease PV from Free (65%) to Case (30%)
 
-#For now, just use the orginal WordOrder classifications, though that's slightly wrong
-
 #Add New WordOrder classifications! The distinction is whether s is the last
 #entity before the v.
 
@@ -634,7 +636,6 @@ alldata[alldata$WordOrder == "(OS)V",]$WordOrder.Embod.Classified <- "NonAdjacen
 
 alldata[alldata$WordOrder == "SVO",]$WordOrder.Embod.Classified <- "Adjacent"
 alldata[alldata$WordOrder == "OVS",]$WordOrder.Embod.Classified <- "NonAdjacent"
-
 
 
 #OK, now let's look within the Casemarking task.  Did the people who
@@ -661,7 +662,6 @@ table(peopledata$PV.Embod, peopledata$SpatialCue)
 # GRAPHS
 #########
 
-#Copying code from above to make sure we have the right data...
 ParticipantScores <- aggregate(alldata$ChoseLateral, by=list(alldata$Subject, alldata$Object.Type, alldata$GestureCondition), mean.na.rm)
 names(ParticipantScores) <- c("Subject", "Object.Type", "GestureCondition", "ChoseLateral")
 
@@ -716,7 +716,7 @@ ggplot(data=GraphScores, aes(x=ExpLabel, y=ChoseLateral, fill=ObLabel)) +
   theme_bw() +
   theme(legend.title=element_blank())
 
-ggsave('gesture_condition_vs_order.jpg')
+ggsave('Fig3_gesture_condition_vs_order.jpg')
 
 ##
 #responses with case vs with role conflict orders...
@@ -747,9 +747,11 @@ ggplot(data=GraphScores, aes(x=SpatLabel, y=count, fill=EmbodLabel)) +
   theme_bw() +
   theme(legend.title=element_blank())
 
-ggsave('gesture_space_vs_order.jpg')
+ggsave('Fig4_gesture_space_vs_order.jpg')
+
+
 ########
-#Code snippets from miguel, no longer in use...
+#Code snippets from MS, no longer in use...
 ######## 
 
 ###
@@ -866,7 +868,7 @@ ggsave('gesture_space_vs_order.jpg')
 
 
 
-#Get the last chunk of string after the Comma (Eunice's coding)
+#Get the last chunk of string after the Comma (EL's coding)
 #oldCsplit = NULL
 #for (i in as.character(gestable$Word.Order)) {
 	#splt = unlist(strsplit(i, "[,]"))
@@ -876,7 +878,7 @@ ggsave('gesture_space_vs_order.jpg')
 
 
 
-#Get the last chunk of string after the Comma (Miguel's coding)
+#Get the last chunk of string after the Comma (MS's coding)
 #newCsplit = NULL
 #for (j in as.character(gestable$Word.Order.Recode)) {
 	#splt = unlist(strsplit(j, "[,]"))
@@ -894,7 +896,7 @@ ggsave('gesture_space_vs_order.jpg')
 #k = 0
 #l = 0
 
-#Get the last chunk of string after the Slash (Eunice's coding)
+#Get the last chunk of string after the Slash (EL's coding)
 #oldCSsplit = NULL
 #for (i in as.character(gestable$Eun.C.Split)) {
 	#splt = unlist(strsplit(i, "[/]"))
@@ -902,7 +904,7 @@ ggsave('gesture_space_vs_order.jpg')
 	#oldCSsplit <- append(oldCSsplit, lst)}
 #gestable$Eun.CS.Split <- oldCSsplit
 	
-#Get the last chunk of string after the Slash (Eunice's coding)
+#Get the last chunk of string after the Slash (EL's coding)
 #oldSCsplit = NULL
 #for (k in as.character(gestable$Eun.S.Split)) {
 	#splt = unlist(strsplit(k, "[,]"))
@@ -910,7 +912,7 @@ ggsave('gesture_space_vs_order.jpg')
 	#oldSCsplit <- append(oldSCsplit, lst)}
 #gestable$Eun.SC.Split <- oldSCsplit
 
-#Get the last chunk of string after the Comma (Miguel's coding)
+#Get the last chunk of string after the Comma (MS's coding)
 #newCSsplit = NULL
 #for (j in as.character(gestable$Mig.C.Split)) {
 	#splt = unlist(strsplit(j, "[/]"))
@@ -918,7 +920,7 @@ ggsave('gesture_space_vs_order.jpg')
 	#newCSsplit <- append(newCSsplit, lst)}
 #gestable$Mig.CS.Split <- newCSsplit
 
-#Get the last chunk of string after the Slash (Miguel's coding)
+#Get the last chunk of string after the Slash (MS's coding)
 #newSCsplit = NULL
 #for (l in as.character(gestable$Mig.S.Split)) {
 	#splt = unlist(strsplit(l, "[,]"))
@@ -926,10 +928,10 @@ ggsave('gesture_space_vs_order.jpg')
 	#newSCsplit <- append(newSCsplit, lst)}
 #gestable$Mig.SC.Split <- newSCsplit
 
-#Compare Eunice's comma and slash splits to see if identical
+#Compare EL's comma and slash splits to see if identical
 #gestable$EunCSComp = (as.character(gestable$Eun.CS.Split) == as.character(gestable$Eun.SC.Split))
 
-#Compare Miguel's comma and slash splits to see if indentical
+#Compare MS's comma and slash splits to see if indentical
 #gestable$MigCSComp = (as.character(gestable$Mig.CS.Split) == as.character(gestable$Mig.SC.Split))
 
 
