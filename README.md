@@ -11,7 +11,7 @@ This is the main analysis script. Running this reproduces the pipeline from raw 
 
 The first part of script produces some 'diff' files pulling out trials that two coders disagreed on. These trials were resolved by a third coder and saved to a new file. The script then picks up those 'resolved' trials and merges it back into the larger dataset that includes all the trials the coders originally agreed on. (So note that you *do* need to run the script all the way from the beginning to get the dataframe that's used for our analyses.) 
 
-Note that the 'spatial' codings referred to in this data cleaning are the ones that merely identify a gesture string as containing 'some embodiment' or 'no embodiment'; an additional coder then broke this into body-based gestures used for the subject, object, and verb specifically, following the Hall et al. (2013) proposal (see EmbodimentHallRecode.csv) This information is incorportated later in the file.
+Note that the 'embodiment' codings referred to in the early data cleaning are the ones that merely identify a gesture string as containing 'some embodiment' or 'no embodiment'; an additional coder then broke this into body-based gestures used for the subject, object, and verb specifically, following the Hall et al. (2013) proposal (see EmbodimentHallRecode.csv) This information is incorportated later in the file.
 
 Interesting lines: 
 
@@ -25,7 +25,7 @@ Line 447: A full list of the 'weird' word orders that we wound up classified as 
 
 Lines 516- 659: Inferential statistics
 
-Lines 553-579 : The 'real' spatial information data is loaded here (we printed out all lines that were marked as having *any* information and coded them more closely)
+Lines 553-579 : The 'real' embodiment information data is loaded here (we printed out all lines that were marked as having *any* information and coded them more closely)
 
 Lines 660-753: Graphs produced!
 
