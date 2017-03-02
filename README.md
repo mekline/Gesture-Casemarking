@@ -5,6 +5,10 @@ Understanding human word-order preferences with gesture/pantomime paradigms. See
 
 This repository contains all stimuli, data, and analyses for study 1. 
 
+##Gesture-Casemark Repo.RProj
+
+Open to load the R project. Packrat should prompt you to install and then load all the package dependencies from the local lib. 
+
 ##Analysis_GestureCasemarking.R
 
 This is the main analysis script. Running this reproduces the pipeline from raw data to tests, graphs, etc. reported in the paper, *except for 1 step*: 
@@ -34,14 +38,14 @@ This folder contains the two keynote slide decks used to present event movies to
 ##Tidy Data
 All trials from participants included in the analysis, with the final word orders, spatial cue, and body-based/embodiment codings following reconciling blind coder disagreements. alldata_tidy_columns.txt explains the columns. 
 
-##Analysis - Post blindcoding
+##Analysis - Post blindcoding/
 
 This is the main folder for intermediate files produced in the final analysis pipeline.
 
 Because this was an in-person study that produced dense video data, and because at least 1 coder for each trial had to be blind to BOTH hypothesis & condition, there are a number of coding steps and files in between the raw data and the final word orders used for analysis. These steps are fully documented in the paper, and the purpose of each csv is explained in '1File Descriptions.txt'. In short, we start with *raw* word orders and participant markings from two separate coders, diff the two codings, reconcile disagreements, and then simplify the resulting strings for analysis. 
 
 
-##Analysis - Pre blindcoding
+##Analysis - Pre blindcoding/
 
 Initial results by EL (who conducted the study) - we later determined that we really needed blind-to-hypothesis coding, but retain the original codings for completeness.  
 
@@ -49,8 +53,12 @@ Initial results by EL (who conducted the study) - we later determined that we re
 * CaseInstructionData.csv contains all trial data from task performed after instructions about marking participants were given
 * GestureCaseMarking.R contains my initial analysis on these datasets
 
+##packrat/
+packrat package stuffs
 
 ## Reproducibility notes
+
+In theory the packratting should get you all the R dependencies, I havent tested this...
 
 R Studio version: 0.98.1102
 
