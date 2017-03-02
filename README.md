@@ -1,7 +1,7 @@
 #Gesture-Study 1
 ### Codename: Gesture-Casemarking
 
-Understanding human word-order preferences with gesture/pantomime paradigms. See the osf repository () and preprint () for the full description of the project. 
+Understanding human word-order preferences with gesture/pantomime paradigms. See the OSF project repository () and preprint () for the full description of the project. 
 
 This repository contains all stimuli, data, and analyses for study 1. 
 
@@ -11,29 +11,28 @@ This is the main analysis script. Running this reproduces the pipeline from raw 
 
 The first part of script produces some 'diff' files pulling out trials that two coders disagreed on. These trials were resolved by a third coder and saved to a new file. The script then picks up those 'resolved' trials and merges it back into the larger dataset that includes all the trials the coders originally agreed on. (So note that you *do* need to run the script all the way from the beginning to get the dataframe that's used for our analyses.) 
 
-Note that the 'embodiment' codings referred to in the early data cleaning are the ones that merely identify a gesture string as containing 'some embodiment' or 'no embodiment'; an additional coder then broke this into body-based gestures used for the subject, object, and verb specifically, following the Hall et al. (2013) proposal (see EmbodimentHallRecode.csv) This information is incorportated later in the file.
+Note that the 'embodiment' codings referred to in the early data cleaning are the ones that merely identify a gesture string as containing 'some embodiment' or 'no embodiment'; we then broke this into body-based gestures used for the subject, object, and verb specifically, following the Hall et al. (2013) proposal (see EmbodimentHallRecode.csv) This information is incorportated later in the file.
 
 Interesting lines: 
 
 Lines 0-30: Modify and run these to ensure all packages load and the files will run on your computer (see bottom for version info)
 
-Lines 31-400: Comment out if you don't wish to run/debug the blind coding and just use the tidy data.
+Lines 31-435: Comment out if you don't wish to run/debug the blind coding and just use the tidy data.
 
-Lines 403-510: Descriptive statistics
+Lines 444-510: Descriptive statistics
 
-Line 447: A full list of the 'weird' word orders that we wound up classified as verb medial or lateral, with counts; consult this if you're skeptical about our gesture coding scheme.
+Line 490: A full list of the 'weird' word orders that we wound up classified as verb medial or lateral, or dropped bc we couldn't classify; consult this if you're skeptical about our gesture coding scheme.
 
-Lines 516- 659: Inferential statistics
+Lines 550- 707: Inferential statistics
 
-Lines 553-579 : The 'real' embodiment information data is loaded here (we printed out all lines that were marked as having *any* information and coded them more closely)
-
-Lines 660-753: Graphs produced!
-
-
+Lines 711-799: Graphs produced!
 
 ##Stimuli 
 
 This folder contains the two keynote slide decks used to present event movies to participants. (All participants see/gesture all trials; some warmup trials followed by a random order of the key items in A, and the same list reversed, in B.)
+
+##Tidy Data
+All trials from participants included in the analysis, with the final word orders, spatial cue, and body-based/embodiment codings following reconciling blind coder disagreements. alldata_tidy_columns.txt explains the columns. 
 
 ##Analysis - Post blindcoding
 

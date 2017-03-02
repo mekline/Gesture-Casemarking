@@ -26,9 +26,9 @@ stderr <- function(x) sqrt(var(x)/length(x))
 #directory = '/Users/mekline/Dropbox/_Projects/Gesture - Case Marking/Analysis - Post Blindcoding' ##LINE TO REDACT FOR PEER REVIEW
 directory = '/Users/mekline/Dropbox/_Projects/Gesture/Gesture-Casemark Repo/Analysis - Post Blindcoding' ##LINE TO REDACT FOR PEER REVIEW
 
-#There is also a tidy data table for people who don't want to debug blind coding/merging steps. (in that case, comment out from line 33 to line 400)
+#There is also a tidy data table for people who don't want to debug blind coding/merging steps. (in that case, comment out from line 33 to line 444)
 tidydir <- '/Users/mekline/Dropbox/_Projects/Gesture/Gesture-Casemark Repo/Tidy Data/' #CHANGE THIS IF RUNNING ON NOT MY LAPTOP ##LINE TO REDACT FOR PEER REVIEW
-
+#######################################
 #Initialize dataset
 gestable = data.frame(NULL)
 

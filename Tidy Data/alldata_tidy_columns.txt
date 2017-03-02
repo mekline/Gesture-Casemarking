@@ -2,7 +2,8 @@ alldata_tidy_columns.txt
 
 What are all those columns?
 
-"X" - row numbers
+“X”/Blank line - row numbers
+
 "Subject" - unique participant number
 
 "GestureCondition" - which gesture task was being performed?
@@ -23,8 +24,14 @@ What are all those columns?
 
 "WordOrder.Classified" - The word orders are classified as Verb Medial, Verb Final, or Unclassified if we couldn't assign them to one of those two.
 
-"SpatialCue" - Indicates whether *any* contrastive spatial info was included in the sign. NOTE that later in the script (and for reported analysis) we upload the additional coding of which elements (S, V, O) are marked spatially (see Analysis Post Blindcoding/EmbodimentHallRecode.csv.   
+"SpatialCue" - Indicates whether *any* contrastive spatial info was included in the sign. (ie. *either* agent or patient was marked somehow).  
 
 "Clipped.Movie.File" - refers to the raw video of the gestures the participant produced on this trial. (This is identifiable data, not currently shared because our IRB doesn't allow for it.)  We can make this available to individual researchers on request.
 
-"ToInclude" - Final decisions on whether to include a trial in analyses; see lines above #400 and preprint for all explanation of dropped trials or subjects.        
+"ToInclude" - Final decisions on whether to include a trial in analyses; see lines above #400 and preprint for all explanation of dropped trials or subjects.   
+
+“Agent.Embod”
+“Verb.Embod”
+“Patient.Embod” - whether that referent was signed in a body-based way (what we are actually interested in is whether *both* patient and verb are embodied. 
+
+“WordOrder.Embodiment.Classified” - recoded orders to reflect the relevant features for the Hall account (whether the subject is placed adjacent to the verb, or not.)  Usually this reflects the same SOV/SVO split as always.      
